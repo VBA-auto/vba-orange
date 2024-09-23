@@ -1,0 +1,222 @@
+[
+  {
+    "marque_id": "m0001",
+    "brandName": "Alfa Romeo"
+  },
+  {
+    "marque_id": "m0002",
+    "brandName": "Aston Martin"
+  },
+  {
+    "marque_id": "m0003",
+    "brandName": "Audi"
+  },
+  {
+    "marque_id": "m0004",
+    "brandName": "Bentley"
+  },
+  {
+    "marque_id": "m0005",
+    "brandName": "BMW"
+  },
+  {
+    "marque_id": "m0006",
+    "brandName": "Borg Warner Marine"
+  },
+  {
+    "marque_id": "m0007",
+    "brandName": "Buick"
+  },
+  {
+    "marque_id": "m0008",
+    "brandName": "Chevrolet"
+  },
+  {
+    "marque_id": "m0009",
+    "brandName": "Chrysler-Plymouth"
+  },
+  {
+    "marque_id": "m0010",
+    "brandName": "Citroen"
+  },
+  {
+    "marque_id": "m0011",
+    "brandName": "Dacia"
+  },
+  {
+    "marque_id": "m0012",
+    "brandName": "Daewoo"
+  },
+  {
+    "marque_id": "m0013",
+    "brandName": "Daimler"
+  },
+  {
+    "marque_id": "m0014",
+    "brandName": "Dodge"
+  },
+  {
+    "marque_id": "m0015",
+    "brandName": "Ferrari"
+  },
+  {
+    "marque_id": "m0016",
+    "brandName": "Fiat"
+  },
+  {
+    "marque_id": "m0017",
+    "brandName": "Ford"
+  },
+  {
+    "marque_id": "m0018",
+    "brandName": "Honda"
+  },
+  {
+    "marque_id": "m0019",
+    "brandName": "Hummer"
+  },
+  {
+    "marque_id": "m0020",
+    "brandName": "Hyundai"
+  },
+  {
+    "marque_id": "m0021",
+    "brandName": "Infiniti"
+  },
+  {
+    "marque_id": "m0022",
+    "brandName": "Isuzu"
+  },
+  {
+    "marque_id": "m0023",
+    "brandName": "Jaguar"
+  },
+  {
+    "marque_id": "m0024",
+    "brandName": "Jeep"
+  },
+  {
+    "marque_id": "m0025",
+    "brandName": "Kia"
+  },
+  {
+    "marque_id": "m0026",
+    "brandName": "Lancia"
+  },
+  {
+    "marque_id": "m0027",
+    "brandName": "Land  Rover"
+  },
+  {
+    "marque_id": "m0028",
+    "brandName": "Lexus"
+  },
+  {
+    "marque_id": "m0029",
+    "brandName": "Lincoln"
+  },
+  {
+    "marque_id": "m0030",
+    "brandName": "Lotus"
+  },
+  {
+    "marque_id": "m0031",
+    "brandName": "Maserati"
+  },
+  {
+    "marque_id": "m0032",
+    "brandName": "Mazda"
+  },
+  {
+    "marque_id": "m0033",
+    "brandName": "Mercedes-AMG"
+  },
+  {
+    "marque_id": "m0034",
+    "brandName": "Mercedes-Benz"
+  },
+  {
+    "marque_id": "m0035",
+    "brandName": "Mercedes-Maybach"
+  },
+  {
+    "marque_id": "m0036",
+    "brandName": "Mercury"
+  },
+  {
+    "marque_id": "m0037",
+    "brandName": "MINI"
+  },
+  {
+    "marque_id": "m0038",
+    "brandName": "Mitsubishi"
+  },
+  {
+    "marque_id": "m0039",
+    "brandName": "Nissan"
+  },
+  {
+    "marque_id": "m0040",
+    "brandName": "Opel"
+  },
+  {
+    "marque_id": "m0041",
+    "brandName": "Peugeot"
+  },
+  {
+    "marque_id": "m0042",
+    "brandName": "Pontiac"
+  },
+  {
+    "marque_id": "m0043",
+    "brandName": "Porsche"
+  },
+  {
+    "marque_id": "m0044",
+    "brandName": "Renault"
+  },
+  {
+    "marque_id": "m0045",
+    "brandName": "Rolls Royce"
+  },
+  {
+    "marque_id": "m0046",
+    "brandName": "Rover"
+  },
+  {
+    "marque_id": "m0047",
+    "brandName": "Saab"
+  },
+  {
+    "marque_id": "m0048",
+    "brandName": "Seat"
+  },
+  {
+    "marque_id": "m0049",
+    "brandName": "Skoda"
+  },
+  {
+    "marque_id": "m0050",
+    "brandName": "Smart"
+  },
+  {
+    "marque_id": "m0051",
+    "brandName": "Subaru"
+  },
+  {
+    "marque_id": "m0052",
+    "brandName": "Suzuki"
+  },
+  {
+    "marque_id": "m0053",
+    "brandName": "Toyota"
+  },
+  {
+    "marque_id": "m0054",
+    "brandName": "Volkswagen"
+  },
+  {
+    "marque_id": "m0055",
+    "brandName": "Volvo"
+  }
+]

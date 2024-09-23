@@ -1,0 +1,119 @@
+[
+  {
+    "image": "/images/TF60.jpeg",
+    "title": "TF60",
+    "excerpt": "Boite de vitesse à convertisseur de couple de marque Aisin",
+    "paragraph": "Boîte de vitesses automatique à six rapports conçue par Aisin Warner pour les moteurs transversaux. Utilisée par Volkswagen, Seat, Škoda, et BMW/MINI, elle comprend un convertisseur de couple hydraulique et un bloc de contrôle hydraulique.",
+    "price": "€2500",
+    "orderLink": "#",
+    "lubrification": "Multi ATF"
+  },
+  {
+    "image": "/images/5L40E.jpeg",
+    "title": "5L40E",
+    "excerpt": "Boite de vitesse à convertisseur de couple de marque General Motors.",
+    "paragraph": "Boîte de vitesses automatique à 5 rapports produite par General Motors avec bloc de contrôle hydraulique (mécatronique). Utilisée dans les BMW, Range Rover, et Cadillac, elle existe en versions pour véhicules à 2 et 4 roues motrices.",
+    "price": "€2500",
+    "orderLink": "#",
+    "lubrification": "Multi ATF"
+  },
+  {
+    "image": "/images/6DCT450.jpeg",
+    "title": "6DCT450",
+    "excerpt": "Boite de vitesse à double embrayage de marque GETRAG.",
+    "paragraph": "Boîte DCT (Dual Clutch Transmission) conçue pour les moteurs transversaux, connue sous le nom de Powershift chez Ford et EDC chez Renault. Utilisée depuis 2009, la Getrag 6DCT250 offre un couple jusqu’à 240 Nm avec un double embrayage 'à sec'.",
+    "price": "€3500",
+    "orderLink": "#",
+    "lubrification": "Multi DCTF"
+  },
+  {
+    "image": "/images/6HP26.jpeg",
+    "title": "6HP26",
+    "excerpt": "Boite de vitesse à convertisseur de couple de marque ZF.",
+    "paragraph": "Boîte de vitesses automatique à convertisseur de couple hydraulique conçue par ZF pour les moteurs longitudinaux depuis 2000. Utilisée principalement sur BMW, Audi (6HP19A) Volkswagen, elle supporte des couples de 400 Nm à 600 Nm.",
+    "price": "€2900",
+    "orderLink": "#",
+    "lubrification": "Multi ATF"
+  },
+  {
+    "image": "/images/8HP70.jpeg",
+    "title": "8HP70",
+    "excerpt": "Boite de vitesse à convertisseur de couple de marque ZF.",
+    "paragraph": "Boîte de vitesses à 8 rapports de la marque ZF, montée sur des véhicules Audi, BMW, Jaguar  et Land Rover. Dispose d’un convertisseur de couple hydraulique et de freins et embrayages pilotés électriquement ou hydrauliquement.",
+    "price": "€3900",
+    "orderLink": "#",
+    "lubrification": "ATF 6 ou Trans ATF"
+  },
+  {
+    "image": "/images/722.8.jpeg",
+    "title": "722.8",
+    "excerpt": "Boite de vitesse à variation continue (Mercedes).",
+    "paragraph": "Boîte CVT (transmission à variation continue) conçue par Mercedes Benz, utilisée dans les Mercedes Classe A et B. Équipée d’un convertisseur de couple hydraulique, elle comprend des composants comme l’embrayage, les poulies primaires et secondaires, et le train épicycloïdal.",
+    "price": "€3200",
+    "orderLink": "#",
+    "lubrification": "Multi CVTF"
+  },
+  {
+    "image": "/images/AW-55-50.jpeg",
+    "title": "AW-55-50",
+    "excerpt": "Boite de vitesse à convertisseur de couple de marque Aisin.",
+    "paragraph": "Boîte de vitesses automatique à 5 rapports développée par Aisin Warner, la 55-50SN équipe des véhicules Renault, Volvo, General Motors, Saab et Fiat. Dotée d'un convertisseur de couple hydraulique, elle utilise des électrovannes pour gérer les flux d’huile.",
+    "price": "€2800",
+    "orderLink": "#",
+    "lubrification": "Multi ATF"
+  },
+  {
+    "image": "/images/0AW(Multitronic).jpeg",
+    "title": "0AW (Multitronic)",
+    "excerpt": "Boite de vitesse à variation continue (Audi).",
+    "paragraph": "Boîte de vitesses 0AW (CVT) sans passage de rapports, utilisée dans les Audi A4, A5, A6 (pas les 3.0). Composée de deux poulies à diamètre variable et d’une chaîne plate, contrôlée par la technologie multitronic. Composants : pompe, embrayages, système CVT, carter.",
+    "price": "€3700",
+    "orderLink": "#",
+    "lubrification": "Multi CVT"
+  },
+  {
+    "image": "/images/0B5(DL501).jpeg",
+    "title": "0B5 (DL501)",
+    "excerpt": "Boite de vitesse à double embrayage (Audi).",
+    "paragraph": "Boîte de vitesses 0B5 (DL-501) équipée d'un double embrayage, utilisée dans les Audi Q5 (2.0L et 3.0L) et A5. Composants : double embrayage, arbre d’entrée, moyeux, pompe à huile, roulements, arbre de sortie, différentiel, carter, éléments hydrauliques.",
+    "price": "€3800",
+    "orderLink": "#",
+    "lubrification": "huile DCTF"
+  },
+  {
+    "image": "/images/01j.jpeg",
+    "title": "01J",
+    "excerpt": "Boite de vitesse à variation continue (Audi).",
+    "paragraph": "Boîte de vitesses 01J  sans passage de rapports, utilisée dans les Audi A4, A5, A6 (pas les 3.0), Seat. Composée de deux poulies à diamètre variable et d’une chaîne plate, contrôlée par la technologie multitronic. Composants : pompe, embrayages, système CVT, carter.",
+    "price": "€3200",
+    "orderLink": "#",
+    "lubrification": "Multi CVT"
+  },
+  {
+    "image": "/images/JF010E.jpeg",
+    "title": "JF010E",
+    "excerpt": "Boite de vitesse à variation continue (Jatco).",
+    "paragraph": "Boîte CVT JF011E, appelée Multi CVT chez Dodge et Jeep, RE0F10A chez Nissan, et F1C1A chez Mitsubishi. Utilisée dans de nombreux véhicules, cette transmission comprend un convertisseur de couple et des embrayages avant et arrière devant les poulies. Lubrification : huile Multi CVT.",
+    "price": "€3200",
+    "orderLink": "#",
+    "lubrification": ""
+  },
+  {
+    "image": "/images/RE5R05A.jpeg",
+    "title": "RE5R05A",
+    "excerpt": "Boite de vitesse à convertisseur de couple (Jatco).",
+    "paragraph": "Boîte de vitesses automatique à 5 rapports, la 5R05 (RE5R05A pour Nissan, JR507E/JR509E pour Jatco, TG5C/TG5D '5EAT' pour Subaru) est utilisée dans les véhicules à propulsion arrière ou 4X4 avec moteurs longitudinaux.",
+    "price": "€3200",
+    "orderLink": "#",
+    "lubrification": "huile Multi ATF"
+  },
+  {
+    "image": "/images/TF80.jpeg",
+    "title": "TF80",
+    "excerpt": "Boite de vitesse à convertisseur de couple de marque Aisin.",
+    "paragraph": "Boîte de vitesses à 6 vitesses et convertisseur de couple hydraulique, conçue par Aisin pour moteurs transversaux. Utilisée dans les Saab, Jaguar, Mazda, PSA (Peugeot-Citroën), Land Rover, Alfa Romeo, Hyundai, Fiat, Chevrolet, Opel (Insignia), Renault et Volvo.",
+    "price": "€2500",
+    "orderLink": "#",
+    "lubrification": "huile Multi ATF"
+  }
+]

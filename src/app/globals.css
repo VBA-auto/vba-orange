@@ -1,0 +1,509 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: poppins, sans-serif;
+  background-color: #fdfdfd;
+}
+p {
+  color: #3f3f3f;
+  font-size: 15px;
+  font-family: poppins, sans-serif;
+}
+h1 {
+  margin-top: -10px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar x {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* //////////////////////////////////////////// */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu.open {
+    display: block;
+  }
+}
+
+.heroTitle {
+  color: #3775cd;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: poppins, sans-serif;
+  /* text-shadow: 1px 1px #f1b04e; */
+}
+
+.video-3d {
+  transform: perspective(1000px) rotateX(30deg);
+  transition: transform 1s ease;
+}
+
+.video-default {
+  transform: perspective(1000px) rotateX(0deg);
+  transition: transform 1s ease;
+}
+
+.myVideo:hover {
+  transform: perspective(1000px) rotateX(0deg);
+  transition: transform 0.5s ease;
+}
+
+.paragraph {
+  line-height: 28px;
+}
+
+/* //////////////////////////////////////////// */
+.formLabel {
+  width: 30%;
+  background-color: #f1b04e;
+  color: #4b4b4b;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 5px 0 0 5px;
+}
+.separator {
+  display: block;
+  width: 35px;
+  margin: 60px auto;
+}
+.formSelect {
+  width: 100%;
+  padding: 0 10px 0 10px;
+  border-radius: 0 5px 5px 0;
+  background-color: #fff;
+  font-family: Poppins;
+  border: 1px solid #f1b04e98;
+}
+.labandsel {
+  display: flex;
+  margin-bottom: 10px;
+}
+.labandsel2 {
+  display: flex;
+  /* margin-bottom: 10px; */
+}
+.formBox {
+  border: 1px solid #f1b04e;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+:focus-visible {
+  outline: none;
+}
+.formBoxButton {
+  padding: 8px 30px;
+  background-color: #ee9d35;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+.formButnParent {
+  margin: 10px 0 0 0;
+}
+
+.titlesFonts {
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #494949;
+  /* text-transform: capitalize; */
+}
+.positionTitle {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 700;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: center;
+  /* padding: 0 40px; */
+  background-color: #f1b04e65;
+}
+.sticky-sidebar {
+  position: sticky;
+  top: 5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+nextjs-portal {
+  display: none;
+}
+.subHeadList1 {
+  position: relative;
+  display: inline-block;
+}
+
+.mainTextOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  color: white;
+  font-weight: 400;
+  width: 100%;
+  font-size: 15px;
+}
+
+.subHeadList1:hover .mainTextOverlay {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.subHeadList1:hover .navSingItem {
+  filter: brightness(40%);
+  transform: scale(0.96);
+}
+.videoOverlay {
+  filter: brightness(60%);
+}
+.videoOverlay1 {
+  filter: brightness(85%);
+}
+.ashColor {
+  color: #000000;
+  font-family: system-ui;
+  text-align: center;
+  font-size: 16px;
+}
+.navBarItems {
+  font-size: 15px;
+}
+.ashColor:hover {
+  color: #f1b04e;
+}
+.navSingItem {
+  margin-bottom: 5px;
+  border-radius: 10px;
+  filter: brightness(60%);
+  transition: 0.8s ease;
+}
+.singleImages {
+  height: 140px;
+}
+.slick-next:before {
+  content: ">" !important;
+  font-family: poppins !important;
+  color: #000 !important;
+}
+.slick-prev:before {
+  content: "<" !important;
+  font-family: poppins !important;
+  color: #000 !important;
+}
+.heroSection {
+  height: 100vh;
+}
+.bannerHead {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footHead {
+  background: linear-gradient(to right, #1671d81c, #f1f1f1);
+}
+.lostImage {
+  height: 113px;
+}
+.navButton {
+  display: none;
+}
+.separetor {
+  display: block;
+  height: 10px;
+  width: 10px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.responsiveeHome {
+  position: absolute;
+  bottom: 5%;
+}
+
+.banText {
+  display: none;
+}
+.heroban {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #9fc6e7;
+}
+.navSubParent {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  height: 200px;
+  padding: 15px;
+}
+
+.heroban1 {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #494949;
+}
+.socialIcons {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #9fc6e7;
+}
+.borderColor {
+  border: 1px solid#CE3F3F;
+}
+.socialIconsI {
+  font-size: 20px;
+}
+.socialIconsImg {
+  width: 60%;
+  margin: auto;
+}
+.heroImage {
+  height: 150px;
+  width: 80%;
+  margin: 15px auto;
+  border: 1px solid #a2a2a2;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+}
+.heroImage:hover {
+  box-shadow: 1px 2px 5px #a0a0a0;
+}
+.navLinks {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s all ease-in-out;
+}
+.navLinks:hover {
+  font-size: 17px;
+  transition: 0.3s all ease-in-out;
+}
+.navLinks::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #ce3f3f;
+  font-size: 18px;
+  transition: width 0.3s ease-in-out; /* only transition width */
+}
+
+.navLinks:hover::after {
+  width: 100%;
+  /* expand width to 100% */
+}
+.navLinksFooter {
+  position: relative;
+  display: block;
+  width: max-content;
+  transition: 0.3s all ease-in-out;
+  margin: auto;
+}
+
+:focus-visible {
+  outline: #9fc6e7;
+}
+.resSubTitle {
+  display: none;
+}
+/* ============================================= */
+.faqResDiv {
+  display: none;
+}
+.hidecomp {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .break {
+    display: block;
+  }
+  .titlesFonts {
+    font-size: 26px;
+  }
+  .navSubParent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  #headMain {
+    /* background-color: #fff; */
+    /* height: 100vh; */
+  }
+  .MB5 {
+    margin-bottom: 30px;
+  }
+  .MT5 {
+    margin-top: 30px;
+  }
+  navBarItems .checkBVACont {
+    z-index: 9999999;
+  }
+  .articleTab {
+    margin-top: 60px;
+    display: flex;
+    height: 240px !important;
+    gap: 30px;
+  }
+  .artiEach {
+    width: 160px;
+  }
+  .artChildImg {
+    width: 100% !important;
+  }
+  .flexDirection {
+    display: inline-flex;
+    gap: 30px;
+    flex-direction: column-reverse;
+  }
+  .navSingItem {
+    width: 250px;
+    height: auto;
+  }
+  .singleImages {
+    height: 99px;
+  }
+  #navbar-default {
+    width: 100%;
+    background-color: #fff;
+    color: #1d1d1d;
+  }
+  .navBarItems {
+    color: #1d1d1d !important;
+  }
+  .hide {
+    display: none;
+  }
+  .hidecomp {
+    display: inherit !important;
+  }
+  .responsiveNavButton {
+    display: none;
+  }
+  .navButton {
+    display: inherit;
+    font-weight: 700;
+  }
+  .faqBanImg {
+    display: none;
+  }
+  .foot1 {
+    margin-top: 20px;
+  }
+  .leftcard,
+  .rightCard {
+    width: 80%;
+    margin: auto;
+  }
+  .logo {
+    width: 120px;
+  }
+  .heroban {
+    font-size: 35px;
+    margin-top: 55px;
+  }
+  .resSubTitle,
+  .faqResDiv {
+    display: inherit;
+  }
+  .resSubTitle p {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  .heroban1,
+  .heroban2 {
+    display: none;
+  }
+  .rightCard {
+    margin-top: 20px;
+  }
+  .navLinks {
+    width: max-content;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  .responsivee {
+    background-color: #ffffffce;
+    margin: 40px 15px;
+    padding: 15px;
+    text-align: center;
+  }
+  .responsiveNav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 0 15px;
+  }
+  .faqH1 {
+    font-size: 22px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .contactBox {
+    padding: 10px 0;
+  }
+  .banText {
+    display: inherit;
+    margin: 5px 0 15px 0;
+  }
+  .BanTextHiode {
+    display: none;
+  }
+  .logoFooter {
+    margin: 5px auto;
+  }
+  .navLinksFooter {
+    margin: auto;
+  }
+  .socialFoot {
+    justify-content: center;
+  }
+  .footHead {
+    text-align: center;
+  }
+  .foot1 {
+    margin-top: 20px;
+  }
+}
