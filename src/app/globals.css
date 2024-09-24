@@ -50,26 +50,11 @@ h1 {
 }
 
 .heroTitle {
-  color: #3775cd;
+  color: #fff;
   font-size: 22px;
   font-weight: 400;
   font-family: poppins, sans-serif;
   /* text-shadow: 1px 1px #f1b04e; */
-}
-
-.video-3d {
-  transform: perspective(1000px) rotateX(30deg);
-  transition: transform 1s ease;
-}
-
-.video-default {
-  transform: perspective(1000px) rotateX(0deg);
-  transition: transform 1s ease;
-}
-
-.myVideo:hover {
-  transform: perspective(1000px) rotateX(0deg);
-  transition: transform 0.5s ease;
 }
 
 .paragraph {
@@ -155,16 +140,6 @@ h1 {
   top: 5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-nextjs-portal {
-  display: none;
-}
 .subHeadList1 {
   position: relative;
   display: inline-block;
@@ -193,12 +168,7 @@ nextjs-portal {
   filter: brightness(40%);
   transform: scale(0.96);
 }
-.videoOverlay {
-  filter: brightness(60%);
-}
-.videoOverlay1 {
-  filter: brightness(85%);
-}
+
 .ashColor {
   color: #000000;
   font-family: system-ui;
@@ -223,12 +193,12 @@ nextjs-portal {
 .slick-next:before {
   content: ">" !important;
   font-family: poppins !important;
-  color: #000 !important;
+  color: #fff !important;
 }
 .slick-prev:before {
   content: "<" !important;
   font-family: poppins !important;
-  color: #000 !important;
+  color: #fff !important;
 }
 .heroSection {
   height: 100vh;
