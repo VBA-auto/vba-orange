@@ -1,5 +1,7 @@
 "use client";
+import ContactButton from "@/app/components/ContactButton";
 import Footer from "@/app/components/Footer";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -72,7 +74,9 @@ const ArticlePage = ({ params }) => {
       {article ? (
         <>
           <div className="relative mx-auto">
-            <img
+            <Image
+              width={400}
+              height={400}
               className="w-full md:h-screen  videoOverlay relative"
               src={article.image}
               alt=""
@@ -90,23 +94,23 @@ const ArticlePage = ({ params }) => {
                 {/* <img className="" src={article.image} alt="" /> */}
                 <h1 className="titlesFonts my-3 capitalize">{article.title}</h1>
                 <p dangerouslySetInnerHTML={{ __html: article.paragraph }} />
-                <Link href="#">
-                  <button className="bg-[#f1b04e]  text-white py-2.5 px-5 mt-5 rounded-md hover:bg-[#f1b04ea6] hover:text-white">
-                    Contactez-nous
-                  </button>
-                </Link>
+                <div className="mt-5">
+                  <ContactButton />
+                </div>
               </div>
               <div className="md:w-[30%] md:h-[90vh] sticky top-12">
                 <div className="border md:h-[90vh] overflow-y-scroll p-3 articleTab">
                   <h1 className="mb-3">More article</h1>
                   {related?.map((related, index) => (
-                    <Link href={`/articles/${related.title}`}>
+                    <Link key={index} href={`/articles/${related.title}`}>
                       <div
                         key={index}
                         className="md:flex md:gap-3 mb-3 artiEach"
                       >
                         <div className="md:w-1/2">
-                          <img
+                          <Image
+                            width={400}
+                            height={400}
                             className="artChildImg"
                             src={related.image}
                             alt=""
@@ -139,7 +143,6 @@ const ArticlePage = ({ params }) => {
       ) : (
         <div>Loading...</div>
       )}
-      <Footer />
     </section>
   );
 };

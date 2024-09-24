@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
   const [parts, setparts] = useState([]);
@@ -16,18 +17,18 @@ const Page = () => {
       });
   }, []);
 
-  useEffect(() => {
-    const scrollToMain = () => {
-      const mainSection = document.getElementById("main");
-      if (mainSection) {
-        mainSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
+  // useEffect(() => {
+  //   const scrollToMain = () => {
+  //     const mainSection = document.getElementById("main");
+  //     if (mainSection) {
+  //       mainSection.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   };
 
-    const scrollTimeout = setTimeout(scrollToMain, 1000);
+  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
 
-    return () => clearTimeout(scrollTimeout);
-  }, []);
+  //   return () => clearTimeout(scrollTimeout);
+  // }, []);
 
   return (
     <section className="">
@@ -38,8 +39,10 @@ const Page = () => {
       {/* <div className="">
         <div className="absolute w-full  mx-auto min-h-screen  bg-black inset-0 backdrop-filter backdrop-blur-xs  bg-opacity-25"></div>
       </div> */}
-
-      <div className="relative mx-auto">
+      <div className="container mx-auto py-12">
+        <Breadcrumb />
+      </div>
+      {/* <div className="relative mx-auto">
         <Image
           width={400}
           height={400}
@@ -50,9 +53,9 @@ const Page = () => {
         <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
           Articles
         </h1>
-      </div>
+      </div> */}
       <div id="main" className="container mx-auto">
-        <div className=" py-16">
+        <div className=" pb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {parts?.map((part, index) => (
               <div
@@ -81,7 +84,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

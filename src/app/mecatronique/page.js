@@ -186,7 +186,7 @@ const Page = () => {
           </div>
           <div className="md:w-1/2">
             <Image
-              width={400}
+              width={600}
               height={400}
               className="rounded-[8px] MB5"
               src="/images/meca2.png"

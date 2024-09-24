@@ -58,7 +58,7 @@ const Page = () => {
               attention particulière doit être portée aux boîtes avec
               convertisseur de couple hydraulique, surtout quand au remontage
               (pompe engrenage). Utiliser les bons outils et suivre les
-              instructions permet d’éviter les erreurs.
+              instructions permet d&apos;éviter les erreurs.
             </p>
 
             <div className="">
@@ -81,20 +81,20 @@ const Page = () => {
               <strong>à convertisseur de couple hydrauliquenécessitent</strong>{" "}
               une attention particulière : Il est important de s&apos;assurer
               que celui-ci est correctement emboîté sur les goupillesafin
-              d’éviter d&apos;endommager la pompe d&apos;engrenage. Une mauvaise
-              manipulation peut entraîner des problèmes au niveau de cette pompe
-              (casse).
+              d&apos;éviter d&apos;endommager la pompe d&apos;engrenage. Une
+              mauvaise manipulation peut entraîner des problèmes au niveau de
+              cette pompe (casse).
             </p>
             <p className="text-justify mb-2 paragraph">
               En ce qui concerne{" "}
-              <strong>les boites automatiques d’occasion</strong>, il est très
-              difficile d&apos;inspecter l&apos;intérieur et de vérifier son
-              état mécanique. Il est aussi impossible de certifier le
-              kilométrage réel. Sur certaines boites équipées d’un calculateur
-              (dans la grande majorité) il sera nécessaire d’effectuer une
-              reprogrammation ainsi qu’un calibrage. Il faudra porter une
-              attention particulière à la couleur et à la qualité de l’huile
-              d’origine.
+              <strong>les boites automatiques d&apos;occasion</strong>, il est
+              très difficile d&apos;inspecter l&apos;intérieur et de vérifier
+              son état mécanique. Il est aussi impossible de certifier le
+              kilométrage réel. Sur certaines boites équipées d&apos;un
+              calculateur (dans la grande majorité) il sera nécessaire
+              d&apos;effectuer une reprogrammation ainsi qu&apos;un calibrage.
+              Il faudra porter une attention particulière à la couleur et à la
+              qualité de l&apos;huile d&apos;origine.
             </p>
           </div>
         </div>
@@ -114,7 +114,7 @@ const Page = () => {
             Reprogrammation et Calculateur
           </h2>
           <p className="text-justify mb-2 paragraph">
-            La grande majorité des boites automatiques sont équipées d’un
+            La grande majorité des boites automatiques sont équipées d&apos;un
             calculateur. La reprogrammation de ces calculateurs doit être
             effectuée correctement pour garantir des performances optimales. Une
             mauvaise reprogrammation peut entraîner des dysfonctionnements.
@@ -128,7 +128,7 @@ const Page = () => {
             correctement. Pour obtenir une mesure précise, il est souvent
             nécessaire de vérifier le niveau d&apos;huile lorsque la
             transmission est chaude, généralement à environ 65°C. Voici les
-            étapes recommandées sur une boite de vitesse équipées d’un
+            étapes recommandées sur une boite de vitesse équipées d&apos;un
             convertissuer de couple
           </p>
           <ul style={{ paddingLeft: "0px", color: "#000" }}>
@@ -164,8 +164,8 @@ const Page = () => {
             </li>
           </ul>
           <p className="text-justify mb-2 paragraph">
-            Suite au remontage d’une boîte automatique, il est important de bien
-            faire le calibrage/reprogrammation et de vérifierle niveau
+            Suite au remontage d&apos;une boîte automatique, il est important de
+            bien faire le calibrage/reprogrammation et de vérifierle niveau
             d&apos;huile.
           </p>
           <div className="">

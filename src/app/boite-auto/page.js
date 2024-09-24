@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
   const [parts, setparts] = useState([]);
@@ -17,18 +18,18 @@ const Page = () => {
       });
   }, []);
 
-  useEffect(() => {
-    const scrollToMain = () => {
-      const mainSection = document.getElementById("main");
-      if (mainSection) {
-        mainSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
+  // useEffect(() => {
+  //   const scrollToMain = () => {
+  //     const mainSection = document.getElementById("main");
+  //     if (mainSection) {
+  //       mainSection.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   };
 
-    const scrollTimeout = setTimeout(scrollToMain, 1000);
+  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
 
-    return () => clearTimeout(scrollTimeout);
-  }, []);
+  //   return () => clearTimeout(scrollTimeout);
+  // }, []);
 
   return (
     <section className="">
@@ -36,11 +37,11 @@ const Page = () => {
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
       </Head>
-      {/* <div className="">
-        <div className="absolute w-full  mx-auto min-h-screen  bg-black inset-0 backdrop-filter backdrop-blur-xs  bg-opacity-25"></div>
-      </div> */}
+      <div className="container mx-auto py-12">
+        <Breadcrumb />
+      </div>
 
-      <div className="relative mx-auto">
+      {/* <div className="relative mx-auto">
         <Image
           width={400}
           height={400}
@@ -51,9 +52,9 @@ const Page = () => {
         <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
           Boite automatiques
         </h1>
-      </div>
+      </div> */}
       <div id="main" className="container mx-auto">
-        <div className=" py-16">
+        <div className=" pb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {parts?.map((part, index) => (
               <div
@@ -67,7 +68,9 @@ const Page = () => {
                   alt={part.title}
                   className="rounded-md w-full"
                 />
-                <h2 className="text-lg font-semibold mt-2">{part.title}</h2>
+                <h2 className="text-md text-gray-700 font-[500] mt-2">
+                  {part.title}
+                </h2>
                 <p className="text-gray-600 mt-1">{part.excerpt}</p>
                 <p className="text-[#f1b04e] font-semibold my-3">
                   Price : {part.price}
@@ -78,7 +81,7 @@ const Page = () => {
                     setSelectedPart(part);
                     document.getElementById("my_modal_3").showModal();
                   }}
-                  className="bg-[#f1b04e]  text-white py-2.5 px-5 rounded-md hover:bg-[#f1b04ea6] hover:text-white"
+                  className="px-5 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md"
                 >
                   Commander
                 </button>
@@ -96,7 +99,9 @@ const Page = () => {
                 ✕
               </button>
             </form>
-            <h2 className="text-lg font-semibold mt-2">{selectedPart.title}</h2>
+            <h2 className="text-md text-gray-700 font-[500] mt-2">
+              {selectedPart.title}
+            </h2>
             <div className="">
               <Image
                 width={400}
@@ -115,7 +120,7 @@ const Page = () => {
             </p>
             <div className="text-center">
               <Link href="/">
-                <button className="bg-[#f1b04e]  text-white py-2.5 px-5 rounded-md hover:bg-[#f1b04ea6] hover:text-white">
+                <button className="px-5 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md">
                   Commander
                 </button>
               </Link>
@@ -123,7 +128,6 @@ const Page = () => {
           </div>
         </dialog>
       )}
-      <Footer />
     </section>
   );
 };

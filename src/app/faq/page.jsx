@@ -4,20 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
+import Breadcrumb from "../components/BreadCumb";
+import ContactButton from "../components/ContactButton";
 
 const Page = () => {
-  useEffect(() => {
-    const scrollToMain = () => {
-      const mainSection = document.getElementById("main");
-      if (mainSection) {
-        mainSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
+  // useEffect(() => {
+  //   const scrollToMain = () => {
+  //     const mainSection = document.getElementById("main");
+  //     if (mainSection) {
+  //       mainSection.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   };
 
-    const scrollTimeout = setTimeout(scrollToMain, 1000);
+  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
 
-    return () => clearTimeout(scrollTimeout);
-  }, []);
+  //   return () => clearTimeout(scrollTimeout);
+  // }, []);
   return (
     <section className="">
       <Head>
@@ -27,8 +29,10 @@ const Page = () => {
       {/* <div className="">
         <div className="absolute w-full  mx-auto min-h-screen  bg-black inset-0 backdrop-filter backdrop-blur-xs  bg-opacity-25"></div>
       </div> */}
-
-      <div className="relative mx-auto">
+      <div className="container mx-auto py-12">
+        <Breadcrumb />
+      </div>
+      {/* <div className="relative mx-auto">
         <Image
           width={400}
           height={400}
@@ -39,9 +43,9 @@ const Page = () => {
         <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
           Foire aux questions
         </h1>
-      </div>
+      </div> */}
       <div id="main" className="container mx-auto">
-        <div className="flex  py-16 gap-5">
+        <div className="flex  pb-16 gap-5">
           <div className="md:w-2/3 mx-auto">
             <h1 className="titlesFonts ps-[15px]"> Foire aux questions</h1>
             <div className="collapse collapse-plus my-5">
@@ -374,16 +378,11 @@ const Page = () => {
               </div>
             </div>
             <div className="ps-[18px]">
-              <Link href="#">
-                <button className="bg-[#f1b04e]  text-white py-2.5 px-5 rounded-md hover:bg-[#f1b04ea6] hover:text-white">
-                  Contactez-nous
-                </button>
-              </Link>
+              <ContactButton />
             </div>
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

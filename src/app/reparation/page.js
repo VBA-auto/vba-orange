@@ -79,6 +79,9 @@ const Page = () => {
         <span className=" separator"></span>
         <div className="md:flex flexDirection gap-14">
           <div className="md:w-1/2">
+            <Image className="rounded-[8px]" src={repa2} alt="" />
+          </div>
+          <div className="md:w-1/2">
             <h1 className="titlesFonts">Les boites robotisées</h1>
             <p className="text-justify mb-5 paragraph">
               Les boîtes robotisées ou pilotées, comme la{" "}
@@ -96,15 +99,9 @@ const Page = () => {
               fiabilité.
             </p>
           </div>
-          <div className="md:w-1/2">
-            <Image className="rounded-[8px]" src={repa2} alt="" />
-          </div>
         </div>
         <span className=" separator"></span>
         <div className="md:flex gap-14">
-          <div className="md:w-1/2">
-            <Image className="rounded-[8px] MB5" src={repa3} alt="" />
-          </div>
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Les double embrayage</h1>
             <p className="text-justify mb-2 paragraph">
@@ -124,6 +121,9 @@ const Page = () => {
             <div className="">
               <ContactButton />
             </div>
+          </div>
+          <div className="md:w-1/2">
+            <Image className="rounded-[8px] MB5" src={repa3} alt="" />
           </div>
         </div>
         <span className=" separator"></span>

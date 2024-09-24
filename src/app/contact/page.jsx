@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import Footer from "../components/Footer";
 import Image from "next/image";
+import Breadcrumb from "../components/BreadCumb";
 
 export default function Contact() {
   const PageDescription = "auto trans";
@@ -67,11 +67,13 @@ export default function Contact() {
     <section className="">
       <Head>
         <title>auto trans</title>
-        <meta name="description" content={pageDescription} />
+        <meta name="description" content={PageDescription} />
         <meta name="headline" content={HeadingText} />
       </Head>
-
-      <div className="relative mx-auto">
+      <div className="container mx-auto py-12">
+        <Breadcrumb />
+      </div>
+      {/* <div className="relative mx-auto">
         <Image
           width={400}
           height={400}
@@ -83,9 +85,9 @@ export default function Contact() {
         <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
           Contact
         </h1>
-      </div>
+      </div> */}
 
-      <div id="main" className="container mx-auto py-24">
+      <div id="main" className="container mx-auto pb-24">
         <div className="md:flex flexDirection MT5 MB5">
           <div className="md:w-1/2">
             <p className="mb-5 font-semibold">Information</p>
@@ -157,7 +159,7 @@ export default function Contact() {
 
               <div className=" mt-4">
                 <button
-                  className="bg-[#f1b04e] hover:bg-[#f1b04ed3] text-white font-bold py-2 px-8 rounded-md focus:outline-none focus:shadow-outline"
+                  className="px-11 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md"
                   type="submit"
                 >
                   Envoyer
@@ -167,7 +169,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 }

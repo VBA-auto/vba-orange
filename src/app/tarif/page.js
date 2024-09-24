@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import TarifFilter from "../components/tarifFilter";
 import Image from "next/image";
+import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
   const [openFilterDiv, setOpenfilterDiv] = useState(false);
@@ -113,11 +114,11 @@ const Page = () => {
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
       </Head>
-      {/* <div className="">
-        <div className="absolute w-full  mx-auto min-h-screen  bg-black inset-0 backdrop-filter backdrop-blur-xs  bg-opacity-25"></div>
-      </div> */}
 
-      <div className="relative mx-auto">
+      <div className="container mx-auto py-12">
+        <Breadcrumb />
+      </div>
+      {/* <div className="relative mx-auto">
         <Image
           width={400}
           height={400}
@@ -129,9 +130,9 @@ const Page = () => {
         <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
           Tarif
         </h1>
-      </div>
+      </div> */}
       <div id="main" className="container mx-auto">
-        <div className="py-16">
+        <div className="pb-16">
           <div className="">
             <h1 className="titlesFonts mb-2">Diagnostic </h1>
             <p className="text-justify mb-2 paragraph">
@@ -338,7 +339,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

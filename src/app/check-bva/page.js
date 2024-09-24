@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import CascadingDropdown from "../components/checkBVA";
+import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
   useEffect(() => {
@@ -134,8 +135,10 @@ const Page = () => {
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
       </Head>
-
-      <div className="relative mx-auto">
+      <div className="container mx-auto py-12">
+        <Breadcrumb />
+      </div>
+      {/* <div className="relative mx-auto">
         <Image
           width={400}
           height={400}
@@ -146,10 +149,10 @@ const Page = () => {
         <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
           Type de BVA
         </h1>
-      </div>
+      </div> */}
       <div id="main" className="container mx-auto ">
-        <div className="md:flex gap-14 pt-24">
-          <div className="md:w-1/2"></div>
+        <div className="md:flex gap-14">
+          <div className="md:w-1/2"> </div>
           <div className="md:w-1/2">
             <h2 className="text-xl text-black font-semibold mb-2">
               Trouvez votre boite automatique
@@ -160,7 +163,7 @@ const Page = () => {
           <div className="md:w-1/2">
             <video
               className="rounded-[8px]"
-              src="/images/repara1.mp4"
+              src="/images/repara1.webm"
               autoPlay
               muted
               loop
@@ -173,7 +176,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

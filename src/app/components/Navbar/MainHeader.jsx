@@ -71,8 +71,13 @@ const MainHeader = () => {
         },
         {
           label: "Type de BVA",
-          image: "/images/aideEn.webp",
+          image: "/images/vid1.png",
           href: "/check-bva",
+        },
+        {
+          label: "Aide en ligne",
+          image: "/images/aideEn.webp",
+          href: "/aide-en-ligne",
         },
       ],
     },

@@ -3,6 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import Breadcrumb from "../components/BreadCumb";
+import ContactButton from "../components/ContactButton";
 
 const Page = () => {
   const [codes, setCodes] = useState([]);
@@ -72,7 +74,10 @@ const Page = () => {
       <Head>
         <title>Automatic Transformation</title>
       </Head>
-      <div className="relative mx-auto">
+      <div className="container mx-auto py-12">
+        <Breadcrumb />
+      </div>
+      {/* <div className="relative mx-auto">
         <video
           className="md:h-screen w-screen object-cover videoOverlay relative"
           src="/images/aide.mp4"
@@ -83,9 +88,9 @@ const Page = () => {
         <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
           Aide En Ligne
         </h1>
-      </div>
+      </div> */}
       <div id="main" className="container mx-auto">
-        <div className="md:flex flexDirection md:h-[700px]  py-16 gap-14">
+        <div className="md:flex flexDirection md:h-[700px]  pb-16 gap-14">
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Aide En Ligne</h1>
             <p className="text-justify my-2">
@@ -114,7 +119,7 @@ const Page = () => {
                 <div className="mt-7">
                   <button
                     onClick={handleClickSearch}
-                    className="bg-[#f1b04e]  text-white py-2.5 px-8 rounded-md hover:bg-[#f1b04ea6] hover:text-white"
+                    className="px-8 text-[15px] py-2 border border-[#f0b04f]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md"
                   >
                     Rechercher
                   </button>
@@ -165,12 +170,7 @@ const Page = () => {
                               </span>
                             )}
                             <div className="flex items-center mt-5">
-                              <Link
-                                href="/contact"
-                                className="text-sm bg-[#f1b04e]  text-white py-2.5 px-5 rounded-md hover:bg-[#f1b04ea6] hover:text-white"
-                              >
-                                Contactez - nous
-                              </Link>
+                              <ContactButton />
                             </div>
                           </div>
                         ))}
@@ -182,12 +182,7 @@ const Page = () => {
                         <p className="mb-4">
                           Pour plus d&apos;informations, merci de nous contacter
                         </p>
-                        <Link
-                          href="/contact"
-                          className="text-sm bg-[#f1b04e]  text-white py-2.5 px-5 rounded-md hover:bg-[#f1b04ea6] hover:text-white"
-                        >
-                          Contactez - nous
-                        </Link>
+                        <ContactButton />
                         {generateH2Tags()}
                       </div>
                     ) : null}
