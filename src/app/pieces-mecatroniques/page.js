@@ -41,7 +41,9 @@ const Page = () => {
       </div> */}
 
       <div className="relative mx-auto">
-        <img
+        <Image
+          width={400}
+          height={400}
           className="w-full md:h-screen videoOverlay relative"
           src="/images/macreto.jpeg"
           alt=""
@@ -58,7 +60,9 @@ const Page = () => {
                 key={index}
                 className="border p-4 rounded-md bg-white shadow-md"
               >
-                <img
+                <Image
+                  width={400}
+                  height={400}
                   src={part.image}
                   alt={part.title}
                   className="rounded-md w-full"
@@ -91,7 +95,9 @@ const Page = () => {
                         <h3 className="font-bold text-lg">
                           {selectedMeca.title}
                         </h3>
-                        <img
+                        <Image
+                          width={400}
+                          height={400}
                           src={selectedMeca.image}
                           alt={selectedMeca.title}
                           className="rounded-md w-full  mx-auto"

@@ -40,7 +40,9 @@ const Page = () => {
       </div> */}
 
       <div className="relative mx-auto">
-        <img
+        <Image
+          width={400}
+          height={400}
           className="w-full md:h-screen videoOverlay relative"
           src="/images/carBlog.jpg"
           alt=""
@@ -58,7 +60,9 @@ const Page = () => {
                 className="border p-4 rounded-md bg-white shadow-md"
               >
                 <Link href={`/articles/${part.title}`}>
-                  <img
+                  <Image
+                    width={400}
+                    height={400}
                     src={part.image}
                     alt={part.title}
                     className="rounded-md w-full mb-5"

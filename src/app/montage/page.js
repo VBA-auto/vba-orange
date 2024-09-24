@@ -51,14 +51,14 @@ const Page = () => {
               Monter une boîte automatique prend en général 4 à 5 heures. Le
               démontage quand à lui prend lui un peu moins de temps . Pour les
               modèles avec une motorisation élevée, il faut prévoir 50 % à 100 %
-              de temps supplémentaire. Cela est dû au fait qu'il est souvent
-              nécessaire de retirer le berceau et parfois le groupe
+              de temps supplémentaire. Cela est dû au fait qu&apos;il est
+              souvent nécessaire de retirer le berceau et parfois le groupe
               motopropulseur. Un outillage spécifique est indispensable pour ces
-              opérations, notamment pour la rétention de l'huile. Une attention
-              particulière doit être portée aux boîtes avec convertisseur de
-              couple hydraulique, surtout quand au remontage (pompe engrenage).
-              Utiliser les bons outils et suivre les instructions permet
-              d’éviter les erreurs.
+              opérations, notamment pour la rétention de l&apos;huile. Une
+              attention particulière doit être portée aux boîtes avec
+              convertisseur de couple hydraulique, surtout quand au remontage
+              (pompe engrenage). Utiliser les bons outils et suivre les
+              instructions permet d’éviter les erreurs.
             </p>
 
             <div className="">
@@ -79,18 +79,19 @@ const Page = () => {
             <p className="text-justify mb-2 paragraph">
               Les boîtes automatiques{" "}
               <strong>à convertisseur de couple hydrauliquenécessitent</strong>{" "}
-              une attention particulière : Il est important de s'assurer que
-              celui-ci est correctement emboîté sur les goupillesafin d’éviter
-              d'endommager la pompe d'engrenage. Une mauvaise manipulation peut
-              entraîner des problèmes au niveau de cette pompe (casse).
+              une attention particulière : Il est important de s&apos;assurer
+              que celui-ci est correctement emboîté sur les goupillesafin
+              d’éviter d&apos;endommager la pompe d&apos;engrenage. Une mauvaise
+              manipulation peut entraîner des problèmes au niveau de cette pompe
+              (casse).
             </p>
             <p className="text-justify mb-2 paragraph">
               En ce qui concerne{" "}
               <strong>les boites automatiques d’occasion</strong>, il est très
-              difficile d'inspecter l'intérieur et de vérifier son état
-              mécanique. Il est aussi impossible de certifier le kilométrage
-              réel. Sur certaines boites équipées d’un calculateur (dans la
-              grande majorité) il sera nécessaire d’effectuer une
+              difficile d&apos;inspecter l&apos;intérieur et de vérifier son
+              état mécanique. Il est aussi impossible de certifier le
+              kilométrage réel. Sur certaines boites équipées d’un calculateur
+              (dans la grande majorité) il sera nécessaire d’effectuer une
               reprogrammation ainsi qu’un calibrage. Il faudra porter une
               attention particulière à la couleur et à la qualité de l’huile
               d’origine.
@@ -119,50 +120,53 @@ const Page = () => {
             mauvaise reprogrammation peut entraîner des dysfonctionnements.
           </p>
           <h2 className="text-lg font-bold text-gray-700 mb-2">
-            Niveau d'Huile
+            Niveau d&apos;Huile
           </h2>
           <p className="text-justify mb-2 paragraph">
-            Le contrôle et l'ajustement du niveau d'huile dans les boîtes
-            automatiques sont essentiels et doivent être réalisés correctement.
-            Pour obtenir une mesure précise, il est souvent nécessaire de
-            vérifier le niveau d'huile lorsque la transmission est chaude,
-            généralement à environ 65°C. Voici les étapes recommandées sur une
-            boite de vitesse équipées d’un convertissuer de couple
+            Le contrôle et l&apos;ajustement du niveau d&apos;huile dans les
+            boîtes automatiques sont essentiels et doivent être réalisés
+            correctement. Pour obtenir une mesure précise, il est souvent
+            nécessaire de vérifier le niveau d&apos;huile lorsque la
+            transmission est chaude, généralement à environ 65°C. Voici les
+            étapes recommandées sur une boite de vitesse équipées d’un
+            convertissuer de couple
           </p>
           <ul style={{ paddingLeft: "0px", color: "#000" }}>
             <li>
               <p className="text-justify  paragraph">
                 {" "}
-                - Chauffer l'huile : Faire monter la température de l'huile de
-                boîte pour atteindre au moins 65°C, puis arrêter le moteur.
+                - Chauffer l&apos;huile : Faire monter la température de
+                l&apos;huile de boîte pour atteindre au moins 65°C, puis arrêter
+                le moteur.
               </p>
             </li>
             <li>
               <p className="text-justify  paragraph">
-                - Vidange : Dévisser le carter, vider l'huile dans une bassine,
-                nettoyer le fond du carter et l'aimant, puis dévisser la crépine
-                pour laisser couler l'huile restante. Remonter le tout avec une
-                nouvelle crépine.
+                - Vidange : Dévisser le carter, vider l&apos;huile dans une
+                bassine, nettoyer le fond du carter et l&apos;aimant, puis
+                dévisser la crépine pour laisser couler l&apos;huile restante.
+                Remonter le tout avec une nouvelle crépine.
               </p>
             </li>
             <li>
               <p className="text-justify  paragraph">
                 - Remplissage : Utiliser un entonnoir pour verser environ 4
-                litres d'huile dans l'orifice de remplissage situé sous le
-                capot, près du moteur.
+                litres d&apos;huile dans l&apos;orifice de remplissage situé
+                sous le capot, près du moteur.
               </p>
             </li>
             <li>
               <p className="text-justify  paragraph">
                 - Mise à niveau : Mettre le moteur en marche au ralenti, appuyer
                 sur la pédale de frein et enclencher toutes les vitesses avant
-                de positionner le levier en mode "Parking" (P).
+                de positionner le levier en mode &apos;Parking&apos; (P).
               </p>
             </li>
           </ul>
           <p className="text-justify mb-2 paragraph">
             Suite au remontage d’une boîte automatique, il est important de bien
-            faire le calibrage/reprogrammation et de vérifierle niveau d'huile.
+            faire le calibrage/reprogrammation et de vérifierle niveau
+            d&apos;huile.
           </p>
           <div className="">
             <ContactButton />

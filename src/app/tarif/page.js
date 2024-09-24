@@ -3,6 +3,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import TarifFilter from "../components/tarifFilter";
+import Image from "next/image";
 
 const Page = () => {
   const [openFilterDiv, setOpenfilterDiv] = useState(false);
@@ -117,7 +118,9 @@ const Page = () => {
       </div> */}
 
       <div className="relative mx-auto">
-        <img
+        <Image
+          width={400}
+          height={400}
           className="videoOverlay relative"
           src="/images/cookies.png"
           alt=""
@@ -134,15 +137,15 @@ const Page = () => {
             <p className="text-justify mb-2 paragraph">
               Le tarif fixe est de 90 €. nous proposons un diagnostic complet de
               votre boîte automatique. Ce service débute par un diagnostic
-              électronique à l'aide d’une des valise correspondante au véhicule
-              et à la boite de vitesse correspondante pour identifier les codes
-              d'erreur. Cela nous permet d’avoir déjà une première indication.
-              Ensuite, nous allons vérifier le niveau et de la qualité de
-              l'huile, indispensable pour le bon fonctionnement de la boîte.
-              Enfin, nous poussons le diagnostic en vérifiant les solénoides de
-              pression par exemple en plus des supports moteur, boite ainsi que
-              la partie mécanique ou du moteur qui pourrait mettre la boite de
-              vitesse en defaut par exemple.
+              électronique à l&apos;aide d’une des valise correspondante au
+              véhicule et à la boite de vitesse correspondante pour identifier
+              les codes d&apos;erreur. Cela nous permet d’avoir déjà une
+              première indication. Ensuite, nous allons vérifier le niveau et de
+              la qualité de l&apos;huile, indispensable pour le bon
+              fonctionnement de la boîte. Enfin, nous poussons le diagnostic en
+              vérifiant les solénoides de pression par exemple en plus des
+              supports moteur, boite ainsi que la partie mécanique ou du moteur
+              qui pourrait mettre la boite de vitesse en defaut par exemple.
             </p>
           </div>
           <div className="mt-12">
@@ -159,7 +162,7 @@ const Page = () => {
               crépine et de la complexité du modèle de boîte (exemple sur
               certain type de boite BMW ou porsche, il y a des tubes et d’autre
               pièce à remplacer en plus de la crépine). Le prix comprend la
-              main-d'œuvre et tous lescomposants nécessaires à une vidange
+              main-d&apos;œuvre et tous lescomposants nécessaires à une vidange
               efficace.
             </p>
           </div>
@@ -318,19 +321,19 @@ const Page = () => {
             </h1>
             <p className="text-justify mb-2 paragraph">
               Les coûts de réparation varient en fonction de la complexité de
-              l'intervention requise. Les problèmes mineurs tels que les défauts
-              électroniques, le remplacement de joints de carter, ou les
-              ajustements de niveau d'huile coûtent généralement moins de 300 €.
-              Des interventions modérées sans démontage complet de la boîte,
-              comme le remplacement de certaines pièces internes, sont facturées
-              sous les 1000 €. Les réparations majeures nécessitant le
-              remplacement d'éléments hydrauliques ou d'un convertisseur de
-              couple, sans démonter la boîte, peuvent coûter entre 1000 € et
-              2500 €. Enfin, si une réparation exige le démontage complet de la
-              boîte, notamment pour les boîtes équipées de double embrayage, les
-              coûts débutent à 1000 €, auxquels s'ajoutent le prix des pièces
-              complexes comme le mécatronique ou le convertisseur de couple
-              hydraulique.
+              l&apos;intervention requise. Les problèmes mineurs tels que les
+              défauts électroniques, le remplacement de joints de carter, ou les
+              ajustements de niveau d&apos;huile coûtent généralement moins de
+              300 €. Des interventions modérées sans démontage complet de la
+              boîte, comme le remplacement de certaines pièces internes, sont
+              facturées sous les 1000 €. Les réparations majeures nécessitant le
+              remplacement d&apos;éléments hydrauliques ou d&apos;un
+              convertisseur de couple, sans démonter la boîte, peuvent coûter
+              entre 1000 € et 2500 €. Enfin, si une réparation exige le
+              démontage complet de la boîte, notamment pour les boîtes équipées
+              de double embrayage, les coûts débutent à 1000 €, auxquels
+              s&apos;ajoutent le prix des pièces complexes comme le mécatronique
+              ou le convertisseur de couple hydraulique.
             </p>
           </div>
         </div>

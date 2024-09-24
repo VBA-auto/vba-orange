@@ -50,8 +50,8 @@ const Page = () => {
             <h1 className="titlesFonts">Les boites CVT à variation continue</h1>
             <p className="text-justify mb-2 paragraph">
               Les boîtes de vitesses CVT, telles que la Mercedes 722.8 des
-              classes A et B et la Multitronic d'Audi, ainsi que la HF35 (CVT)
-              des Ford Mondeo Hybrid et autres nécessitent des outils
+              classes A et B et la Multitronic d&apos;Audi, ainsi que la HF35
+              (CVT) des Ford Mondeo Hybrid et autres nécessitent des outils
               spécialisés pour leur réparation. Ces systèmes utilisent une
               courroie segmentée en acier reliant des pignons primaires et
               secondaires, permettant un ajustement continu des rapports.
@@ -82,11 +82,12 @@ const Page = () => {
             <h1 className="titlesFonts">Les boites robotisées</h1>
             <p className="text-justify mb-5 paragraph">
               Les boîtes robotisées ou pilotées, comme la{" "}
-              <strong>"Powershift"</strong> chez Renault (Modus, Twingo) et
-              Fiat, ainsi que sur les anciennes Peugeot 5008, sont constituées
-              d'un embrayage, d'une butée d'embrayage, et d'unrobot(comprenant
-              souvent un accumulateur) qui automatise le changement de vitesses
-              et la gestion de l'embrayage. Ce sont en réalité des boites
+              <strong>&apos;Powershift&apos;</strong> chez Renault (Modus,
+              Twingo) et Fiat, ainsi que sur les anciennes Peugeot 5008, sont
+              constituées d&apos;un embrayage, d&apos;une butée
+              d&apos;embrayage, et d&apos;unrobot(comprenant souvent un
+              accumulateur) qui automatise le changement de vitesses et la
+              gestion de l&apos;embrayage. Ce sont en réalité des boites
               manuelles pilotées avec donc moins de confort qu’une « vraie»
               boite automatique : il est fréquent de « sentir » l’a-coup du
               passage de la vitesse. Il existe sur certains nouveaux modèles des
@@ -111,12 +112,12 @@ const Page = () => {
               Les modèles à embrayage mouillé,{" "}
               <strong>DQ500, DQ381, DSG6</strong> (DQ250), et certains modèles
               de Mercedes (724.0), nécessitent une lubrification (équipent en
-              général les moteurs plus puissants). À l'inverse, les boîtes à
-              embrayage sec, comme les <strong>DSG7</strong>(DQ200) et la{" "}
+              général les moteurs plus puissants). À l&apos;inverse, les boîtes
+              à embrayage sec, comme les <strong>DSG7</strong>(DQ200) et la{" "}
               <strong>6DCT250</strong> de GETRAG (appelée{" "}
               <strong>boîte EDC ou DC4</strong>), fonctionnent avec très peu de
               lubrification : une partie dans le mécatronique et à peine dans la
-              partie mécanique. L'entretien ou la réparation de ces boîtes
+              partie mécanique. L&apos;entretien ou la réparation de ces boîtes
               demande des outils spécifiques, tels que ceux fournis par la
               marque LUK.
             </p>
@@ -172,16 +173,16 @@ const Page = () => {
             <div className="md:w-1/2">
               <p className="text-justify mb-2 paragraph">
                 Le dispositif du convertisseur agit comme un embrayage qui
-                permet de multiplier le couple entre les vitesses d'entrée et de
-                sortie, grâce à un mécanisme hydraulique où toutes les pièces
-                internes baignent dans de l’huile, souvent la même que celle
-                utilisée pour la boîte de vitesses automatique (BVA), à quelques
-                exceptions près. Cette caractéristique isole la boîte de
-                vitesses du moteur, permettant au véhicule de rester en marche
-                même à l'arrêt. Le rôle de l’embrayage du convertissuer de
-                couple hydraulique permet de combler la perte d’énergie qui se
-                perd entre les deux turbines et pour réduire la consommation
-                d’essence/gasoil.{" "}
+                permet de multiplier le couple entre les vitesses d&apos;entrée
+                et de sortie, grâce à un mécanisme hydraulique où toutes les
+                pièces internes baignent dans de l’huile, souvent la même que
+                celle utilisée pour la boîte de vitesses automatique (BVA), à
+                quelques exceptions près. Cette caractéristique isole la boîte
+                de vitesses du moteur, permettant au véhicule de rester en
+                marche même à l&apos;arrêt. Le rôle de l’embrayage du
+                convertissuer de couple hydraulique permet de combler la perte
+                d’énergie qui se perd entre les deux turbines et pour réduire la
+                consommation d’essence/gasoil.{" "}
                 <strong>Celui-ci fait office de frein moteur.</strong>
               </p>
               <p className="text-justify mb-2 paragraph">

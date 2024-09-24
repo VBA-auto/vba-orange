@@ -48,12 +48,12 @@ const Page = () => {
             <h1 className="titlesFonts">Pourquoi vidanger sa BVA ?</h1>
             <p className="text-justify mb-2 paragraph">
               Certaines boîtes de vitesses automatiques sont à convertisseur de
-              couple, d'autres à double embrayage. Certaines contiennent une
-              crépine interne ou externe, avec ou sans joint de carter. Parfois
-              il existe aussi une cartouche externe. La quantité d'huile varie
-              selon les boîtes : les doubles embrayages à sec nécessitent peu
-              d'huile, tandis que les autres types contiennent généralement
-              entre 7 et 10 litres.
+              couple, d&apos;autres à double embrayage. Certaines contiennent
+              une crépine interne ou externe, avec ou sans joint de carter.
+              Parfois il existe aussi une cartouche externe. La quantité
+              d&apos;huile varie selon les boîtes : les doubles embrayages à sec
+              nécessitent peu d&apos;huile, tandis que les autres types
+              contiennent généralement entre 7 et 10 litres.
             </p>
             <p className="text-justify mb-2 paragraph">
               Il est donc important de lubrifier correctement sa boite de
@@ -73,33 +73,34 @@ const Page = () => {
           <div className="md:w-3/4">
             <h1 className="titlesFonts">Vidange gravité vs Flushing</h1>
             <p className="text-justify mb-2 paragraph">
-              Lorsqu'il s'agit de vidanger votre boîte de vitesses automatique,
-              la méthode par flushing se révèle beaucoup plus efficace que la
-              vidange par gravité. La vidange par flushing utilise une machine
-              spécifique pour injecter de l'huile neuve sous pression tout en
-              collectant l'huile usagée. Cela permet de remplacer jusqu'à
-              95-100% de l'huile, contrairement à la méthode par gravité qui ne
-              renouvelle qu'environ 70% de l'huile (50% sur modèle Jatco par
-              exemple)
+              Lorsqu&apos;il s&apos;agit de vidanger votre boîte de vitesses
+              automatique, la méthode par flushing se révèle beaucoup plus
+              efficace que la vidange par gravité. La vidange par flushing
+              utilise une machine spécifique pour injecter de l&apos;huile neuve
+              sous pression tout en collectant l&apos;huile usagée. Cela permet
+              de remplacer jusqu&apos;à 95-100% de l&apos;huile, contrairement à
+              la méthode par gravité qui ne renouvelle qu&apos;environ 70% de
+              l&apos;huile (50% sur modèle Jatco par exemple)
             </p>
             <p className="text-justify mb-2 paragraph">
               Le principal avantage de la vidange par flushing est de permettre
-              le remplacement intégral de l'huile et de nettoyer le
-              convertisseur de couple (si équipé), l'ensemble du système de
-              transmission automatique, le refroidisseur d'huile et toutes les
-              conduites d'huile. Ce "rinçage complet de la boîte" élimine aussi
-              la poussière de métal créée par l'usure des pièces.
+              le remplacement intégral de l&apos;huile et de nettoyer le
+              convertisseur de couple (si équipé), l&apos;ensemble du système de
+              transmission automatique, le refroidisseur d&apos;huile et toutes
+              les conduites d&apos;huile. Ce &apos;rinçage complet de la
+              boîte&apos; élimine aussi la poussière de métal créée par
+              l&apos;usure des pièces.
             </p>
             <p className="text-justify mb-2 paragraph">
-              Il suffit de remplir le réservoir d'huile neuve de la machine, de
-              connecter les tuyaux aux raccords du radiateur de la boîte de
-              vitesses et de lancer le programme. La machine ajuste
-              automatiquement le niveau d'huile. Il est important de noter que
-              pour une boîte de vitesses automatique (BVA) d'une capacité totale
-              de 8 litres, il faut souvent injecter bien plus de 8 litres
-              d'huile neuve pour atteindre un résultat satisfaisant. Plus on
-              injecte d'huile neuve, plus on s'approche des 100% de remplacement
-              de l'huile usagée.
+              Il suffit de remplir le réservoir d&apos;huile neuve de la
+              machine, de connecter les tuyaux aux raccords du radiateur de la
+              boîte de vitesses et de lancer le programme. La machine ajuste
+              automatiquement le niveau d&apos;huile. Il est important de noter
+              que pour une boîte de vitesses automatique (BVA) d&apos;une
+              capacité totale de 8 litres, il faut souvent injecter bien plus de
+              8 litres d&apos;huile neuve pour atteindre un résultat
+              satisfaisant. Plus on injecte d&apos;huile neuve, plus on
+              s&apos;approche des 100% de remplacement de l&apos;huile usagée.
             </p>
             <p className="text-justify mb-2 paragraph">
               La vidange par flushing est donc la méthode recommandée pour un
@@ -126,9 +127,9 @@ const Page = () => {
             automatique, il est essentiel de choisir la bonne huile. Les
             mécanismes des boîtes automatiques doivent être lubrifiés
             efficacement. Contrairement aux boîtes manuelles qui utilisent de
-            l'huile minérale, les boîtes automatiques utilisent des huiles de
-            synthèse, appelées ATF (Automatic Transmission Fluid), obtenues par
-            synthèse chimique ou hydrocraquage d’une huile
+            l&apos;huile minérale, les boîtes automatiques utilisent des huiles
+            de synthèse, appelées ATF (Automatic Transmission Fluid), obtenues
+            par synthèse chimique ou hydrocraquage d’une huile
             minérale.Ceslubrifiants synthétiques, constitués de molécules
             homogènes, offrent des performances supérieures en termes
             d’utilisation et de durée de vie. Ils sont extrêmement fluides à
@@ -138,17 +139,18 @@ const Page = () => {
           <p className="text-justify mb-2 paragraph">
             Il existe plusieurstypes d’huiles pour les transmissions
             automatiques, notamment la <strong>Multi ATF</strong> , polyvalente
-            pour denombreux véhicules, et l'<strong>ATF 6</strong>, spécifique
-            aux boîtes modernes pour une meilleure fluidité à basse température.
-            La <strong>Multi CVT</strong> est conçue pour lestransmissions à
-            variation continue. Les huiles <strong>DCTF</strong> sont destinées
-            auxtransmissions à double embrayage, garantissant des changements de
-            vitessrapides et efficaces. La <strong>Multi HF</strong> est une
-            huilesurtout utilisée pour les boites robotisée ou encore pour les
-            mécatroniques des DSG7 (DQ200). La <strong>Trans ATF</strong>, de
-            couleur transparente, est surtout utilisée pour les modèles de
-            boites à convertisseur assez récents notament sur BMW et sur les
-            moèles assez récents.
+            pour denombreux véhicules, et l&apos;<strong>ATF 6</strong>,
+            spécifique aux boîtes modernes pour une meilleure fluidité à basse
+            température. La <strong>Multi CVT</strong> est conçue pour
+            lestransmissions à variation continue. Les huiles{" "}
+            <strong>DCTF</strong> sont destinées auxtransmissions à double
+            embrayage, garantissant des changements de vitessrapides et
+            efficaces. La <strong>Multi HF</strong> est une huilesurtout
+            utilisée pour les boites robotisée ou encore pour les mécatroniques
+            des DSG7 (DQ200). La <strong>Trans ATF</strong>, de couleur
+            transparente, est surtout utilisée pour les modèles de boites à
+            convertisseur assez récents notament sur BMW et sur les moèles assez
+            récents.
           </p>
           <p className="text-justify mb-2 paragraph">
             Il est important de bien respecter les préconisations du
@@ -158,12 +160,13 @@ const Page = () => {
             consommation de carburant. Elle est adaptée aux marquesaméricaines,
             asiatiques et européennes. L’huile <strong>ATF+4®</strong>, formulée
             pour lestransmissions Chrysler, améliore les changements de vitesse,
-            réduit lesTremblements et offre une protection contre l'usure et la
-            corrosion. Pourmaintenir votre boîte de vitesses automatique en
-            parfait état, il est important de procéder à des vidanges
+            réduit lesTremblements et offre une protection contre l&apos;usure
+            et la corrosion. Pourmaintenir votre boîte de vitesses automatique
+            en parfait état, il est important de procéder à des vidanges
             régulières, tous les 60 000 à 80 000 km. La méthode de vidange par
             flushing, utilisant une machine spécifique, garantit unremplacement
-            quasi complet de l'huile, assurant ainsi des performancesoptimales.
+            quasi complet de l&apos;huile, assurant ainsi des
+            performancesoptimales.
           </p>
           <div className="">
             <ContactButton />

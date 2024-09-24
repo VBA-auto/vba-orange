@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 const TarifFilter = () => {
@@ -125,7 +126,9 @@ const TarifFilter = () => {
 
                   {seemore && (
                     <div className="">
-                      <img
+                      <Image
+                        width={400}
+                        height={400}
                         src={seemore.picture ? seemore.picture : ""}
                         alt={seemore.model}
                       />

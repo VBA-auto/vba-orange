@@ -89,7 +89,7 @@ const Page = () => {
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Aide En Ligne</h1>
             <p className="text-justify my-2">
-              Bienvenue sur notre page d'aide en ligne.
+              Bienvenue sur notre page d&apos;aide en ligne.
             </p>
             <p className="text-justify">
               Entrez le code défaut indiqué sur votre valise diagnostic. Vous
@@ -148,7 +148,7 @@ const Page = () => {
                               >
                                 ici
                               </button>{" "}
-                              pour obtenir de l'aide
+                              pour obtenir de l&apos;aide
                             </span> */}
 
                             {selectedCode === code.code && (
@@ -180,7 +180,7 @@ const Page = () => {
                         <p className=" mb-2">CODE DÉFAUT INCONNU</p>
                         <p>Le code défaut saisi est inconnu</p>
                         <p className="mb-4">
-                          Pour plus d'informations, merci de nous contacter
+                          Pour plus d&apos;informations, merci de nous contacter
                         </p>
                         <Link
                           href="/contact"

@@ -41,7 +41,9 @@ const Page = () => {
       </div> */}
 
       <div className="relative mx-auto">
-        <img
+        <Image
+          width={400}
+          height={400}
           className="w-full md:h-screen videoOverlay1 relative"
           src="/images/boite.jpeg"
           alt=""
@@ -58,7 +60,9 @@ const Page = () => {
                 key={index}
                 className="border p-4 rounded-md bg-white shadow-md"
               >
-                <img
+                <Image
+                  width={400}
+                  height={400}
                   src={part.image}
                   alt={part.title}
                   className="rounded-md w-full"
@@ -94,7 +98,9 @@ const Page = () => {
             </form>
             <h2 className="text-lg font-semibold mt-2">{selectedPart.title}</h2>
             <div className="">
-              <img
+              <Image
+                width={400}
+                height={400}
                 src={selectedPart.image}
                 alt={selectedPart.title}
                 className="rounded-md w-full"

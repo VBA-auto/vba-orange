@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 export default function Contact() {
   const PageDescription = "auto trans";
@@ -71,7 +72,9 @@ export default function Contact() {
       </Head>
 
       <div className="relative mx-auto">
-        <img
+        <Image
+          width={400}
+          height={400}
           className="videoOverlay relative"
           src="/images/cookies.png"
           alt=""

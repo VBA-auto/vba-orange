@@ -136,7 +136,9 @@ const Page = () => {
       </Head>
 
       <div className="relative mx-auto">
-        <img
+        <Image
+          width={400}
+          height={400}
           className="videoOverlay relative"
           src="/images/cookies.png"
           alt=""

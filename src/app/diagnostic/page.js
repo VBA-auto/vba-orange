@@ -41,15 +41,15 @@ const Page = () => {
               <h1 className="titlesFonts mb-2">Diagnostic mécanique</h1>
               <p className="text-justify mb-2 paragraph">
                 Le diagnostic des boîtes automatiques commence par la lecture
-                des codes d'erreur avec une valise diagnostique. Cependant, ce
-                n'est qu'une partie du processus. Nous vérifions également le{" "}
-                <strong>niveau, la qualité de l'huile</strong> et éventuellement
-                la <strong>présence de limaille</strong>. La partie «{" "}
-                <strong>mécatronique</strong>» ou « bloc de contrôle hydraulique
-                » est important : il faut vérifier la pression.
+                des codes d&apos;erreur avec une valise diagnostique. Cependant,
+                ce n&apos;est qu&apos;une partie du processus. Nous vérifions
+                également le <strong>niveau, la qualité de l&apos;huile</strong>{" "}
+                et éventuellement la <strong>présence de limaille</strong>. La
+                partie « <strong>mécatronique</strong>» ou « bloc de contrôle
+                hydraulique » est important : il faut vérifier la pression.
               </p>
               <p className="text-justify mb-7 paragraph">
-                Ces contrôles nous aident à évaluer l'état de la boîte et à
+                Ces contrôles nous aident à évaluer l&apos;état de la boîte et à
                 estimer les réparations. Si ces premiers tests ne suffisent pas
                 à identifier les problèmes, nous procédons à des inspections
                 plus poussées, comme le démontage de la boîte. nous procédons à
@@ -87,13 +87,13 @@ const Page = () => {
               <p className="text-justify mb-2 paragraph">
                 Les codes défaut obtenus avec la valise offrent des indications
                 mais il faut bien connaître les différents modèles de boîtes et
-                avoir de l’expérience dans leur interprétation. Les outils
+                avoir de l&apos;expérience dans leur interprétation. Les outils
                 diagnostiques varient également entre les marques comme{" "}
                 <strong>Autel, Lauchn, Flex, Delphi</strong>, chacun ayant ses
-                spécificités. Comprendre ces différences et les "petits secrets"
-                de chaque système est indispensable afin de bien cerner le
-                problème. Vous trouverez dans ce lien un récapitulatif des codes
-                défauts :{" "}
+                spécificités. Comprendre ces différences et les &apos;petits
+                secrets&apos; de chaque système est indispensable afin de bien
+                cerner le problème. Vous trouverez dans ce lien un récapitulatif
+                des codes défauts :{" "}
                 <Link className="text-[#f1b04e]" href="/aide-en-ligne">
                   https://www.xxxxxxxxxxxxxxx.fr/aide-en-ligne.
                 </Link>
@@ -107,16 +107,17 @@ const Page = () => {
             <div>
               <h1 className="titlesFonts mb-2">Voyant tableau de bord</h1>
               <p className="text-justify mb-2 paragraph">
-                <strong>"Boîte de vitesse à contrôler"</strong>, "Défaut boîte
-                de vitesse, aller à l’atelier", ou encore "surchauffe boite de
-                vitesse". Ces alertes pouvant apparaître dans des véhicules de
-                marques BMW, Audi, Volkswagen, Mercedes, Peugeot, Renault,
-                Toyota ou autre indiquent évidement un problème avec la
-                transmission automatique. Il faut noter que dans environ 10% des
-                cas, cela peut aussi être lié à un problème moteur, ABS ou
-                autre. Il est donc essentiel de ne pas ignorer ces
-                avertissements et de faire un diagnostic rapidement.
-                avertissements et de faire un diagnostic rapidement.
+                <strong>&apos;Boîte de vitesse à contrôler&apos;</strong>,
+                &apos;Défaut boîte de vitesse, aller à l&apos;atelier&apos;, ou
+                encore &apos;surchauffe boite de vitesse&apos;. Ces alertes
+                pouvant apparaître dans des véhicules de marques BMW, Audi,
+                Volkswagen, Mercedes, Peugeot, Renault, Toyota ou autre
+                indiquent évidement un problème avec la transmission
+                automatique. Il faut noter que dans environ 10% des cas, cela
+                peut aussi être lié à un problème moteur, ABS ou autre. Il est
+                donc essentiel de ne pas ignorer ces avertissements et de faire
+                un diagnostic rapidement. avertissements et de faire un
+                diagnostic rapidement.
               </p>
             </div>
           </div>
@@ -140,22 +141,22 @@ const Page = () => {
             dans son fonctionnement. Parmi ces composants, on trouve le
             convertisseur de couple hydraulique, les disques de friction, les
             disques en métal, les bagues en bronze, le(s) joint(s) de carter,
-            l’embrayage (simple ou double), le bloc de contrôle hydraulique, les
-            solénoïdes de pression, les synchros…etc. Il faut bien connaître la
-            boîte sur laquelle on va réaliser le diagnostic :
+            l&apos;embrayage (simple ou double), le bloc de contrôle
+            hydraulique, les solénoïdes de pression, les synchros…etc. Il faut
+            bien connaître la boîte sur laquelle on va réaliser le diagnostic :
             https://www.xxxxxxxxxxxxxxxx.fr/typeof gearbox Deux actions sont
-            essentielles pour un diagnostic précis : d'abord, il faut connaître
-            en détail les composants de la boîte de vitesse sur laquelle on
-            internient pour pouvoir identifier correctement les problèmes
-            potentiels.
+            essentielles pour un diagnostic précis : d&apos;abord, il faut
+            connaître en détail les composants de la boîte de vitesse sur
+            laquelle on internient pour pouvoir identifier correctement les
+            problèmes potentiels.
           </p>
           <p className="text-justify mb-2 paragraph">
             Il faut ensuite effectuer un diagnostic éléctronique avec la valise.
-            Il faut vérifier les niveaux d’huile, de la crépine (ou cartouche
-            externe parfois). inspecter tous les supports moteur et boîte de
-            vitesse. Ces vérifications permettent d’assurer un diagnostic
-            complet et que la panne identifiée est bien la source du problème,
-            garantissant ainsi une réparation efficace et durable.
+            Il faut vérifier les niveaux d&apos;huile, de la crépine (ou
+            cartouche externe parfois). inspecter tous les supports moteur et
+            boîte de vitesse. Ces vérifications permettent d&apos;assurer un
+            diagnostic complet et que la panne identifiée est bien la source du
+            problème, garantissant ainsi une réparation efficace et durable.
           </p>
 
           <div className="mt-5">

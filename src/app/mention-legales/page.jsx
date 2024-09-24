@@ -29,7 +29,9 @@ const Page = () => {
       </div> */}
 
       <div className="relative mx-auto">
-        <img
+        <Image
+          width={400}
+          height={400}
           className="videoOverlay relative"
           src="/images/cookies.png"
           alt=""
@@ -47,10 +49,11 @@ const Page = () => {
               1. PRÉSENTATION DU SITE.
             </h1>
             <p className="my-2">
-              En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour
-              la confiance dans l'économie numérique, il est précisé aux
-              utilisateurs du site www.xxxxx.frl'identité des différents
-              intervenants dans le cadre de sa réalisation et de son suivi :
+              En vertu de l&apos;article 6 de la loi n° 2004-575 du 21 juin 2004
+              pour la confiance dans l&apos;économie numérique, il est précisé
+              aux utilisateurs du site www.xxxxx.frl&apos;identité des
+              différents intervenants dans le cadre de sa réalisation et de son
+              suivi :
             </p>
             <div className="">
               <h2 className="text-gray-500 text-lg font-semibold">
@@ -211,24 +214,24 @@ const Page = () => {
             <p className="my-2">
               En France, les données personnelles sont notamment protégées par
               la loi n° 78-87 du 6 janvier 1978, la loi n° 2004-801 du 6 août
-              2004, l'article L. 226-13 du Code pénal et la Directive Européenne
-              du 24 octobre 1995.
+              2004, l&apos;article L. 226-13 du Code pénal et la Directive
+              Européenne du 24 octobre 1995.
             </p>
             <p className="my-2">
-              A l'occasion de l'utilisation du site www.XXX.com, peuvent êtres
-              recueillies : l'URL des liens par l'intermédiaire desquels
-              l'utilisateur a accédé au site www.XXX.com, le fournisseur d'accès
-              de l'utilisateur, l'adresse de protocole Internet (IP) de
-              l'utilisateur.
+              A l&apos;occasion de l&apos;utilisation du site www.XXX.com,
+              peuvent êtres recueillies : l&apos;URL des liens par
+              l&apos;intermédiaire desquels l&apos;utilisateur a accédé au site
+              www.XXX.com, le fournisseur d&apos;accès de l&apos;utilisateur,
+              l&apos;adresse de protocole Internet (IP) de l&apos;utilisateur.
             </p>
             <p className="my-2">
               En tout état de cause AxElecAuto ne collecte des informations
-              personnelles relatives à l'utilisateur que pour le besoin de
-              certains services proposés par le site www.XXX.com. L'utilisateur
-              fournit ces informations en toute connaissance de cause, notamment
-              lorsqu'il procède par lui-même à leur saisie. Il est alors précisé
-              à l'utilisateur du site www.XXX.com l’obligation ou non de fournir
-              ces informations.
+              personnelles relatives à l&apos;utilisateur que pour le besoin de
+              certains services proposés par le site www.XXX.com.
+              L&apos;utilisateur fournit ces informations en toute connaissance
+              de cause, notamment lorsqu&apos;il procède par lui-même à leur
+              saisie. Il est alors précisé à l&apos;utilisateur du site
+              www.XXX.com l’obligation ou non de fournir ces informations.
             </p>
             <p className="my-2">
               Conformément aux dispositions des articles 38 et suivants de la
@@ -241,18 +244,18 @@ const Page = () => {
               réponse doit être envoyée.
             </p>
             <p className="my-2">
-              Aucune information personnelle de l'utilisateur du site
-              www.XXX.com n'est publiée à l'insu de l'utilisateur, échangée,
-              transférée, cédée ou vendue sur un support quelconque à des tiers.
-              Seule l'hypothèse du rachat de AxElecAuto et de ses droits
-              permettrait la transmission des dites informations à l'éventuel
-              acquéreur qui serait à son tour tenu de la même obligation de
-              conservation et de modification des données vis à vis de
-              l'utilisateur du site www.XXX.com.
+              Aucune information personnelle de l&apos;utilisateur du site
+              www.XXX.com n&apos;est publiée à l&apos;insu de
+              l&apos;utilisateur, échangée, transférée, cédée ou vendue sur un
+              support quelconque à des tiers. Seule l&apos;hypothèse du rachat
+              de AxElecAuto et de ses droits permettrait la transmission des
+              dites informations à l&apos;éventuel acquéreur qui serait à son
+              tour tenu de la même obligation de conservation et de modification
+              des données vis à vis de l&apos;utilisateur du site www.XXX.com.
             </p>
             <p className="my-2">
-              Le site n'est pas déclaré à la CNIL car il ne recueille pas
-              d'informations personnelles.
+              Le site n&apos;est pas déclaré à la CNIL car il ne recueille pas
+              d&apos;informations personnelles.
             </p>
             <p className="my-2">
               Les bases de données sont protégées par les dispositions de la loi
@@ -293,25 +296,26 @@ const Page = () => {
             </p>
             <p className="my-2">
               Sous Firefox : en haut de la fenêtre du navigateur, cliquez sur le
-              bouton Firefox, puis aller dans l'onglet Options. Cliquer sur
-              l'onglet Vie privée. Paramétrez les Règles de conservation sur :
-              utiliser les paramètres personnalisés pour l'historique. Enfin
-              décochez-la pour désactiver les cookies.
+              bouton Firefox, puis aller dans l&apos;onglet Options. Cliquer sur
+              l&apos;onglet Vie privée. Paramétrez les Règles de conservation
+              sur : utiliser les paramètres personnalisés pour
+              l&apos;historique. Enfin décochez-la pour désactiver les cookies.
             </p>
             <p className="my-2">
               Sous Safari : Cliquez en haut à droite du navigateur sur le
               pictogramme de menu (symbolisé par un rouage). Sélectionnez
               Paramètres. Cliquez sur Afficher les paramètres avancés. Dans la
-              section "Confidentialité", cliquez sur Paramètres de contenu. Dans
-              la section "Cookies", vous pouvez bloquer les cookies.
+              section &apos;Confidentialité&apos;, cliquez sur Paramètres de
+              contenu. Dans la section &apos;Cookies&apos;, vous pouvez bloquer
+              les cookies.
             </p>
             <p className="my-2">
               Sous Chrome : Cliquez en haut à droite du navigateur sur le
               pictogramme de menu (symbolisé par trois lignes horizontales).
               Sélectionnez Paramètres. Cliquez sur Afficher les paramètres
-              avancés. Dans la section "Confidentialité", cliquez sur
-              préférences. Dans l'onglet "Confidentialité", vous pouvez bloquer
-              les cookies.
+              avancés. Dans la section &apos;Confidentialité&apos;, cliquez sur
+              préférences. Dans l&apos;onglet &apos;Confidentialité&apos;, vous
+              pouvez bloquer les cookies.
             </p>
             <h1 className="text-gray-500 text-xl font-semibold">
               9. DROIT APPLICABLE ET ATTRIBUTION DE JURIDICTION.
@@ -326,12 +330,12 @@ const Page = () => {
             </h1>
             <p className="my-2">
               Loi n° 78-17 du 6 janvier 1978, notamment modifiée par la loi n°
-              2004-801 du 6 août 2004 relative à l'informatique, aux fichiers et
-              aux libertés.
+              2004-801 du 6 août 2004 relative à l&apos;informatique, aux
+              fichiers et aux libertés.
             </p>
             <p className="my-2">
-              Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie
-              numérique.
+              Loi n° 2004-575 du 21 juin 2004 pour la confiance dans
+              l&apos;économie numérique.
             </p>
             <h1 className="text-gray-500 text-xl font-semibold">
               11. LEXIQUE.
@@ -343,8 +347,9 @@ const Page = () => {
             <p className="my-2">
               Informations personnelles : « les informations qui permettent,
               sous quelque forme que ce soit, directement ou non,
-              l'identification des personnes physiques auxquelles elles
-              s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).
+              l&apos;identification des personnes physiques auxquelles elles
+              s&apos;appliquent » (article 4 de la loi n° 78-17 du 6 janvier
+              1978).
             </p>
           </div>
         </div>
