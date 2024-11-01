@@ -77,7 +77,7 @@ const Page = () => {
                 <p>{part.excerpt}...</p>
 
                 <Link href={`/articles/${part.title}`}>
-                  <button className="font-medium">Lire plus</button>
+                  <button className="text-[15px]">Lire plus</button>
                 </Link>
               </div>
             ))}

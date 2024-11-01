@@ -58,7 +58,7 @@ const Page = () => {
             <p className="text-justify mb-2 paragraph">
               Il est donc important de lubrifier correctement sa boite de
               vitesse automatique. Une vidange est recommandée tous les 60 000 à
-              80 000 km.
+              80 000 km. <br /> N’hésitez pas à nous demander conseil.
             </p>
             <div className="">
               <ContactButton />
@@ -111,7 +111,7 @@ const Page = () => {
           </div>
           <div className="md:w-1/3 ">
             <video
-              className="ms-auto  w-full h-[555px] object-cover MT5"
+              className="ms-auto  w-full h-[530px] object-cover MT5"
               src="/images/vid2.mp4"
               autoPlay
               muted
@@ -129,44 +129,43 @@ const Page = () => {
             efficacement. Contrairement aux boîtes manuelles qui utilisent de
             l&apos;huile minérale, les boîtes automatiques utilisent des huiles
             de synthèse, appelées ATF (Automatic Transmission Fluid), obtenues
-            par synthèse chimique ou hydrocraquage d’une huile
-            minérale.Ceslubrifiants synthétiques, constitués de molécules
-            homogènes, offrent des performances supérieures en termes
-            d’utilisation et de durée de vie. Ils sont extrêmement fluides à
-            froid et garantissent une lubrification optimale des actionneurs
-            hydrauliques.
+            par synthèse chimique ou hydrocraquage d’une huile minérale.
+            Ceslubrifiants synthétiques, constitués de molécules homogènes,
+            offrent des performances supérieures en termes d’utilisation et de
+            durée de vie. Ils sont extrêmement fluides à froid et garantissent
+            une lubrification optimale des actionneurs hydrauliques.
           </p>
           <p className="text-justify mb-2 paragraph">
-            Il existe plusieurstypes d’huiles pour les transmissions
+            Il existe plusieurs types d’huiles pour les transmissions
             automatiques, notamment la <strong>Multi ATF</strong> , polyvalente
-            pour denombreux véhicules, et l&apos;<strong>ATF 6</strong>,
+            pour de nombreux véhicules, et l&apos;<strong>ATF 6</strong>,
             spécifique aux boîtes modernes pour une meilleure fluidité à basse
             température. La <strong>Multi CVT</strong> est conçue pour
             lestransmissions à variation continue. Les huiles{" "}
-            <strong>DCTF</strong> sont destinées auxtransmissions à double
-            embrayage, garantissant des changements de vitessrapides et
-            efficaces. La <strong>Multi HF</strong> est une huilesurtout
+            <strong>DCTF</strong> sont destinées aux transmissions à double
+            embrayage, garantissant des changements de vitesses rapides et
+            efficaces. La <strong>Multi HF</strong> est une huile surtout
             utilisée pour les boites robotisée ou encore pour les mécatroniques
             des DSG7 (DQ200). La <strong>Trans ATF</strong>, de couleur
             transparente, est surtout utilisée pour les modèles de boites à
-            convertisseur assez récents notament sur BMW et sur les moèles assez
-            récents.
+            convertisseur assez récents notament sur BMW et sur les modèles les
+            assez récents.
           </p>
           <p className="text-justify mb-2 paragraph">
             Il est important de bien respecter les préconisations du
-            constructeur lors du choix del’huile. Par exemple, l’huile{" "}
-            <strong>Dexron VI®</strong> convient auxvéhicules récents, offrant
-            une excellente fluidité à basse température et uneréduction de la
-            consommation de carburant. Elle est adaptée aux marquesaméricaines,
+            constructeur lors du choix de l’huile. Par exemple, l’huile{" "}
+            <strong>Dexron VI®</strong> convient aux véhicules récents, offrant
+            une excellente fluidité à basse température et une réduction de la
+            consommation de carburant. Elle est adaptée aux marques américaines,
             asiatiques et européennes. L’huile <strong>ATF+4®</strong>, formulée
-            pour lestransmissions Chrysler, améliore les changements de vitesse,
-            réduit lesTremblements et offre une protection contre l&apos;usure
-            et la corrosion. Pourmaintenir votre boîte de vitesses automatique
-            en parfait état, il est important de procéder à des vidanges
-            régulières, tous les 60 000 à 80 000 km. La méthode de vidange par
-            flushing, utilisant une machine spécifique, garantit unremplacement
-            quasi complet de l&apos;huile, assurant ainsi des
-            performancesoptimales.
+            pour les transmissions Chrysler, améliore les changements de
+            vitesse, réduit les Tremblements et offre une protection contre
+            l&apos;usure et la corrosion. Pour maintenir votre boîte de vitesses
+            automatique en parfait état, il est important de procéder à des
+            vidanges régulières, tous les 60 000 à 80 000 km. La méthode de
+            vidange par flushing, utilisant une machine spécifique, garantit un
+            remplacement quasi complet de l&apos;huile, assurant ainsi des
+            performances optimales.
           </p>
           <div className="">
             <ContactButton />

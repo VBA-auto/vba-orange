@@ -75,7 +75,7 @@ const Page = () => {
                 </h2>
                 <p className="text-gray-600 mt-1">{part.paragraph}</p>
                 <p className="text-[#f1b04e] font-semibold my-3">
-                  Price : {part.price}
+                  Price : {part.price} €
                 </p>
 
                 <button

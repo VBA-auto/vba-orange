@@ -1,27 +1,14 @@
 "use client";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect } from "react";
-import Footer from "../components/Footer";
+import React from "react";
+
 import mont1 from "../../../public/images/mont1.png";
 import mont2 from "../../../public/images/mont2.png";
 import Breadcrumb from "../components/BreadCumb";
 import ContactButton from "../components/ContactButton";
 
 const Page = () => {
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main");
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
   return (
     <section className="">
       <Head>
@@ -31,18 +18,6 @@ const Page = () => {
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <video
-          className="md:h-screen w-screen object-cover videoOverlay relative"
-          src="/images/montage.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Montage BVA
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
         <div className="md:flex gap-14">
           <div className="md:w-1/2">
@@ -58,7 +33,10 @@ const Page = () => {
               attention particulière doit être portée aux boîtes avec
               convertisseur de couple hydraulique, surtout quand au remontage
               (pompe engrenage). Utiliser les bons outils et suivre les
-              instructions permet d&apos;éviter les erreurs.
+              instructions permet d&apos;éviter les erreurs. Enfin, après
+              montage d’une boite de Vitesse automatique, il est important de
+              bien faire le niveau d’huile et de réaliser les ”adaptations” ou
+              “réglages de base”.
             </p>
 
             <div className="">
@@ -100,17 +78,17 @@ const Page = () => {
         </div>
         <span className="separator"></span>
         <div className="pb-16">
-          <h1 className="titlesFonts">Boîtes automatiques : warning !</h1>
+          <h1 className="titlesFonts">Boîtes automatiques : attention !</h1>
           <p className="text-justify mb-2 paragraph">
             Les boîtes de vitesses automatiques diffèrent des boites manuelles
             sur plusieurs points :
           </p>
-          <h2 className="text-lg font-bold text-gray-700 mb-2">Calibrage</h2>
+          <h2 className="font-bold text-gray-700 mb-2">Calibrage</h2>
           <p className="text-justify mb-2 paragraph">
             Les boîtes automatiques nécessitent un calibrage précis pour assurer
             des changements de vitesse contrairement aux boites manuelles.
           </p>
-          <h2 className="text-lg font-bold text-gray-700 mb-2">
+          <h2 className=" font-bold text-gray-700 mb-2">
             Reprogrammation et Calculateur
           </h2>
           <p className="text-justify mb-2 paragraph">
@@ -119,9 +97,7 @@ const Page = () => {
             effectuée correctement pour garantir des performances optimales. Une
             mauvaise reprogrammation peut entraîner des dysfonctionnements.
           </p>
-          <h2 className="text-lg font-bold text-gray-700 mb-2">
-            Niveau d&apos;Huile
-          </h2>
+          <h2 className=" font-bold text-gray-700 mb-2">Niveau d&apos;Huile</h2>
           <p className="text-justify mb-2 paragraph">
             Le contrôle et l&apos;ajustement du niveau d&apos;huile dans les
             boîtes automatiques sont essentiels et doivent être réalisés

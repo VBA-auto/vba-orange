@@ -91,7 +91,7 @@ const Page = () => {
             circuit à la masse, rapport de démultiplication incorect, ratio
             incorrect, rapports incorrect…
           </p>
-          <h2 className="text-lg font-bold text-gray-700 mb-2">
+          <h2 className=" text-gray-700 mb-2">
             Le diagnostic doit inclure plusieurs vérifications:
           </h2>
           <ul
@@ -152,13 +152,15 @@ const Page = () => {
               possible de réparer la platine ou le calculateur, ce qui relève de
               l&apos;électronique pure. On peut aussi remplacer les solénoïdes
               (soit tous ou uniquement ceux de pression). Il faut aussi vérifier
-              l&apos;étanchéité et remplacer éventuelement les joints (kit
-              joints) pour enlever les défauts de pression. Il est préférable
-              (si possible) de commencer par le mécatronique avant de démonter
-              la boîte pour s&apos;assurer que le problème n&apos;est pas
+              létanchéité et remplacer éventuelement les joints (kit joints)
+              pour enlever les défauts de pression. Il est préférable (si
+              possible) de commencer par le mécatronique avant de démonter la
+              boîte pour s&apos;assurer que le problème n&apos;est pas
               mécanique. Un diagnostic précis et une réparation efficace
               nécessitent de l&apos;expérience pour bien identifier la source du
-              problème.
+              problème. Pour résumer, lorsque l&apos;on contrôle un ”valve
+              body”, il faut dans un premier temps verifier le niveau
+              d&apos;huile.
             </p>
 
             <div className="">
@@ -180,8 +182,10 @@ const Page = () => {
               Renault DC4 (boites EDC),Peugeot. Dans tous les cas, nous
               informons nos clients si nous pouvons réaliser le calibrage ou
               non, afin de ne pas leur faire perdre de temps. Nous orientons
-              volontiers nos clients vers nos partenaires si nécessaire. Bonne
-              route !
+              volontiers nos clients vers nos partenaires si nécessaire. Pour
+              résumer, calibrage, étalonage, calibrage des points de touche,
+              calibrage des points de lechage désignent tous le même terme et
+              font partie de la procedure.
             </p>
           </div>
           <div className="md:w-1/2">

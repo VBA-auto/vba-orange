@@ -39,7 +39,7 @@ const Hero = () => {
               >
                 <source src="/images/video.webm" type="video/webm" />
               </video>
-              <div className="absolute top-0 w-full h-full  z-50 bg-black/50">
+              <div className="absolute top-0 w-full h-full  z-50 bg-[#00000091] rounded-md">
                 <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50">
                   <div className="w-[300px] mx-auto my-5">
                     <Slider {...settings}>
@@ -58,7 +58,7 @@ const Hero = () => {
                   </div>
                   <div className="">
                     <Link href="aide-en-ligne">
-                      <button className="px-5 text-[15px] py-2 border border-white bg-white  text-[#3775cd] hover:bg-[#3775cd] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
+                      <button className="px-5 text-[15px] py-2 border border-white bg-white  text-[#C33E1D] hover:bg-[#C33E1D] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
                         Aide en ligne
                       </button>
                     </Link>

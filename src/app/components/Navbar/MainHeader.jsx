@@ -85,7 +85,7 @@ const MainHeader = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 w-full z-50">
+    <header className="bg-white shadow-md sticky top-0 w-full z-[99999]">
       <div className="container mx-auto">
         <nav className="max-w-7xl mx-auto flex items-center justify-between py-2">
           <div className="md:w-1/4 text-lg font-bold">

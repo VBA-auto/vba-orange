@@ -8,6 +8,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -22,23 +23,26 @@ const Footer = () => {
                     <p className="text-[14px] text-gray-700">RBA</p>
 
                     <p className="text-[14px] my-[5px] text-gray-700">
-                      354 san andress road
+                      11 rue denis papin
                     </p>
 
                     <p className="text-[14px] text-gray-700">
-                      63243 SANTA MONICA
+                      77680 ROISSY EN BRIE
                     </p>
                   </div>
                   <div className="w-full">
-                    <div className="text-[14px] footnav">
-                      <Link className="navLinksFooter text-gray-700" href="/">
-                        04 83 54 24 38
+                    <div className="text-[15px] footnav">
+                      <Link
+                        href="callto:0145147254"
+                        className=" navLinksFooter md:text-[15px] text-[11px] text-gray-700"
+                      >
+                        01 45 14 72 54
                       </Link>
                       <Link
                         className="navLinksFooter py-[5px] text-gray-700"
                         href="#"
                       >
-                        contact@roissyboiteauto.fr
+                        contact@laboiteauto.com
                       </Link>
                       <div className="flex justify-center items-center gap-5 mt-1">
                         <Link
@@ -87,7 +91,7 @@ const Footer = () => {
                           className="text-gray-700"
                           rel="noopener noreferrer"
                         >
-                          <FaTwitter size={16} />
+                          <FaXTwitter size={16} />
                         </Link>
                         <Link
                           href="https://www.youtube.com/channel/UCdW6FARqs2Sv6rzeBidaQsw"

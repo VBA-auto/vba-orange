@@ -77,20 +77,8 @@ const Page = () => {
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <video
-          className="md:h-screen w-screen object-cover videoOverlay relative"
-          src="/images/aide.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Aide En Ligne
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
-        <div className="md:flex flexDirection md:h-[700px]  pb-16 gap-14">
+        <div className="md:flex flexDirection md:h-[500px]  pb-16 gap-14">
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Aide En Ligne</h1>
             <p className="text-justify my-2">
@@ -193,7 +181,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

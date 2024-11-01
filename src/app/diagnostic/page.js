@@ -89,13 +89,13 @@ const Page = () => {
                 mais il faut bien connaître les différents modèles de boîtes et
                 avoir de l&apos;expérience dans leur interprétation. Les outils
                 diagnostiques varient également entre les marques comme{" "}
-                <strong>Autel, Lauchn, Flex, Delphi</strong>, chacun ayant ses
+                <strong>Autel, Launch, Flex, Delphi</strong>, chacun ayant ses
                 spécificités. Comprendre ces différences et les &apos;petits
                 secrets&apos; de chaque système est indispensable afin de bien
                 cerner le problème. Vous trouverez dans ce lien un récapitulatif
                 des codes défauts :{" "}
                 <Link className="text-[#f1b04e]" href="/aide-en-ligne">
-                  https://www.xxxxxxxxxxxxxxx.fr/aide-en-ligne.
+                  https://laboiteauto.com/aide-en-ligne.
                 </Link>
               </p>
             </div>
@@ -116,8 +116,8 @@ const Page = () => {
                 automatique. Il faut noter que dans environ 10% des cas, cela
                 peut aussi être lié à un problème moteur, ABS ou autre. Il est
                 donc essentiel de ne pas ignorer ces avertissements et de faire
-                un diagnostic rapidement. avertissements et de faire un
-                diagnostic rapidement.
+                un diagnostic rapidement. L’écran de contrôle ou le message
+                d’erreur peut différent en fonction des marques.
               </p>
             </div>
           </div>
@@ -143,17 +143,19 @@ const Page = () => {
             disques en métal, les bagues en bronze, le(s) joint(s) de carter,
             l&apos;embrayage (simple ou double), le bloc de contrôle
             hydraulique, les solénoïdes de pression, les synchros…etc. Il faut
-            bien connaître la boîte sur laquelle on va réaliser le diagnostic :
-            https://www.xxxxxxxxxxxxxxxx.fr/typeof gearbox Deux actions sont
-            essentielles pour un diagnostic précis : d&apos;abord, il faut
-            connaître en détail les composants de la boîte de vitesse sur
-            laquelle on internient pour pouvoir identifier correctement les
-            problèmes potentiels.
+            bien connaître la boîte sur laquelle on va réaliser le diagnostic:{" "}
+            <Link className="text-[#f1b04e]" href="/aide-en-ligne">
+              https://laboiteauto.com/check-bva.
+            </Link>{" "}
+            gearbox Deux actions sont essentielles pour un diagnostic précis :
+            d&apos;abord, il faut connaître en détail les composants de la boîte
+            de vitesse sur laquelle on internient pour pouvoir identifier
+            correctement les problèmes potentiels.
           </p>
           <p className="text-justify mb-2 paragraph">
             Il faut ensuite effectuer un diagnostic éléctronique avec la valise.
             Il faut vérifier les niveaux d&apos;huile, de la crépine (ou
-            cartouche externe parfois). inspecter tous les supports moteur et
+            cartouche externe parfois). Inspecter tous les supports moteur et
             boîte de vitesse. Ces vérifications permettent d&apos;assurer un
             diagnostic complet et que la panne identifiée est bien la source du
             problème, garantissant ainsi une réparation efficace et durable.

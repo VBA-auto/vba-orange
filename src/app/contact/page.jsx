@@ -64,7 +64,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="">
+    <section className="pb-8">
       <Head>
         <title>auto trans</title>
         <meta name="description" content={PageDescription} />
@@ -93,8 +93,9 @@ export default function Contact() {
             <p className="mb-5 font-semibold">Information</p>
             <div className="">
               <p>Adresse</p>
-              <p>00 00 00 00 00</p>
-              <p>Veuillez nous contacter ici</p>
+              <p>RBA</p>
+              <p>11 rue denis papin</p>
+              <p>77680 ROISSY EN BRIE</p>
               {/* <p>contact@roissyboiteauto.fr</p> */}
             </div>
           </div>

@@ -18,19 +18,6 @@ const Page = () => {
       });
   }, []);
 
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main");
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
-
   return (
     <section className="">
       <Head>
@@ -40,19 +27,6 @@ const Page = () => {
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-
-      {/* <div className="relative mx-auto">
-        <Image
-          width={400}
-          height={400}
-          className="w-full md:h-screen videoOverlay1 relative"
-          src="/images/boite.jpeg"
-          alt=""
-        />
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Boite automatiques
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
         <div className=" pb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -73,7 +47,7 @@ const Page = () => {
                 </h2>
                 <p className="text-gray-600 mt-1">{part.excerpt}</p>
                 <p className="text-[#f1b04e] font-semibold my-3">
-                  Price : {part.price}
+                  Price : {part.price} €
                 </p>
 
                 <button
@@ -116,7 +90,7 @@ const Page = () => {
               Lubrification : {selectedPart.lubrification}
             </p>
             <p className="text-[#f1b04e] font-semibold my-3">
-              Price : {selectedPart.price}
+              Price : {selectedPart.price} €
             </p>
             <div className="text-center">
               <Link href="/">

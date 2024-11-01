@@ -84,19 +84,20 @@ const Page = () => {
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Les boites robotisées</h1>
             <p className="text-justify mb-5 paragraph">
-              Les boîtes robotisées ou pilotées, comme la{" "}
-              <strong>&apos;Powershift&apos;</strong> chez Renault (Modus,
-              Twingo) et Fiat, ainsi que sur les anciennes Peugeot 5008, sont
-              constituées d&apos;un embrayage, d&apos;une butée
-              d&apos;embrayage, et d&apos;unrobot(comprenant souvent un
-              accumulateur) qui automatise le changement de vitesses et la
-              gestion de l&apos;embrayage. Ce sont en réalité des boites
-              manuelles pilotées avec donc moins de confort qu’une « vraie»
-              boite automatique : il est fréquent de « sentir » l’a-coup du
-              passage de la vitesse. Il existe sur certains nouveaux modèles des
-              boites robotisées à double embrayage. Ces boîtes nécessitent une
-              maintenance régulière pour préserver leur performance et leur
-              fiabilité.
+              Les boîtes robotisées ou pilotées, comme
+              la &apos;Powershift&apos; chez Renault (Modus, Twingo) et Fiat,
+              ainsi que sur les anciennes Peugeot 5008, sont constituées
+              d&apos;un embrayage, d&apos;une butée d&apos;embrayage, et
+              d&apos;un robot(comprenant souvent un accumulateur) qui automatise
+              le changement de vitesses et la gestion de l&apos;embrayage. Ce
+              sont en réalité des boites manuelles pilotées avec donc moins de
+              confort qu’une « vraie» boite automatique : il est fréquent de «
+              sentir » l’a-coup du passage de la vitesse. Il existe sur certains
+              nouveaux modèles des boites robotisées à double embrayage. Ces
+              boîtes nécessitent une maintenance régulière pour préserver leur
+              performance et leur fiabilité. Pour résumer, il est possible de
+              réparer le robot en focntion des codes défauts et symptoms (moins
+              coûteux que neuf).
             </p>
           </div>
         </div>
@@ -106,17 +107,19 @@ const Page = () => {
             <h1 className="titlesFonts">Les double embrayage</h1>
             <p className="text-justify mb-2 paragraph">
               Il existe les modèles à embrayage mouillé et ceux à embrayage sec.
-              Les modèles à embrayage mouillé,{" "}
+              Les modèles à embrayage mouillé,
               <strong>DQ500, DQ381, DSG6</strong> (DQ250), et certains modèles
               de Mercedes (724.0), nécessitent une lubrification (équipent en
               général les moteurs plus puissants). À l&apos;inverse, les boîtes
-              à embrayage sec, comme les <strong>DSG7</strong>(DQ200) et la{" "}
+              à embrayage sec, comme les <strong>DSG7</strong> (DQ200) et la
               <strong>6DCT250</strong> de GETRAG (appelée{" "}
-              <strong>boîte EDC ou DC4</strong>), fonctionnent avec très peu de
+              <strong>boîte EDC ou DC4</strong> ), fonctionnent avec très peu de
               lubrification : une partie dans le mécatronique et à peine dans la
               partie mécanique. L&apos;entretien ou la réparation de ces boîtes
               demande des outils spécifiques, tels que ceux fournis par la
-              marque LUK.
+              marque LUK. Le plus important pour réparer ces boites est
+              d&apos;avoir le bon outillage pour pouvoir remplacer ces embrayage
+              que ce soit un embrayage sec ou mouillé.
             </p>
             <div className="">
               <ContactButton />
@@ -154,7 +157,7 @@ const Page = () => {
                 spécifiques pour diagnostiquer correctement le problème. Les
                 plus grande marques de boite de vitesse a convertisseur sont
                 <strong>Aisin, ZF, Mercedes</strong>. Comme dit précédement, il
-                y a certain modèles de boite de vitesse dont la maladie peut
+                existe certain modèles de boite de vitesse dont la maladie peut
                 être le convertisseur comme sur certain modèle{" "}
                 <strong>
                   722.6, 722.9 (7G-Tronic) et nouvelle 725.0 (9G-Tronic /
