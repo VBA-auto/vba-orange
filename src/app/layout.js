@@ -10,8 +10,8 @@ import Footer from "./components/Footer";
 }
 
 export const metadata = {
-  title: "Auto Transformation",
-  description: "Auto Transformation",
+  title: "VBA - Laboiteauto",
+  description: "VBA - Laboiteauto",
   icons: {
     // icon: "/fav.png",
   },

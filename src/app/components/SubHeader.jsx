@@ -9,7 +9,7 @@ const SubHeader = () => {
           <div className="flex justify-between">
             <div className="">
               <div className="flex items-center gap-3">
-                <FaEnvelope className="text-[#F0B04F]" />
+                <FaEnvelope className="text-[#2C80EF]" />
                 <Link
                   href="mailto:contact@laboiteauto.com"
                   className="md:text-[15px] text-[11px] text-gray-700"
@@ -20,7 +20,7 @@ const SubHeader = () => {
             </div>
             <div className="">
               <div className="flex items-center gap-3">
-                <FaPhoneAlt className="text-[#F0B04F]" />
+                <FaPhoneAlt className="text-[#2C80EF]" />
                 <Link
                   href="callto:0145147254"
                   className="md:text-[15px] text-[11px] text-gray-700"

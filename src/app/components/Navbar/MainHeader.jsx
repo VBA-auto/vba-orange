@@ -93,7 +93,7 @@ const MainHeader = () => {
               <Image
                 width={80}
                 height={80}
-                src="/images/logo.webp"
+                src="/images/VBAlogo.webp"
                 alt="logo"
               />
             </Link>
@@ -110,12 +110,12 @@ const MainHeader = () => {
             </ul>
           </div>
           <div className="md:w-1/4 flex justify-end space-x-2">
-            <button className="px-5 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md hidden md:block">
+            <button className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block">
               Type de BVA
             </button>
 
             <button
-              className="md:hidden px-5 py-2 bg-[#f0b04f] text-white"
+              className="md:hidden px-5 py-2 bg-[#2C80EF] text-white"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               &#9776;
