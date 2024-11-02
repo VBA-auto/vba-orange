@@ -184,8 +184,9 @@ const Page = () => {
               non, afin de ne pas leur faire perdre de temps. Nous orientons
               volontiers nos clients vers nos partenaires si nécessaire. Pour
               résumer, calibrage, étalonage, calibrage des points de touche,
-              calibrage des points de lechage désignent tous le même terme et
-              font partie de la procedure.
+              calibrage des points de léchage désignent tous le même terme et
+              font partie de la procedure. Dans certains cas, il ne vaut mieux
+              pas faire de calibrage.
             </p>
           </div>
           <div className="md:w-1/2">
