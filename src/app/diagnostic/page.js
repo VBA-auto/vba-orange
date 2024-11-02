@@ -62,7 +62,7 @@ const Page = () => {
         <div className="md:flex flexDirection gap-8">
           <div className="md:w-1/2 flex">
             <Image
-              className="rounded-[8px]"
+              className="rounded-[8px] h-[220px]"
               width={600}
               height={400}
               src={Diag3}
@@ -136,7 +136,7 @@ const Page = () => {
             <Link className="text-[#f1b04e]" href="/aide-en-ligne">
               https://laboiteauto.com/check-bva.
             </Link>{" "}
-            gearbox Deux actions sont essentielles pour un diagnostic précis :
+            Deux actions sont essentielles pour un diagnostic précis :
             d&apos;abord, il faut connaître en détail les composants de la boîte
             de vitesse sur laquelle on internient pour pouvoir identifier
             correctement les problèmes potentiels.
