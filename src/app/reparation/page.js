@@ -60,7 +60,8 @@ const Page = () => {
               Il existe aussi des problèmes sur l’embrayage situé juste avant le
               système CVT. Pour remplacer et modifier un système CVT, il est
               important d’avoir un outil spécial pour ne pas endommager la
-              transmission.
+              transmission. <br /> Les passages de vitesses sont en réalité des
+              “ratios”.
             </p>
             <div className="">
               <ContactButton />
@@ -96,7 +97,7 @@ const Page = () => {
               nouveaux modèles des boites robotisées à double embrayage. Ces
               boîtes nécessitent une maintenance régulière pour préserver leur
               performance et leur fiabilité. Pour résumer, il est possible de
-              réparer le robot en focntion des codes défauts et symptoms (moins
+              réparer le robot en focntion des codes défauts et symptômes (moins
               coûteux que neuf).
             </p>
           </div>
@@ -108,11 +109,11 @@ const Page = () => {
             <p className="text-justify mb-2 paragraph">
               Il existe les modèles à embrayage mouillé et ceux à embrayage sec.
               Les modèles à embrayage mouillé,
-              <strong>DQ500, DQ381, DSG6</strong> (DQ250), et certains modèles
+              <strong> DQ500, DQ381, DSG6</strong> (DQ250) et certains modèles
               de Mercedes (724.0), nécessitent une lubrification (équipent en
               général les moteurs plus puissants). À l&apos;inverse, les boîtes
               à embrayage sec, comme les <strong>DSG7</strong> (DQ200) et la
-              <strong>6DCT250</strong> de GETRAG (appelée{" "}
+              <strong> 6DCT250</strong> de GETRAG (appelée{" "}
               <strong>boîte EDC ou DC4</strong> ), fonctionnent avec très peu de
               lubrification : une partie dans le mécatronique et à peine dans la
               partie mécanique. L&apos;entretien ou la réparation de ces boîtes
@@ -156,7 +157,7 @@ const Page = () => {
                 boîtes nécessite un savoir-faire technique et des outils
                 spécifiques pour diagnostiquer correctement le problème. Les
                 plus grande marques de boite de vitesse a convertisseur sont
-                <strong>Aisin, ZF, Mercedes</strong>. Comme dit précédement, il
+                <strong> Aisin, ZF, Mercedes</strong>. Comme dit précédement, il
                 existe certain modèles de boite de vitesse dont la maladie peut
                 être le convertisseur comme sur certain modèle{" "}
                 <strong>
@@ -168,7 +169,7 @@ const Page = () => {
             </div>
             <div className="md:w-1/2 ">
               <Image
-                className="rounded-[8px] h-[625px] mx-auto MB5 MT5"
+                className="rounded-[8px] h-[565px] mx-auto MB5 MT5"
                 src={repa4}
                 alt=""
               />

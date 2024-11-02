@@ -74,7 +74,7 @@ const Page = () => {
         </div>
         <span className="separator"></span>
         <div className="">
-          <h1 className="titlesFonts ">Réparation Mecatronique</h1>
+          <h1 className="titlesFonts ">Réparation Mécatronique</h1>
           <p className="text-justify mb-2 paragraph">
             C&apos; est une composante essentielle des boites de vitesses
             automatiques. Pour la plupart des modèles, ce bloc baigne dans
