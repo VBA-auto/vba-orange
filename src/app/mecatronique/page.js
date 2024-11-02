@@ -64,7 +64,7 @@ const Page = () => {
           <div className="md:w-1/2">
             <video
               className="rounded-[8px] MB5"
-              src="/images/Meca1.webm"
+              src="/images/meca1.webm"
               autoPlay
               muted
               loop
