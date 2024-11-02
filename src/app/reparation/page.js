@@ -196,7 +196,7 @@ const Page = () => {
                 <strong>des boîtes Multitronic</strong>
                 (01J/0AN ou 0AW).
               </p>
-              <div className="">
+              <div className="mt-8">
                 <ContactButton />
               </div>
             </div>
