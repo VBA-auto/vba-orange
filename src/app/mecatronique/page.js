@@ -58,7 +58,8 @@ const Page = () => {
               En général, le bloc hydraulique baigne dans l&apos;huile avec les
               solénoides(à bien contrôller) mais ce n&apos;est pas toujours le
               cas. Les défaillances courantes concernent la qualité de
-              l&apos;huile et les courts-circuits à haute température.
+              l&apos;huile et les courts-circuits à haute température. Il est
+              possible de réparer ou de reconditionner les mécatroniques.
             </p>
           </div>
           <div className="md:w-1/2">
