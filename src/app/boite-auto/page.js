@@ -3,32 +3,35 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
 import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
-  const [parts, setparts] = useState([]);
+  const [parts, setParts] = useState([]);
   const [selectedPart, setSelectedPart] = useState(null);
 
   useEffect(() => {
     fetch("/parts.json")
       .then((res) => res.json())
       .then((data) => {
-        setparts(data);
+        setParts(data);
       });
   }, []);
+
+  const openModal = (part) => {
+    setSelectedPart(part);
+    document.getElementById("my_modal_3").showModal();
+  };
 
   return (
     <section className="">
       <Head>
         <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
       </Head>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
       <div id="main" className="container mx-auto">
-        <div className=" pb-16">
+        <div className="pb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {parts?.map((part, index) => (
               <div
@@ -46,16 +49,12 @@ const Page = () => {
                   {part.title}
                 </h2>
                 <p className="text-gray-600 mt-1">{part.excerpt}</p>
-                <p className="text-[#f1b04e] font-semibold my-3">
-                  Price : {part.price} €
+                <p className="text-[#2C80EF] font-semibold my-3">
+                  Price: {part.price} €
                 </p>
-
                 <button
-                  onClick={() => {
-                    setSelectedPart(part);
-                    document.getElementById("my_modal_3").showModal();
-                  }}
-                  className="px-5 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md"
+                  onClick={() => openModal(part)}
+                  className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md"
                 >
                   Commander
                 </button>
@@ -64,44 +63,46 @@ const Page = () => {
           </div>
         </div>
       </div>
-      {selectedPart && (
-        <dialog id="my_modal_3" className="modal">
-          <div className="modal-box bg-white">
-            <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                ✕
-              </button>
-            </form>
-            <h2 className="text-md text-gray-700 font-[500] mt-2">
-              {selectedPart.title}
-            </h2>
-            <div className="">
-              <Image
-                width={400}
-                height={400}
-                src={selectedPart.image}
-                alt={selectedPart.title}
-                className="rounded-md w-full"
-              />
-            </div>
-            <p className="pt-4 text-justify">{selectedPart.paragraph}</p>
-            <p className=" my-2 font-medium">
-              Lubrification : {selectedPart.lubrification}
-            </p>
-            <p className="text-[#f1b04e] font-semibold my-3">
-              Price : {selectedPart.price} €
-            </p>
-            <div className="text-center">
-              <Link href="/">
-                <button className="px-5 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md">
-                  Commander
-                </button>
-              </Link>
-            </div>
-          </div>
-        </dialog>
-      )}
+      {/* Always include the dialog in the DOM */}
+      <dialog id="my_modal_3" className="modal">
+        <div className="modal-box bg-white">
+          <form method="dialog">
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              ✕
+            </button>
+          </form>
+          {selectedPart && (
+            <>
+              <h2 className="text-md text-gray-700 font-[500] mt-2">
+                {selectedPart.title}
+              </h2>
+              <div className="">
+                <Image
+                  width={400}
+                  height={400}
+                  src={selectedPart.image}
+                  alt={selectedPart.title}
+                  className="rounded-md w-full"
+                />
+              </div>
+              <p className="pt-4 text-justify">{selectedPart.paragraph}</p>
+              <p className="my-2 font-medium">
+                Lubrification: {selectedPart.lubrification}
+              </p>
+              <p className="text-[#2C80EF] font-semibold my-3">
+                Price: {selectedPart.price} €
+              </p>
+              <div className="text-center">
+                <Link href="/">
+                  <button className="px-5 text-[15px] py-2 border border-[#2C80EF] text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md">
+                    Commander
+                  </button>
+                </Link>
+              </div>
+            </>
+          )}
+        </div>
+      </dialog>
     </section>
   );
 };

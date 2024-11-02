@@ -20,7 +20,7 @@ const Page = () => {
       </div>
       <div id="main" className="container mx-auto">
         <div className="md:flex gap-14">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 ">
             <h1 className="titlesFonts">Spécificités techniques</h1>
             <p className="text-justify mb-2 paragraph">
               Monter une boîte automatique prend en général 4 à 5 heures. Le
@@ -33,10 +33,9 @@ const Page = () => {
               attention particulière doit être portée aux boîtes avec
               convertisseur de couple hydraulique, surtout quand au remontage
               (pompe engrenage). Utiliser les bons outils et suivre les
-              instructions permet d&apos;éviter les erreurs. Enfin, après
-              montage d’une boite de Vitesse automatique, il est important de
-              bien faire le niveau d’huile et de réaliser les ”adaptations” ou
-              “réglages de base”.
+              instructions permet d&apos;éviter les erreurs. il est important de
+              faire le niveau d’huile et les ”adaptations” ou “réglages de
+              base”.
             </p>
 
             <div className="">
@@ -83,12 +82,12 @@ const Page = () => {
             Les boîtes de vitesses automatiques diffèrent des boites manuelles
             sur plusieurs points :
           </p>
-          <h2 className="font-bold text-gray-700 mb-2">Calibrage</h2>
+          <h2 className="font-[500] text-gray-700 mb-2">Calibrage</h2>
           <p className="text-justify mb-2 paragraph">
             Les boîtes automatiques nécessitent un calibrage précis pour assurer
             des changements de vitesse contrairement aux boites manuelles.
           </p>
-          <h2 className=" font-bold text-gray-700 mb-2">
+          <h2 className="font-[500] text-gray-700 mb-2">
             Reprogrammation et Calculateur
           </h2>
           <p className="text-justify mb-2 paragraph">
@@ -97,7 +96,7 @@ const Page = () => {
             effectuée correctement pour garantir des performances optimales. Une
             mauvaise reprogrammation peut entraîner des dysfonctionnements.
           </p>
-          <h2 className=" font-bold text-gray-700 mb-2">Niveau d&apos;Huile</h2>
+          <h2 className="font-[500] text-gray-700 mb-2">Niveau d&apos;Huile</h2>
           <p className="text-justify mb-2 paragraph">
             Le contrôle et l&apos;ajustement du niveau d&apos;huile dans les
             boîtes automatiques sont essentiels et doivent être réalisés

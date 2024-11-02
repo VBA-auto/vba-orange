@@ -1,60 +1,34 @@
 "use client";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect } from "react";
-import Footer from "../components/Footer";
 import Breadcrumb from "../components/BreadCumb";
 import ContactButton from "../components/ContactButton";
 
 const Page = () => {
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main");
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
   return (
     <section className="">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
       </Head>
-      {/* <div className="">
-        <div className="absolute w-full  mx-auto min-h-screen  bg-black inset-0 backdrop-filter backdrop-blur-xs  bg-opacity-25"></div>
-      </div> */}
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <Image
-          width={400}
-          height={400}
-          className="w-full md:h-screen videoOverlay relative"
-          src="/images/faq.png"
-          alt=""
-        />
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Foire aux questions
-        </h1>
-      </div> */}
+
       <div id="main" className="container mx-auto">
         <div className="flex  pb-16 gap-5">
           <div className="md:w-2/3 mx-auto">
-            <h1 className="titlesFonts ps-[15px]"> Foire aux questions</h1>
-            <div className="collapse collapse-plus my-5">
+            <h1 className="text-[20px] font-[500] text-center text-[#2C80EF]">
+              {" "}
+              Foire aux questions
+            </h1>
+            <div className="collapse collapse-plus border border-[#2c80ef9f] my-5">
               <input type="radio" name="my-accordion-3" defaultChecked />
-              <div className="collapse-title  font-semibold">
+              <div className="collapse-title border-b  font-semibold ">
                 <p>Comment vidanger sa boîte de vitesses automatique ?</p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Pour vidanger une boîte de vitesses automatique, il faut
                   suivre un protocole précis. Utilisez un outil de diagnostic
                   connecté sur une prise OBD pour vérifier l&apos;état de
@@ -70,15 +44,15 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   À quelle fréquence faut-il vidanger sa boîte de vitesses ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Il est conseillé de vidanger votre boîte de vitesses
                   automatique tous les 60 000 à 80 000 km. Cependant, pour les
                   boîtes à double embrayage à sec, telles que la DSG7 de
@@ -93,15 +67,15 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   Quel type d&apos;huile utiliser pour ma boîte de vitesses ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Le choix de l&apos;huile dépend du type de boîte de vitesses
                   et de l&apos;âge du véhicule. Utilisez de l&apos;huile
                   multi-ATF pour les boîtes à convertisseur de couple des
@@ -117,16 +91,16 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   Est-il préférable de laisser en D ou de mettre en P lors
                   d&apos;un arrêt au stop ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Il est conseillé de laisser votre boîte automatique en
                   position D lors des courts arrêts, comme aux feux rouges ou
                   aux stops, pour éviter l&apos;usure prématurée des composants.
@@ -141,13 +115,13 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>Les boîtes DSG sont-elles fiables ?</p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Oui, les boîtes DSG (Direct Shift Gearbox) sont réputées pour
                   leur fiabilité et leurs performances. Elles offrent des
                   changements de vitesses rapides et fluides, surtout les
@@ -161,16 +135,16 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   Quelle est la différence entre un double embrayage à sec et
                   mouillé ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Un double embrayage à sec n&apos;est pas immergé dans
                   l&apos;huile, ce qui le rend plus simple et moins coûteux à
                   produire, mais peut entraîner une usure plus rapide des
@@ -187,13 +161,13 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>Est-ce qu&apos;une vidange peut supprimer les à-coups ?</p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Oui, une vidange peut supprimer les à-coups, surtout
                   s&apos;ils sont faibles. En renouvelant l&apos;huile, vous
                   éliminez les impuretés qui perturbent le fonctionnement des
@@ -204,16 +178,16 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   Quelle est la différence entre la méthode flushing et gravité
                   ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Le flushing consiste en un rinçage total de la boîte,
                   remplaçant presque toute l&apos;huile, et est particulièrement
                   efficace pour les boîtes de vitesses à convertisseur de couple
@@ -225,16 +199,16 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   Est-ce qu&apos;une vidange peut endommager ma boîte de
                   vitesses ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Non, une vidange bien réalisée n&apos;endommage pas la partie
                   mécanique de la boîte de vitesses. Cependant, elle doit être
                   effectuée avec précaution pour éviter des problèmes dans le
@@ -245,13 +219,13 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>Pourquoi faire la vidange de sa boîte automatique ?</p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Vidanger régulièrement votre boîte de vitesses prolonge sa
                   durée de vie, améliore les performances et évite des coûts de
                   remplacement élevés. L&apos;huile se dégrade avec le temps,
@@ -263,15 +237,15 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   Comment expliquer la présence de limaille dans l&apos;huile ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   La présence de limaille dans l&apos;huile de votre boîte de
                   vitesses est principalement due à l&apos;usure des disques de
                   friction qui libèrent de minuscules fragments de métal. Ces
@@ -284,16 +258,16 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   Que signifie la présence d&apos;antigel (liquide
                   refroidissement) dans l&apos;huile ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   La présence d&apos;antigel dans l&apos;huile de la boîte de
                   vitesses indique une fuite au niveau du refroidisseur de la
                   boîte. Le liquide de refroidissement se mélange à
@@ -308,13 +282,13 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>Est-il vrai que certaines BVA ne se vidangent jamais ?</p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   En pratique, toutes les boîtes de vitesses doivent être
                   vidangées. Même les huiles dites &apos;long life&apos; doivent
                   être remplacées périodiquement pour maintenir leurs
@@ -328,16 +302,16 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   J&apos;ai une fuite : huile de boîte de vitesses ou huile
                   moteur ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p>
+                <p className="mt-2">
                   Les huiles de boîtes de vitesses peuvent être rouges, jaunes
                   ou vertes. Si votre huile de boîte est jaune, elle peut
                   ressembler à l&apos;huile moteur. Pour déterminer
@@ -349,16 +323,16 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="collapse collapse-plus mb-5">
+            <div className="collapse collapse-plus border border-[#2c80ef9f] mb-5">
               <input type="radio" name="my-accordion-3" />
-              <div className="collapse-title font-semibold">
+              <div className="collapse-title border-b font-semibold">
                 <p>
                   Quel type d&apos;huile utiliser pour ma boîte de vitesses
                   automatique ?
                 </p>
               </div>
               <div className="collapse-content">
-                <p className="">
+                <p className="mt-2">
                   Le choix de l&apos;huile pour votre boîte de vitesses
                   automatique est important : il faut utiliser soit de
                   l&apos;huile homologuée ou soit l&apos;huile du constructeur.
@@ -377,7 +351,7 @@ const Page = () => {
                 </p>
               </div>
             </div>
-            <div className="ps-[18px]">
+            <div className="text-center">
               <ContactButton />
             </div>
           </div>

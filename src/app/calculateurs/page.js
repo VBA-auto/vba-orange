@@ -18,19 +18,6 @@ const Page = () => {
       });
   }, []);
 
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main");
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
-
   return (
     <section className="">
       <Head>
@@ -40,18 +27,6 @@ const Page = () => {
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <Image
-          width={400}
-          height={400}
-          className="w-full md:h-screen videoOverlay relative"
-          src="/images/calculators.png"
-          alt=""
-        />
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          calculateurs
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
         <div className=" pb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -71,16 +46,12 @@ const Page = () => {
                   {part.title}
                 </h2>
                 <p className="text-gray-600 my-3">{part.paragraph}</p>
-                {/* <p className="text-[#f1b04e] font-semibold my-1">
-                  Price : {part.price}
-                </p> */}
-
                 <button
                   onClick={() => {
                     setSelectedPart(part);
                     document.getElementById("my_modal_3").showModal();
                   }}
-                  className="px-5 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md"
+                  className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md"
                 >
                   Commander
                 </button>
@@ -110,7 +81,7 @@ const Page = () => {
                         </p>
                         <div className="text-center">
                           <Link href={part.orderLink}>
-                            <button className="px-5 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md">
+                            <button className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md">
                               Nous contacter
                             </button>
                           </Link>

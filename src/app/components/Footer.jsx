@@ -12,10 +12,10 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1),_0_2px_4px_-1px_rgba(0,0,0,0.06)] bottom-0 w-full ">
+    <footer className="shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1),_0_2px_4px_-1px_rgba(0,0,0,0.06)] bottom-0 w-full]">
       <div className="">
         <div className="container mx-auto max-w-screen ">
-          <div className="relative  ">
+          <div className="relative">
             <div className="">
               <div className=" p-3">
                 <div className="md:flex justify-between gap-1">
@@ -113,20 +113,17 @@ const Footer = () => {
                         </Link>
                       </div>
                       <div className="text-gray-700 text-end my-[5px] ">
-                        <Link className="text-[14px]" href="" target="_blank">
+                        <Link
+                          className="text-[14px]"
+                          href="https://clickandtrust.fr/"
+                          target="_blank"
+                        >
                           Développé par Click & Trust
                         </Link>
                       </div>
                       <div className="text-gray-700 text-end text-[14px]">
                         <Link className="" href="/mention-legales">
-                          Mention Legales{" - "}
-                        </Link>
-                        <Link
-                          className=""
-                          href="https://wa.me/9384923232"
-                          target="_blank"
-                        >
-                          Cookies
+                          Mention Legales{" - "}Cookies
                         </Link>
                       </div>
                     </div>

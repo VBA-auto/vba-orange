@@ -8,18 +8,6 @@ import Breadcrumb from "../components/BreadCumb";
 import ContactButton from "../components/ContactButton";
 
 const Page = () => {
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main");
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
   return (
     <section className="">
       <Head>
@@ -29,23 +17,11 @@ const Page = () => {
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <video
-          className="md:h-screen w-screen object-cover videoOverlay relative"
-          src="/images/Macatro.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Mecatronique
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
         <div className="md:flex  gap-14">
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Les différents types</h1>
-            <p className="text-justify mb-4 paragraph">
+            <p className="text-justify my-2 paragraph">
               Le bloc de contrôle hydraulique, appelé aussi
               &apos;mécatronique&apos;, est indispensable dans les transmissions
               automatiques. Celui-ci comprends un « valve body » ou « corps de
@@ -57,7 +33,7 @@ const Page = () => {
             <p className="text-justify paragraph">
               En général, le bloc hydraulique baigne dans l&apos;huile avec les
               solénoides(à bien contrôller) mais ce n&apos;est pas toujours le
-              cas. Les défaillances courantes concernent la qualité de
+              cas. <br /> Les défaillances courantes concernent la qualité de
               l&apos;huile et les courts-circuits à haute température. <br /> Il
               est possible de réparer ou de reconditionner les mécatroniques.
             </p>
@@ -76,21 +52,21 @@ const Page = () => {
         <div className="">
           <h1 className="titlesFonts ">Réparation Mécatronique</h1>
           <p className="text-justify mb-2 paragraph">
-            C&apos; est une composante essentielle des boites de vitesses
+            C&apos;est une composante essentielle des boites de vitesses
             automatiques. Pour la plupart des modèles, ce bloc baigne dans
             l&apos;huile, indispensable pour son bon fonctionnement. À
             l&apos;intérieur de ce bloc, des billes circulent, permettant le
             blocage ou le passage des vitesses. Cependant, l&apos;utilisation
-            d&apos;une mauvaise huile peut endommager l&apos;ensemble du
-            bloc.Lorsque la température de l&apos;huile devient trop élevée,
-            cela peut provoquer des courts-circuits. Ces courts-circuits peuvent
+            d&apos;une mauvaise huile peut endommager l&apos;ensemble du bloc.
+            Lorsque la température de l&apos;huile devient trop élevée, cela
+            peut provoquer des courts-circuits. Ces courts-circuits peuvent
             entraîner divers problèmes, tels que la lenteur au passage des
             rapports, des à-coups ou même l&apos;impossibilité de passer à une
             vitesse supérieure. Dans la plupart des cas, lorsqu&apos;il y a un
             problème sur celui-ci, un code défaut va remonter sur la valise
-            diagnostic : defaut de pression, défaut moteur embrayage 2 court
-            circuit à la masse, rapport de démultiplication incorect, ratio
-            incorrect, rapports incorrect…
+            diagnostic: defaut de pression, défaut moteur embrayage 2 court
+            circuit à la masse, rapport de démultiplication incorrect, ratio
+            incorrect, rapports incorrects…
           </p>
           <h2 className=" text-gray-700 mb-2">
             Le diagnostic doit inclure plusieurs vérifications:
@@ -100,25 +76,25 @@ const Page = () => {
           >
             <li>
               <p className="text-justify mb-2 paragraph">
-                Pression d&apos;huile: Sur chacun des solénoïdes ou
+                Pression d&apos;huile: sur chacun des solénoïdes ou
                 électrovannes.
               </p>
             </li>
             <li>
               <p className="text-justify mb-2 paragraph">
-                Solénoïde du convertisseur de couple : Assurer son bon
+                Solénoïde du convertisseur de couple: assurer son bon
                 fonctionnement.
               </p>
             </li>
             <li>
               <p className="text-justify mb-2 paragraph">
-                Rapports de démultiplication : Vérifier la cohérence et les
-                ratio avec les données en temps réel
+                Rapports de démultiplication: vérifier la cohérence et les ratio
+                avec les données en temps réel
               </p>
             </li>
             <li>
               <p className="text-justify mb-2 paragraph">
-                Température de l&apos;huile de transmission : vérifier la
+                Température de l&apos;huile de transmission: vérifier la
                 stabilité et la surchauffe
               </p>
             </li>
@@ -129,11 +105,6 @@ const Page = () => {
             fonctionnement du mécatronique et ainsi prolonger la durée de vie de
             la transmission.
           </p>
-          {/* <Link href="#">
-            <button className="bg-[#f1b04e]  text-white py-2.5 px-5 rounded-md hover:bg-[#f1b04ea6] hover:text-white">
-              Aide En Ligne
-            </button>
-          </Link> */}
         </div>
         <span className="separator"></span>
         <div className="md:flex gap-14">
@@ -159,8 +130,8 @@ const Page = () => {
               boîte pour s&apos;assurer que le problème n&apos;est pas
               mécanique. Un diagnostic précis et une réparation efficace
               nécessitent de l&apos;expérience pour bien identifier la source du
-              problème. Pour résumer, lorsque l&apos;on contrôle un ”valve
-              body”, il faut dans un premier temps verifier le niveau
+              problème. <br /> Pour résumer, lorsque l&apos;on contrôle un
+              ”valve body”, il faut dans un premier temps verifier le niveau
               d&apos;huile.
             </p>
 

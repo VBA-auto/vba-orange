@@ -8,18 +8,6 @@ import ContactButton from "../components/ContactButton";
 
 const Page = () => {
   const [codes, setCodes] = useState([]);
-  useEffect(() => {
-    const scrollToMain = () => {
-      const mainSection = document.getElementById("main");
-      if (mainSection) {
-        mainSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-    return () => clearTimeout(scrollTimeout);
-  }, []);
 
   useEffect(() => {
     fetch("/defCode.json")
@@ -85,8 +73,8 @@ const Page = () => {
               Bienvenue sur notre page d&apos;aide en ligne.
             </p>
             <p className="text-justify">
-              Entrez le code défaut indiqué sur votre valise diagnostic. Vous
-              trouverez une description du défaut et des indications pour le
+              Entrez le code défault indiqué sur votre valise diagnostic. Vous
+              trouverez une description du défault et des indications pour le
               résoudre. Ce système (à titre indicatif) vous aide à identifier la
               source du problème et peut éventuellement vous guider pour
               effectuer les réparations nécessaires.
@@ -94,20 +82,20 @@ const Page = () => {
           </div>
           <div className="md:w-1/2">
             <div className="">
-              <p className="">Chercher un code default</p>
+              <p className="">Chercher un code défault</p>
               <div className="">
                 <input
                   type="text"
                   placeholder="example code : P0700"
                   value={searchTerm}
                   onChange={handleChange}
-                  className="w-full py-3 px-2 bg-transparent border border-[#f1b04e] mt-5"
+                  className="w-full py-3 px-2 bg-transparent border border-[#2c80ef] mt-5"
                 />
 
                 <div className="mt-7">
                   <button
                     onClick={handleClickSearch}
-                    className="px-8 text-[15px] py-2 border border-[#f0b04f]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md"
+                    className="px-8 text-[15px] py-2 border border-[#2c80ef]  text-[#2c80ef] hover:bg-[#2c80ef] hover:text-white hover:border rounded-md"
                   >
                     Rechercher
                   </button>
@@ -130,19 +118,6 @@ const Page = () => {
                             >
                               {code.description}
                             </p>
-                            {/* <p className="mb-2 italic text-[14px] text-gray-500">
-                              {code.subTitle}
-                            </p> */}
-                            {/* <span className="text-[15px]">
-                              Cliquer{" "}
-                              <button
-                                className=" font-semibold text-[#f1b04e]"
-                                onClick={() => toggleRecommendation(code.code)}
-                              >
-                                ici
-                              </button>{" "}
-                              pour obtenir de l&apos;aide
-                            </span> */}
 
                             {selectedCode === code.code && (
                               <span className="text-[14px]">

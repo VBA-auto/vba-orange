@@ -38,37 +38,6 @@ const ArticlePage = ({ params }) => {
 
     fetchArticle();
   }, [params.title]);
-
-  // const renderParagraphWithBoldAndLinks = (paragraph) => {
-  //   return paragraph.split("**").map((part, index) => {
-  //     if (index % 2 === 0) {
-  //       // Normal text or linked word
-  //       return part
-  //         .split(" ")
-  //         .map((word, index) => {
-  //           if (word.startsWith("A-") && word.endsWith("-A")) {
-  //             // Linked word
-  //             const [_, url, linkedWord] = word.split("-");
-  //             return (
-  //               <Link href={url} key={index}>
-  //                 <span className="font-semibold text-[#f1b04e]">
-  //                   {linkedWord}&nbsp;
-  //                 </span>
-  //               </Link>
-  //             );
-  //           } else {
-  //             // Regular text
-  //             return <span key={index}>{word} </span>;
-  //           }
-  //         })
-  //         .concat(" "); // Add a space after each word
-  //     } else {
-  //       // Bold text
-  //       return <strong key={index}>{part}</strong>;
-  //     }
-  //   });
-  // };
-
   return (
     <section className="article-container">
       {article ? (
@@ -77,7 +46,7 @@ const ArticlePage = ({ params }) => {
             <Image
               width={400}
               height={400}
-              className="w-full md:h-screen  videoOverlay relative"
+              className="w-full md:h-[86vh]  videoOverlay relative"
               src={article.image}
               alt=""
             />
@@ -89,7 +58,7 @@ const ArticlePage = ({ params }) => {
             id="main"
             className="container mx-auto min-h-screen  items-center"
           >
-            <div className="md:flex gap-5 pb-16 pt-8">
+            <div className="md:flex gap-5 pb-16 pt-24">
               <div className="md:w-[70%]">
                 {/* <img className="" src={article.image} alt="" /> */}
                 <h1 className="titlesFonts my-3 capitalize">{article.title}</h1>
@@ -98,8 +67,8 @@ const ArticlePage = ({ params }) => {
                   <ContactButton />
                 </div>
               </div>
-              <div className="md:w-[30%] md:h-[90vh] sticky top-12">
-                <div className="border md:h-[90vh] overflow-y-scroll p-3 articleTab">
+              <div className="md:w-[30%] md:h-[70vh] sticky top-20">
+                <div className="border md:h-[80vh] overflow-y-scroll p-3 articleTab">
                   <h1 className="mb-3">More article</h1>
                   {related?.map((related, index) => (
                     <Link key={index} href={`/articles/${related.title}`}>
@@ -130,7 +99,9 @@ const ArticlePage = ({ params }) => {
                             }}
                           />
 
-                          <button className="text-[#f1b04e]">Lire plus</button>
+                          <button className="text-[#2C80EF] text-[14px]">
+                            Lire plus...
+                          </button>
                         </div>
                       </div>
                     </Link>

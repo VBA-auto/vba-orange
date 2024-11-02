@@ -278,7 +278,7 @@ export default function Header() {
 
                     <div className="w-1/4  flex justify-end gap-5 hide">
                       <div className="headButton">
-                        <Link href="/check-bva">
+                        <Link href="/type-de-bva">
                           <button className="bg-[#F1B04E]  text-white py-[9px] px-[20px] rounded-md hover:bg-[#f1b04eda] hover:text-white text-[15px]">
                             Type de BVA
                           </button>
@@ -614,7 +614,7 @@ export default function Header() {
                   <div className="subHeadList">
                     <Link
                       onClick={closeNavbar}
-                      href="/check-bva"
+                      href="/type-de-bva"
                       className="subHeadList1 block py-2 ashColor"
                     >
                       <Image

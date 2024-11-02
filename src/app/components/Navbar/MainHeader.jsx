@@ -72,7 +72,7 @@ const MainHeader = () => {
         {
           label: "Type de BVA",
           image: "/images/vid1.png",
-          href: "/check-bva",
+          href: "/type-de-bva",
         },
         {
           label: "Aide en ligne",
@@ -110,9 +110,12 @@ const MainHeader = () => {
             </ul>
           </div>
           <div className="md:w-1/4 flex justify-end space-x-2">
-            <button className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block">
-              Type de BVA
-            </button>
+            <Link href="/type-de-bva">
+              {" "}
+              <button className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block">
+                Type de BVA
+              </button>
+            </Link>
 
             <button
               className="md:hidden px-5 py-2 bg-[#2C80EF] text-white"

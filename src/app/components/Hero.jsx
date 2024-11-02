@@ -58,7 +58,7 @@ const Hero = () => {
                   </div>
                   <div className="">
                     <Link href="aide-en-ligne">
-                      <button className="px-5 text-[15px] py-2 border border-white bg-white  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
+                      <button className="px-5 text-[15px] py-2 border border-white bg-[#c33e1d]  text-[#fff] hover:bg-[#C33E1D] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
                         Aide en ligne
                       </button>
                     </Link>

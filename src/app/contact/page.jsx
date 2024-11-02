@@ -8,18 +8,6 @@ import Breadcrumb from "../components/BreadCumb";
 export default function Contact() {
   const PageDescription = "auto trans";
   const HeadingText = "auto trans";
-  useEffect(() => {
-    const scrollToMain = () => {
-      const mainSection = document.getElementById("main");
-      if (mainSection) {
-        mainSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-    return () => clearTimeout(scrollTimeout);
-  }, []);
 
   const [isError, setIsError] = useState(false);
   const [isOk, setIsOk] = useState(false);
@@ -73,26 +61,12 @@ export default function Contact() {
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <Image
-          width={400}
-          height={400}
-          className="videoOverlay relative"
-          src="/images/cookies.png"
-          alt=""
-        />
-
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Contact
-        </h1>
-      </div> */}
 
       <div id="main" className="container mx-auto pb-24">
         <div className="md:flex flexDirection MT5 MB5">
           <div className="md:w-1/2">
             <p className="mb-5 font-semibold">Information</p>
             <div className="">
-              <p>Adresse</p>
               <p>RBA</p>
               <p>11 rue denis papin</p>
               <p>77680 ROISSY EN BRIE</p>

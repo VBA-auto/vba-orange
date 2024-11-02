@@ -36,12 +36,13 @@ const Page = () => {
                 partie « <strong>mécatronique</strong>» ou « bloc de contrôle
                 hydraulique » est important : il faut vérifier la pression.
               </p>
-              <p className="text-justify mb-7 paragraph">
+              <p className="text-justify mb-2 paragraph">
                 Ces contrôles nous aident à évaluer l&apos;état de la boîte et à
                 estimer les réparations. Si ces premiers tests ne suffisent pas
                 à identifier les problèmes, nous procédons à des inspections
-                plus poussées, comme le démontage de la boîte. nous procédons à
-                des inspections plus poussées, comme le démontage de la boîte.
+                plus poussées, comme le démontage de la boîte. <br /> nous
+                procédons à des inspections plus poussées, comme le démontage de
+                la boîte.
               </p>
             </div>
             <div className="">
@@ -105,8 +106,8 @@ const Page = () => {
                 peut aussi être lié à un problème moteur, ABS ou autre. Il est
                 donc essentiel de ne pas ignorer ces avertissements et de faire
                 un diagnostic rapidement. L’écran de contrôle ou le message
-                d’erreur peut différent en fonction des marques. Chaque message
-                est différent en fonction du véhicule.
+                d’erreur peut différent en fonction des marques. <br /> Chaque
+                message est différent en fonction du véhicule.
               </p>
             </div>
           </div>
@@ -133,8 +134,8 @@ const Page = () => {
             l&apos;embrayage (simple ou double), le bloc de contrôle
             hydraulique, les solénoïdes de pression, les synchros…etc. Il faut
             bien connaître la boîte sur laquelle on va réaliser le diagnostic:{" "}
-            <Link className="text-[#f1b04e]" href="/aide-en-ligne">
-              https://laboiteauto.com/check-bva.
+            <Link className="text-[#f1b04e]" href="/type-de-bva">
+              https://laboiteauto.com/type-de-bva.
             </Link>{" "}
             Deux actions sont essentielles pour un diagnostic précis :
             d&apos;abord, il faut connaître en détail les composants de la boîte

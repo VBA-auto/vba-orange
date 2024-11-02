@@ -11,39 +11,14 @@ import Breadcrumb from "../components/BreadCumb";
 import ContactButton from "../components/ContactButton";
 
 const Page = () => {
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main");
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
   return (
     <section className="">
       <Head>
         <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
       </Head>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <video
-          className="md:h-screen w-screen object-cover videoOverlay relative"
-          src="/images/video.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Réparation BVA
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
         <div className="md:flex  gap-14">
           <div className="md:w-1/2">
@@ -63,7 +38,7 @@ const Page = () => {
               transmission. <br /> Les passages de vitesses sont en réalité des
               “ratios”.
             </p>
-            <div className="">
+            <div className="mt-5">
               <ContactButton />
             </div>
           </div>
@@ -96,9 +71,11 @@ const Page = () => {
               sentir » l’a-coup du passage de la vitesse. Il existe sur certains
               nouveaux modèles des boites robotisées à double embrayage. Ces
               boîtes nécessitent une maintenance régulière pour préserver leur
-              performance et leur fiabilité. Pour résumer, il est possible de
-              réparer le robot en focntion des codes défauts et symptômes (moins
-              coûteux que neuf).
+              performance et leur fiabilité.
+            </p>
+            <p className="text-justify mt-1 paragraph">
+              Pour résumer, il est possible de réparer le robot en focntion des
+              codes défauts et symptômes (moins coûteux que neuf).
             </p>
           </div>
         </div>
@@ -147,9 +124,8 @@ const Page = () => {
                 (Renault/Peugeot) sont réputées pour leur robustesse et leur
                 capacité à gérer la puissance du moteur de manière fluide. Le
                 convertisseur permet à la voiture de démarrer sans à-coups ;
-              </p>
-              <p className="text-justify mb-2 paragraph">
                 <strong>
+                  {" "}
                   si la voiture patine ou si les tours du moteur oscillent
                   anormalement
                 </strong>

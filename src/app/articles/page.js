@@ -71,13 +71,18 @@ const Page = () => {
                     className="rounded-md w-full mb-5"
                   />
                 </Link>
-                <h2 className="text-lg  mt-2 text-gray-700 capitalize font-medium">
-                  {part.title}
-                </h2>
+                <Link href={`/articles/${part.title}`}>
+                  {" "}
+                  <h2 className="text-lg  mt-2 text-gray-700 capitalize font-medium">
+                    {part.title}
+                  </h2>
+                </Link>
                 <p>{part.excerpt}...</p>
 
                 <Link href={`/articles/${part.title}`}>
-                  <button className="text-[15px]">Lire plus</button>
+                  <button className="text-[14px] text-gray-500">
+                    Lire plus...
+                  </button>
                 </Link>
               </div>
             ))}

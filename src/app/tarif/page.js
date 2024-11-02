@@ -118,19 +118,6 @@ const Page = () => {
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <Image
-          width={400}
-          height={400}
-          className="videoOverlay relative"
-          src="/images/cookies.png"
-          alt=""
-        />
-
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Tarif
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
         <div className="pb-16">
           <div className="">
@@ -163,8 +150,8 @@ const Page = () => {
               crépine et de la complexité du modèle de boîte (exemple sur
               certain type de boite BMW ou porsche, il y a des tubes et d’autre
               pièce à remplacer en plus de la crépine). Le prix comprend la
-              main-d&apos;œuvre et tous lescomposants nécessaires à une vidange
-              efficace.
+              main-d&apos;œuvre et tous les composants nécessaires à une vidange
+              faite dans les règles de l’art.
             </p>
           </div>
           <div className="mt-12">

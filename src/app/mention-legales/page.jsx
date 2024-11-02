@@ -4,48 +4,24 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
+import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
-  useEffect(() => {
-    const scrollToMain = () => {
-      const mainSection = document.getElementById("main");
-      if (mainSection) {
-        mainSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-    return () => clearTimeout(scrollTimeout);
-  }, []);
   return (
     <section className="">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
       </Head>
-      {/* <div className="">
-        <div className="absolute w-full  mx-auto min-h-screen  bg-black inset-0 backdrop-filter backdrop-blur-xs  bg-opacity-25"></div>
-      </div> */}
 
-      <div className="relative mx-auto">
-        <Image
-          width={400}
-          height={400}
-          className="videoOverlay relative"
-          src="/images/cookies.png"
-          alt=""
-        />
-
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Mentions Légales
-        </h1>
-      </div>
       <div id="main" className="container mx-auto">
-        <div className="py-16">
+        <div className="mt-16 mb-8">
+          <Breadcrumb />
+        </div>
+        <div>
           {/* <h1 className="text-center text-4xl">Mentions Légales</h1> */}
           <div className="">
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               1. PRÉSENTATION DU SITE.
             </h1>
             <p className="my-2">
@@ -101,7 +77,7 @@ const Page = () => {
                 Générateur de mentions légales
               </p>
             </div>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               2. CONDITIONS GÉNÉRALES D’UTILISATION DU SITE ET DES SERVICES
               PROPOSÉS.
             </h1>
@@ -126,7 +102,7 @@ const Page = () => {
               à s’y référer le plus souvent possible afin d’en prendre
               connaissance.
             </p>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               3. DESCRIPTION DES SERVICES FOURNIS.
             </h1>
             <p className="my-2">
@@ -147,7 +123,7 @@ const Page = () => {
               sont pas exhaustifs. Ils sont donnés sous réserve de modifications
               ayant été apportées depuis leur mise en ligne.
             </p>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               4. LIMITATIONS CONTRACTUELLES SUR LES DONNÉES TECHNIQUES.
             </h1>
             <p className="my-2">Le site utilise la technologie Nextjs.</p>
@@ -159,7 +135,7 @@ const Page = () => {
               génération mis-à-jour
             </p>
 
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               5. PROPRIÉTÉ INTELLECTUELLE ET CONTREFAÇONS.
             </h1>
             <p className="my-2">
@@ -180,7 +156,7 @@ const Page = () => {
               contrefaçon et poursuivie conformément aux dispositions des
               articles L.335-2 et suivants du Code de Propriété Intellectuelle.
             </p>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               6. LIMITATIONS DE RESPONSABILITÉ.
             </h1>
             <p className="my-2">
@@ -208,7 +184,7 @@ const Page = () => {
               pornographique, quel que soit le support utilisé (texte,
               photographie…).
             </p>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               7. GESTION DES DONNÉES PERSONNELLES.
             </h1>
             <p className="my-2">
@@ -262,7 +238,7 @@ const Page = () => {
               du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996
               relative à la protection juridique des bases de données.
             </p>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               8. LIENS HYPERTEXTES ET COOKIES.
             </h1>
             <p className="my-2">
@@ -317,7 +293,7 @@ const Page = () => {
               préférences. Dans l&apos;onglet &apos;Confidentialité&apos;, vous
               pouvez bloquer les cookies.
             </p>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               9. DROIT APPLICABLE ET ATTRIBUTION DE JURIDICTION.
             </h1>
             <p className="my-2">
@@ -325,7 +301,7 @@ const Page = () => {
               soumis au droit français. Il est fait attribution exclusive de
               juridiction aux tribunaux compétents de Paris.
             </p>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               10. LES PRINCIPALES LOIS CONCERNÉES.
             </h1>
             <p className="my-2">
@@ -337,7 +313,7 @@ const Page = () => {
               Loi n° 2004-575 du 21 juin 2004 pour la confiance dans
               l&apos;économie numérique.
             </p>
-            <h1 className="text-gray-500 text-xl font-semibold">
+            <h1 className="text-gray-500 text-md font-semibold">
               11. LEXIQUE.
             </h1>
             <p className="my-2">
@@ -354,7 +330,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

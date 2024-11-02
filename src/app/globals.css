@@ -30,7 +30,11 @@ h1 {
 ::-webkit-scrollbar-thumb {
   background: #888;
 }
-
+.collapse-title,
+:where(.collapse > input[type="checkbox"]),
+:where(.collapse > input[type="radio"]) {
+  min-height: 0 !important;
+}
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -65,12 +69,12 @@ h1 {
 .formLabel {
   width: 30%;
   background-color: #ffffff;
-  color: #f1b04e;
+  color: #2c80ef;
   text-align: center;
   padding: 12px 0;
   border-radius: 5px 0 0 5px;
   font-size: 15px;
-  border: 1px solid #f1b04e;
+  border: 1px solid #2c80ef;
 }
 .separator {
   display: block;
@@ -84,9 +88,9 @@ h1 {
   background-color: #fff;
   font-family: Poppins;
   font-size: 15px;
-  border-top: 1px solid #f1b04e98;
-  border-right: 1px solid #f1b04e98;
-  border-bottom: 1px solid #f1b04e98;
+  border-top: 1px solid #2c80ef;
+  border-right: 1px solid #2c80ef;
+  border-bottom: 1px solid #2c80ef;
 }
 .labandsel {
   display: flex;
@@ -97,7 +101,7 @@ h1 {
   /* margin-bottom: 10px; */
 }
 .formBox {
-  border: 1px solid #f1b04e;
+  border: 1px solid #2c80ef;
   background-color: #fff;
   padding: 12px;
   border-radius: 5px;

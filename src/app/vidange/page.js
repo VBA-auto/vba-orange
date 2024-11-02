@@ -1,47 +1,20 @@
 "use client";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect } from "react";
-import Footer from "../components/Footer";
 import diag1 from "../../../public/images/vid1.png";
 import ContactButton from "../components/ContactButton";
 import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main") || null;
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
   return (
     <section className="">
       <Head>
         <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
       </Head>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <video
-          className="md:h-screen w-screen object-cover videoOverlay relative"
-          src="/images/vidange.mp4"
-          autoPlay
-          muted
-          loop
-        ></video>
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Vidange BVA
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
         <div className="md:flex gap-14">
           <div className="md:w-1/2">
@@ -58,7 +31,10 @@ const Page = () => {
             <p className="text-justify mb-2 paragraph">
               Il est donc important de lubrifier correctement sa boite de
               vitesse automatique. Une vidange est recommandée tous les 60 000 à
-              80 000 km. <br /> N’hésitez pas à nous demander conseil.
+              80 000 km.
+            </p>
+            <p className="text-justify mb-2 paragraph">
+              N’hésitez pas à nous demander conseil.
             </p>
             <div className="">
               <ContactButton />
