@@ -12,18 +12,6 @@ import Breadcrumb from "../components/BreadCumb";
 import ContactButton from "../components/ContactButton";
 
 const Page = () => {
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main");
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
   return (
     <section className="">
       <Head>
@@ -117,7 +105,8 @@ const Page = () => {
                 peut aussi être lié à un problème moteur, ABS ou autre. Il est
                 donc essentiel de ne pas ignorer ces avertissements et de faire
                 un diagnostic rapidement. L’écran de contrôle ou le message
-                d’erreur peut différent en fonction des marques.
+                d’erreur peut différent en fonction des marques. Chaque message
+                est différent en fonction du véhicule.
               </p>
             </div>
           </div>
