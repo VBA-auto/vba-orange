@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
+import { FaPhoneAlt, FaPaperPlane } from "react-icons/fa";
 import Breadcrumb from "../components/BreadCumb";
+import Link from "next/link";
 
 export default function Contact() {
   const PageDescription = "auto trans";
@@ -67,9 +68,22 @@ export default function Contact() {
           <div className="md:w-1/2">
             <p className="mb-5 font-semibold">Information</p>
             <div className="">
-              <p>RBA</p>
-              <p>11 rue denis papin</p>
+              <p>VBA</p>
+              <p className="my-1">11 rue denis papin</p>
               <p>77680 ROISSY EN BRIE</p>
+              <Link
+                href="callto:0756896197"
+                className="flex items-center gap-2 text-[15px] text-gray-600 mt-1"
+              >
+                07 56 89 61 97
+              </Link>
+              <Link
+                href="mailto:contact@laboiteauto.com"
+                className="flex items-center gap-2 text-[15px] text-gray-600 mt-1"
+              >
+                contact@laboiteauto.com
+              </Link>
+
               {/* <p>contact@roissyboiteauto.fr</p> */}
             </div>
           </div>
@@ -134,7 +148,7 @@ export default function Contact() {
 
               <div className=" mt-4">
                 <button
-                  className="px-11 text-[15px] py-2 border border-[#f0b04fbe]  text-[#f0b04f] hover:bg-[#f0b04f] hover:text-white hover:border rounded-md"
+                  className="px-11 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md"
                   type="submit"
                 >
                   Envoyer

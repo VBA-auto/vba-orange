@@ -44,21 +44,50 @@ const Hero = () => {
                   <div className="w-[300px] mx-auto my-5">
                     <Slider {...settings}>
                       <div className="">
-                        <h3 className="heroTitle">Diagnostic </h3>
+                        <Link
+                          href="/diagnostic"
+                          className="hover:text-blue-700"
+                        >
+                          <h3 className="heroTitle hover:text-white/90">
+                            Diagnostic{" "}
+                          </h3>
+                        </Link>
                       </div>
 
                       <div>
-                        <h3 className="heroTitle">Vidange</h3>
+                        <Link href="/vidange">
+                          <h3 className="heroTitle hover:text-white/90">
+                            Vidange
+                          </h3>
+                        </Link>
                       </div>
 
                       <div>
-                        <h3 className="heroTitle">Réparation</h3>
+                        <Link href="/reparation">
+                          <h3 className="heroTitle hover:text-white/90">
+                            Réparation
+                          </h3>
+                        </Link>
+                      </div>
+                      <div>
+                        <Link href="/mecatronique">
+                          <h3 className="heroTitle hover:text-white/90">
+                            Mécatronique
+                          </h3>
+                        </Link>
+                      </div>
+                      <div>
+                        <Link href="/montage">
+                          <h3 className="heroTitle hover:text-white/90">
+                            Montage
+                          </h3>
+                        </Link>
                       </div>
                     </Slider>
                   </div>
                   <div className="">
-                    <Link href="aide-en-ligne">
-                      <button className="px-5 text-[15px] py-2 border border-white bg-[#c33e1d]  text-[#fff] hover:bg-[#C33E1D] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
+                    <Link href="/aide-en-ligne">
+                      <button className="px-5 text-[15px] py-2 border border-white bg-[#fff]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
                         Aide en ligne
                       </button>
                     </Link>

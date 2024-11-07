@@ -20,7 +20,7 @@ const Footer = () => {
               <div className=" p-3">
                 <div className="md:flex justify-between gap-1">
                   <div className="w-full text-start">
-                    <p className="text-[14px] text-gray-700">RBA</p>
+                    <p className="text-[14px] text-gray-700">VBA</p>
 
                     <p className="text-[14px] my-[5px] text-gray-700">
                       11 rue denis papin

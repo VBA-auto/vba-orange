@@ -17,10 +17,29 @@ h1 {
   width: 5px;
   height: 5px;
 }
+
 ::-webkit-scrollbar x {
   width: 5px;
 }
-
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+input[type="checkbox"]:checked {
+  background-color: #007bff; /* Blue background when checked */
+  border-color: #ffffff; /* Darker border when checked */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M20.285 5.285l-11 11a1 1 0 0 1-1.415 0l-5-5a1 1 0 1 1 1.415-1.415L9 14.585l9.875-9.875a1 1 0 0 1 1.415 1.415z'/%3E%3C/svg%3E");
+  background-size: 100%; /* Adjust the size of the checkmark */
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;

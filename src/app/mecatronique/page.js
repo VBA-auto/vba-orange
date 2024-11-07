@@ -51,7 +51,7 @@ const Page = () => {
         <span className="separator"></span>
         <div className="">
           <h1 className="titlesFonts ">Réparation Mécatronique</h1>
-          <p className="text-justify mb-2 paragraph">
+          <p className="text-justify my-2  paragraph">
             C&apos;est une composante essentielle des boites de vitesses
             automatiques. Pour la plupart des modèles, ce bloc baigne dans
             l&apos;huile, indispensable pour son bon fonctionnement. À
@@ -119,7 +119,7 @@ const Page = () => {
           </div>
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Réparation du mécatronique </h1>
-            <p className="text-justify mb-2 paragraph">
+            <p className="text-justify my-2 paragraph">
               Réparer un mécatronique peut se faire de plusieurs façons. Il est
               possible de réparer la platine ou le calculateur, ce qui relève de
               l&apos;électronique pure. On peut aussi remplacer les solénoïdes
@@ -130,12 +130,11 @@ const Page = () => {
               boîte pour s&apos;assurer que le problème n&apos;est pas
               mécanique. Un diagnostic précis et une réparation efficace
               nécessitent de l&apos;expérience pour bien identifier la source du
-              problème. <br /> Pour résumer, lorsque l&apos;on contrôle un
-              ”valve body”, il faut dans un premier temps verifier le niveau
-              d&apos;huile.
+              problème. <br /> Pour résumer, il faut toujours dans un premier
+              temps verifier le niveau d&apos;huile.
             </p>
 
-            <div className="">
+            <div className="mt-3">
               <ContactButton />
             </div>
           </div>
@@ -144,7 +143,7 @@ const Page = () => {
         <div className="md:flex flexDirection gap-14 pb-16">
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Calibrage</h1>
-            <p className="text-justify mb-2 paragraph">
+            <p className="text-justify my-2 paragraph">
               Dans la plupart des cas, il faut faire un calibrage ou une
               réinitialisation des valeurs auto-adaptatives. Cela peut être
               appelé calibrage, réinitialisation, réglages de base ou

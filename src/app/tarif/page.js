@@ -8,18 +8,6 @@ import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
   const [openFilterDiv, setOpenfilterDiv] = useState(false);
-  useEffect(() => {
-    const scrollToMain = () => {
-      const mainSection = document.getElementById("main");
-      if (mainSection) {
-        mainSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
-
-    const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-    return () => clearTimeout(scrollTimeout);
-  }, []);
 
   const openFilter = () => {
     setOpenfilterDiv(true);

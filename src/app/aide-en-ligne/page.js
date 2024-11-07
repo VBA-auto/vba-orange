@@ -86,7 +86,7 @@ const Page = () => {
               <div className="">
                 <input
                   type="text"
-                  placeholder="example code : P0700"
+                  placeholder="Exemple code : P0700"
                   value={searchTerm}
                   onChange={handleChange}
                   className="w-full py-3 px-2 bg-transparent border border-[#2c80ef] mt-5"

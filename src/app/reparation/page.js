@@ -25,8 +25,8 @@ const Page = () => {
             <h1 className="titlesFonts">Les boites CVT à variation continue</h1>
             <p className="text-justify mb-2 paragraph">
               Les boîtes de vitesses CVT, telles que la Mercedes 722.8 des
-              classes A et B et la Multitronic d&apos;Audi, ainsi que la HF35
-              (CVT) des Ford Mondeo Hybrid et autres nécessitent des outils
+              classes A et B et la Multitronic d&apos;Audi, ainsi que la
+              HF35(CVT) des Ford Mondeo Hybrid et autres nécessitent des outils
               spécialisés pour leur réparation. Ces systèmes utilisent une
               courroie segmentée en acier reliant des pignons primaires et
               secondaires, permettant un ajustement continu des rapports.
@@ -145,7 +145,7 @@ const Page = () => {
             </div>
             <div className="md:w-1/2 ">
               <Image
-                className="rounded-[8px] h-[565px] mx-auto MB5 MT5"
+                className="rounded-[8px] h-[545px] mx-auto MB5 MT5"
                 src={repa4}
                 alt=""
               />
@@ -172,7 +172,7 @@ const Page = () => {
                 <strong>des boîtes Multitronic</strong>
                 (01J/0AN ou 0AW).
               </p>
-              <div className="mt-8">
+              <div className="mt-5">
                 <ContactButton />
               </div>
             </div>

@@ -24,7 +24,7 @@ const Page = () => {
             </h2>
           </div>
         </div>
-        <div className="md:flex  pb-24 gap-14">
+        <div className="md:flex  pb-36 gap-14">
           <div className="md:w-1/2">
             <video
               className="rounded-[8px]"

@@ -80,7 +80,7 @@ const Page = () => {
                 <p>{part.excerpt}...</p>
 
                 <Link href={`/articles/${part.title}`}>
-                  <button className="text-[14px] text-gray-500">
+                  <button className="text-[14px] text-[#2C80EF]">
                     Lire plus...
                   </button>
                 </Link>

@@ -87,7 +87,7 @@ const Page = () => {
           </div>
           <div className="md:w-1/3 ">
             <video
-              className="ms-auto  w-full h-[520px] object-cover MT5"
+              className="ms-auto  w-full h-[520px] object-cover MT5 rounded-md"
               src="/images/vid2.mp4"
               autoPlay
               muted

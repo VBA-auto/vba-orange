@@ -24,7 +24,7 @@ const Page = () => {
       </div>
       <div id="main" className="container mx-auto">
         <div className="md:flex gap-14 items-stretch">
-          <div className="md:w-1/2 ">
+          <div className="md:w-1/2">
             <div className="">
               <h1 className="titlesFonts mb-2">Diagnostic mécanique</h1>
               <p className="text-justify mb-2 paragraph">
@@ -40,12 +40,12 @@ const Page = () => {
                 Ces contrôles nous aident à évaluer l&apos;état de la boîte et à
                 estimer les réparations. Si ces premiers tests ne suffisent pas
                 à identifier les problèmes, nous procédons à des inspections
-                plus poussées, comme le démontage de la boîte. <br /> nous
-                procédons à des inspections plus poussées, comme le démontage de
-                la boîte.
+                plus poussées, comme le démontage de la boîte. <br /> Nous
+                effectuons des contrôles complémentaires, comme le démontage
+                caisson.
               </p>
             </div>
-            <div className="">
+            <div className="mt-5">
               <ContactButton />
             </div>
           </div>
@@ -53,7 +53,7 @@ const Page = () => {
             <Image
               width={600}
               height={200}
-              className="rounded-[8px] md:h-[360px]"
+              className="rounded-[8px] md:h-[350px]"
               src={Diag2}
               alt=""
             />
@@ -83,7 +83,7 @@ const Page = () => {
                 secrets&apos; de chaque système est indispensable afin de bien
                 cerner le problème. Vous trouverez dans ce lien un récapitulatif
                 des codes défauts :{" "}
-                <Link className="text-[#f1b04e]" href="/aide-en-ligne">
+                <Link className="text-[#2C80EF]" href="/aide-en-ligne">
                   https://laboiteauto.com/aide-en-ligne.
                 </Link>
               </p>
@@ -134,7 +134,7 @@ const Page = () => {
             l&apos;embrayage (simple ou double), le bloc de contrôle
             hydraulique, les solénoïdes de pression, les synchros…etc. Il faut
             bien connaître la boîte sur laquelle on va réaliser le diagnostic:{" "}
-            <Link className="text-[#f1b04e]" href="/type-de-bva">
+            <Link className="text-[#2C80EF]" href="/type-de-bva">
               https://laboiteauto.com/type-de-bva.
             </Link>{" "}
             Deux actions sont essentielles pour un diagnostic précis :
