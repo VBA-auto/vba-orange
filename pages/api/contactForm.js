@@ -2,11 +2,11 @@ import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   try {
-    const { email, phone, name, message } = req.body;
+    const { email, phone, name, message, immatriculation } = req.body;
 
     const transporter = nodemailer.createTransport({
       // service: "gmail",
-      host: "mail.laboiteauto.com",
+      host: "laboiteauto.com",
       port: 465,
       secure: true,
       auth: {
@@ -19,7 +19,7 @@ export default async function handler(req, res) {
       from: email,
       to: "contact@laboiteauto.com",
       subject: "Nouveau message de contact@laboiteauto.com",
-      text: `Un utilisateur a rempli le formulaire sur le site https://contact@laboiteauto.com/ :\n\nEmail: ${email}\n\nTéléphone: ${phone}\n\nNom et prénom: ${name}\n\nMessage: ${message}`,
+      text: `Un utilisateur a rempli le formulaire sur le site https://contact@laboiteauto.com/ :\n\nEmail: ${email}\n\nTéléphone: ${phone}\n\nNom et prénom: ${name}\n\nMessage: ${message} \n\n immatriculation:${immatriculation}`,
     };
 
     await transporter.sendMail(mailOptions);
