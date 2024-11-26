@@ -6,21 +6,21 @@ export default async function handler(req, res) {
 
     const transporter = nodemailer.createTransport({
       // service: "gmail",
-      host: "parallelisme.fr",
+      host: "contact@laboiteauto.com",
       port: 465,
       secure: true,
       auth: {
-        user: "contact@parallelisme.fr",
-        pass: "Noroc007//",
+        user: "contact@laboiteauto.com",
+        pass: "Test008//@@",
       },
     });
 
     const mailOptions = {
       from: email,
-      to: "contact@parallelisme.fr",
+      to: "contact@laboiteauto.com",
       // to: "contact@sos-enlevement-epave.fr",
-      subject: "Nouveau message de parallelisme.fr",
-      text: `Un utilisateur a rempli le formulaire sur le site https://parallelisme.fr/ :\n\nEmail: ${email}\n\nTéléphone: ${phone}\n\nNom et prénom: ${name}\n\nMessage: ${message}`,
+      subject: "Nouveau message de contact@laboiteauto.com",
+      text: `Un utilisateur a rempli le formulaire sur le site https://contact@laboiteauto.com/ :\n\nEmail: ${email}\n\nTéléphone: ${phone}\n\nNom et prénom: ${name}\n\nMessage: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);

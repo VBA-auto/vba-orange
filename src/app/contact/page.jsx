@@ -30,26 +30,26 @@ export default function Contact() {
     console.log(formData);
     e.preventDefault();
 
-    // try {
-    //   const response = await fetch("/api/contactForm", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(formData),
-    //   });
+    try {
+      const response = await fetch("/api/contactForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    //   if (response.ok) {
-    //     setIsOk(true);
-    //   } else {
-    //     const errorMessage = await response.text();
-    //     console.error(`Error: ${response.status} - ${errorMessage}`);
-    //     setIsError(true);
-    //   }
-    // } catch (error) {
-    //   console.error("Error sending the form:", error);
-    //   setIsError(true);
-    // }
+      if (response.ok) {
+        setIsOk(true);
+      } else {
+        const errorMessage = await response.text();
+        console.error(`Error: ${response.status} - ${errorMessage}`);
+        setIsError(true);
+      }
+    } catch (error) {
+      console.error("Error sending the form:", error);
+      setIsError(true);
+    }
   };
 
   return (
