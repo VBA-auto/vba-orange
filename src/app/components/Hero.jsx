@@ -35,7 +35,7 @@ const Hero = () => {
                 autoPlay
                 loop
                 muted
-                className="myVideo rounded-md hidden md:block video-3d"
+                className="myVideo rounded-md md:block video-3d"
               >
                 <source src="/images/video.webm" type="video/webm" />
               </video>
@@ -95,6 +95,13 @@ const Hero = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="mb-32 md:mb-0">
+            <Link href="/aide-en-ligne">
+              <button className="px-5 text-[15px] py-2 border border-[#2C80EF] bg-[#fff]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md block sm:hidden mx-auto mt-5">
+                Aide en ligne
+              </button>
+            </Link>
           </div>
         </div>
       </div>

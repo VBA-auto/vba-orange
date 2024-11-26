@@ -1,14 +1,12 @@
-"use client";
 import Head from "next/head";
 import Image from "next/image";
-import React, { useEffect } from "react";
 import diag1 from "../../../public/images/vid1.png";
 import ContactButton from "../components/ContactButton";
 import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
       </Head>
@@ -16,7 +14,7 @@ const Page = () => {
         <Breadcrumb />
       </div>
       <div id="main" className="container mx-auto">
-        <div className="md:flex gap-14">
+        <div className="flex gap-14 items-stretch flex-col-reverse md:flex-row">
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Pourquoi vidanger sa BVA ?</h1>
             <p className="text-justify mb-2 paragraph">
@@ -85,7 +83,7 @@ const Page = () => {
               508, Citroën, Opel, Renault, Volvo, Mini.
             </p>
           </div>
-          <div className="md:w-1/3 ">
+          <div className="md:w-1/3 md:mt-0 mt-12">
             <video
               className="ms-auto  w-full h-[520px] object-cover MT5 rounded-md"
               src="/images/vid2.mp4"

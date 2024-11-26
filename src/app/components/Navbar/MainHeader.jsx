@@ -1,7 +1,7 @@
 // Main header for layout
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import NavbarItems from "./NavbarItems";
 import MegaMenu from "./MegaMenu";
@@ -10,6 +10,25 @@ import Link from "next/link";
 const MainHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMegaMenu, setOpenMegaMenu] = useState(null);
+  const mobileMenuRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (
+      mobileMenuRef.current &&
+      !mobileMenuRef.current.contains(event.target)
+    ) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  // Add and remove event listeners for clicks
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   const navItems = [
     { label: "Accueil", href: "/" },
@@ -85,9 +104,12 @@ const MainHeader = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 w-full z-[99999]">
+    <header className="bg-white shadow-md sticky top-0 w-full z-[99999] px-5 md:px-0">
       <div className="container mx-auto">
-        <nav className="max-w-7xl mx-auto flex items-center justify-between py-2">
+        <nav
+          className="max-w-7xl mx-auto flex items-center justify-between py-2"
+          ref={mobileMenuRef}
+        >
           <div className="md:w-1/4 text-lg font-bold">
             <Link href="/">
               <Image

@@ -1,12 +1,10 @@
-"use client";
 import Head from "next/head";
-import React, { useEffect } from "react";
 import Breadcrumb from "../components/BreadCumb";
 import ContactButton from "../components/ContactButton";
 
 const Page = () => {
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}

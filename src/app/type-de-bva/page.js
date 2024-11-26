@@ -1,4 +1,3 @@
-"use client";
 import Head from "next/head";
 
 import CascadingDropdown from "../components/checkBVA";
@@ -6,7 +5,7 @@ import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
   return (
-    <section className="checkBVACont">
+    <section className="checkBVACont px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
@@ -34,7 +33,7 @@ const Page = () => {
               loop
             ></video>
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 md:mt-0 mt-12">
             <div className="compareParent">
               <CascadingDropdown />
             </div>

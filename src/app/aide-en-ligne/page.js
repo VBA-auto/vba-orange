@@ -58,7 +58,7 @@ const Page = () => {
   };
 
   return (
-    <section>
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
       </Head>

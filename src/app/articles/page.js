@@ -31,7 +31,7 @@ const Page = () => {
   // }, []);
 
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}

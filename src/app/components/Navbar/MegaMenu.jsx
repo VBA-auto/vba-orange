@@ -5,7 +5,7 @@ import React from "react";
 const MegaMenu = ({ childrenItems }) => {
   return (
     <div className="container">
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-14 border w-[600px] rounded-md bg-white shadow-md mt-2 p-4 grid grid-cols-2 gap-4">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-14 border md:w-[600px] w-full rounded-md bg-white shadow-md mt-2 p-4 grid md:grid-cols-2 grid-cols-1 gap-4">
         {childrenItems.map((child, index) => (
           <div key={index} className="border rounded-md">
             <Link href={child.href || "#"}>

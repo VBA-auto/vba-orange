@@ -1,4 +1,3 @@
-"use client";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
@@ -10,7 +9,7 @@ import ContactButton from "../components/ContactButton";
 
 const Page = () => {
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
@@ -19,7 +18,7 @@ const Page = () => {
         <Breadcrumb />
       </div>
       <div id="main" className="container mx-auto">
-        <div className="md:flex gap-14">
+        <div className="flex gap-14 items-stretch flex-col-reverse md:flex-row">
           <div className="md:w-1/2 ">
             <h1 className="titlesFonts">Spécificités techniques</h1>
             <p className="text-justify mb-2 paragraph">
@@ -51,7 +50,7 @@ const Page = () => {
           <div className="md:w-1/2">
             <Image className="rounded-[8px] MB5" src={mont2} alt="" />
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 md:mt-0 mt-12">
             <h1 className="titlesFonts">Particularités</h1>
             <p className="text-justify mb-2 paragraph">
               Les boîtes automatiques{" "}

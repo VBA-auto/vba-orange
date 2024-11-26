@@ -39,7 +39,7 @@ const ArticlePage = ({ params }) => {
     fetchArticle();
   }, [params.title]);
   return (
-    <section className="article-container">
+    <section className="article-container px-5 md:px-0">
       {article ? (
         <>
           <div className="relative mx-auto">
@@ -58,7 +58,7 @@ const ArticlePage = ({ params }) => {
             id="main"
             className="container mx-auto min-h-screen  items-center"
           >
-            <div className="md:flex gap-5 pb-16 pt-24">
+            <div className="md:flex gap-5 pb-16 md:pt-24">
               <div className="md:w-[70%]">
                 {/* <img className="" src={article.image} alt="" /> */}
                 <h1 className="titlesFonts my-3 capitalize">{article.title}</h1>
@@ -67,7 +67,7 @@ const ArticlePage = ({ params }) => {
                   <ContactButton />
                 </div>
               </div>
-              <div className="md:w-[30%] md:h-[70vh] sticky top-20">
+              <div className="md:w-[30%] md:h-[70vh] sticky top-20 md:mt-0 mt-12">
                 <div className="border md:h-[80vh] overflow-y-scroll p-3 articleTab">
                   <h1 className="mb-3">More article</h1>
                   {related?.map((related, index) => (

@@ -19,7 +19,7 @@ const Page = () => {
   }, []);
 
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
@@ -77,7 +77,11 @@ const Page = () => {
                           className="rounded-md w-full  mx-auto"
                         />
                         <p className="py-4 text-justify">
-                          {selectedPart.description}
+                          <p
+                            dangerouslySetInnerHTML={{
+                              __html: selectedPart.description,
+                            }}
+                          />
                         </p>
                         <div className="text-center">
                           <Link href={part.orderLink}>

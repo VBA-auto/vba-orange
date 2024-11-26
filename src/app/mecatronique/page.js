@@ -1,15 +1,12 @@
-"use client";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect } from "react";
-import Footer from "../components/Footer";
+
 import Breadcrumb from "../components/BreadCumb";
 import ContactButton from "../components/ContactButton";
 
 const Page = () => {
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
@@ -18,7 +15,7 @@ const Page = () => {
         <Breadcrumb />
       </div>
       <div id="main" className="container mx-auto">
-        <div className="md:flex  gap-14">
+        <div className="flex gap-14 items-stretch flex-col-reverse md:flex-row">
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Les différents types</h1>
             <p className="text-justify my-2 paragraph">
@@ -117,7 +114,7 @@ const Page = () => {
               alt=""
             />
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 md:mt-0 mt-12">
             <h1 className="titlesFonts">Réparation du mécatronique </h1>
             <p className="text-justify my-2 paragraph">
               Réparer un mécatronique peut se faire de plusieurs façons. Il est
@@ -140,7 +137,7 @@ const Page = () => {
           </div>
         </div>
         <span className="separator"></span>
-        <div className="md:flex flexDirection gap-14 pb-16">
+        <div className="flex flexDirection gap-14 pb-16 flex-col-reverse md:flex-row">
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Calibrage</h1>
             <p className="text-justify my-2 paragraph">

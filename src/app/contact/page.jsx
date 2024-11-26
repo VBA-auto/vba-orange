@@ -53,7 +53,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="pb-8">
+    <section className="pb-8 px-5 md:px-0">
       <Head>
         <title>auto trans</title>
         <meta name="description" content={PageDescription} />
@@ -64,8 +64,8 @@ export default function Contact() {
       </div>
 
       <div id="main" className="container mx-auto pb-24">
-        <div className="md:flex flexDirection MT5 MB5">
-          <div className="md:w-1/2">
+        <div className="flex flexDirection MT5 MB5 flex-col-reverse md:flex-row">
+          <div className="md:w-1/2 md:mt-0 mt-12 ">
             <p className="mb-5 font-semibold">Information</p>
             <div className="">
               <p>VBA</p>

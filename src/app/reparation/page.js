@@ -1,9 +1,5 @@
-"use client";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect } from "react";
-import Footer from "../components/Footer";
 import repa2 from "../../../public/images/repara2.png";
 import repa3 from "../../../public/images/repara3.png";
 import repa4 from "../../../public/images/repara4.jpeg";
@@ -12,7 +8,7 @@ import ContactButton from "../components/ContactButton";
 
 const Page = () => {
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
       </Head>
@@ -20,7 +16,7 @@ const Page = () => {
         <Breadcrumb />
       </div>
       <div id="main" className="container mx-auto">
-        <div className="md:flex  gap-14">
+        <div className="flex gap-14 items-stretch flex-col-reverse md:flex-row">
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Les boites CVT à variation continue</h1>
             <p className="text-justify mb-2 paragraph">
@@ -57,7 +53,7 @@ const Page = () => {
           <div className="md:w-1/2">
             <Image className="rounded-[8px]" src={repa2} alt="" />
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 md:mt-0 mt-12">
             <h1 className="titlesFonts">Les boites robotisées</h1>
             <p className="text-justify mb-5 paragraph">
               Les boîtes robotisées ou pilotées, comme
@@ -103,13 +99,13 @@ const Page = () => {
               <ContactButton />
             </div>
           </div>
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 md:mt-0 mt-12">
             <Image className="rounded-[8px] MB5" src={repa3} alt="" />
           </div>
         </div>
         <span className=" separator"></span>
         <div className=" pb-16">
-          <h1 className="titlesFonts text-center mb-5">
+          <h1 className="titlesFonts md:text-center mb-5">
             {" "}
             Les boites à convertisseur de couple hydraulique
           </h1>
@@ -143,7 +139,7 @@ const Page = () => {
                 .
               </p>
             </div>
-            <div className="md:w-1/2 ">
+            <div className="md:w-1/2 md:my-0 my-12">
               <Image
                 className="rounded-[8px] h-[545px] mx-auto MB5 MT5"
                 src={repa4}

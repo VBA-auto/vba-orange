@@ -1,10 +1,6 @@
-"use client";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
-import Footer from "../components/Footer";
-import BG from "../../../public/images/diagnostic.jpeg";
 import Diag1 from "../../../public/images/diag3.jpeg";
 import Diag2 from "../../../public/images/diag1.jpeg";
 import Diag3 from "../../../public/images/diag2.png";
@@ -13,7 +9,7 @@ import ContactButton from "../components/ContactButton";
 
 const Page = () => {
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
@@ -23,7 +19,7 @@ const Page = () => {
         <Breadcrumb />
       </div>
       <div id="main" className="container mx-auto">
-        <div className="md:flex gap-14 items-stretch">
+        <div className="flex gap-14 items-stretch flex-col-reverse md:flex-row">
           <div className="md:w-1/2">
             <div className="">
               <h1 className="titlesFonts mb-2">Diagnostic mécanique</h1>
@@ -63,14 +59,14 @@ const Page = () => {
         <div className="md:flex flexDirection gap-8">
           <div className="md:w-1/2 flex">
             <Image
-              className="rounded-[8px] h-[220px]"
+              className="rounded-[8px] md:h-[220px] h-[177px]"
               width={600}
               height={400}
               src={Diag3}
               alt=""
             />
           </div>
-          <div className="md:w-1/2 flex flex-col justify-between">
+          <div className="md:w-1/2 flex flex-col justify-between md:mt-0 mt-12">
             <div>
               <h1 className="titlesFonts mb-2">La valise </h1>
               <p className="text-justify mb-2 paragraph">
@@ -91,7 +87,7 @@ const Page = () => {
           </div>
         </div>
         <span className="separator"></span>
-        <div className="md:flex gap-14 items-stretch">
+        <div className="flex gap-14 items-stretch flex-col-reverse md:flex-row">
           <div className="md:w-1/2 flex flex-col justify-between">
             <div>
               <h1 className="titlesFonts mb-2">Voyant tableau de bord</h1>

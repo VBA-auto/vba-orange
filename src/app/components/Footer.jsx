@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="">
               <div className=" p-3">
                 <div className="md:flex justify-between gap-1">
-                  <div className="w-full text-start">
+                  <div className="w-full md:text-start text-center">
                     <p className="text-[14px] text-gray-700">VBA</p>
 
                     <p className="text-[14px] my-[5px] text-gray-700">
@@ -30,11 +30,11 @@ const Footer = () => {
                       77680 ROISSY EN BRIE
                     </p>
                   </div>
-                  <div className="w-full">
+                  <div className="w-full my-5 md:my-0">
                     <div className="text-[15px] footnav">
                       <Link
                         href="callto:0145147254"
-                        className=" navLinksFooter md:text-[15px] text-[11px] text-gray-700"
+                        className=" navLinksFooter md:text-[14px] text-[14px] text-gray-700"
                       >
                         01 45 14 72 54
                       </Link>
@@ -105,14 +105,14 @@ const Footer = () => {
                     </div>
                   </div>
 
-                  <div className="w-full ">
+                  <div className="w-full mt-6 md:mt-0">
                     <div className="">
-                      <div className="text-gray-700 text-end  text-[14px]">
+                      <div className="text-gray-700 md:text-end text-center  text-[14px] ">
                         <Link className=" " href="">
                           © 2024 All Rights Reserved
                         </Link>
                       </div>
-                      <div className="text-gray-700 text-end my-[5px] ">
+                      <div className="text-gray-700 md:text-end text-center  my-[5px] ">
                         <Link
                           className="text-[14px]"
                           href="https://clickandtrust.fr/"
@@ -121,7 +121,7 @@ const Footer = () => {
                           Développé par Click & Trust
                         </Link>
                       </div>
-                      <div className="text-gray-700 text-end text-[14px]">
+                      <div className="text-gray-700 md:text-end text-center  text-[14px]">
                         <Link className="" href="/mention-legales">
                           Mention Legales{" - "}Cookies
                         </Link>

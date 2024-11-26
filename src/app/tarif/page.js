@@ -97,7 +97,7 @@ const Page = () => {
     }
   }, [selectedBrand, selectedModel, modelsData]);
   return (
-    <section className="">
+    <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
         {/* <meta name="description" content={pageDescription} /> */}
@@ -143,14 +143,14 @@ const Page = () => {
             </p>
           </div>
           <div className="mt-12">
-            <div className="md:flex">
-              <div className="w-1/2">
-                <p className="text-justify mb-2 paragraph">
+            <div className="flex">
+              <div className="md:w-1/2 w-3/4">
+                <p className="md:text-justify mb-2 paragraph">
                   Exemple de prix sur certain modèle :
                 </p>
               </div>
               {openFilterDiv && (
-                <div className="w-1/2 text-end">
+                <div className="md:w-1/2 w-1/5 text-end ">
                   <button className="" onClick={closeFilter}>
                     ✕
                   </button>
@@ -159,7 +159,7 @@ const Page = () => {
             </div>
 
             <div className="md:flex gap-5">
-              <div className="md:w-1/3">
+              <div className="md:w-1/3 md:mb-0 mb-5">
                 <button
                   className="border rounded-md w-full py-3"
                   onClick={openFilter}
@@ -174,7 +174,7 @@ const Page = () => {
                     <div className="w-full">
                       <div className="">
                         <div className="md:flex gap-5">
-                          <div className="md:w-1/2 ">
+                          <div className="md:w-1/2 md:mb-0 mb-5">
                             <div className="labandsel2">
                               <label className="formLabel">
                                 <p>Marque:</p>
