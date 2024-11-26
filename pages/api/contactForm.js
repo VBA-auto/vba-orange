@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
     const transporter = nodemailer.createTransport({
       // service: "gmail",
-      host: "laboiteauto.com",
+      host: "mail.laboiteauto.com",
       port: 465,
       secure: true,
       auth: {
@@ -18,7 +18,6 @@ export default async function handler(req, res) {
     const mailOptions = {
       from: email,
       to: "contact@laboiteauto.com",
-      // to: "contact@sos-enlevement-epave.fr",
       subject: "Nouveau message de contact@laboiteauto.com",
       text: `Un utilisateur a rempli le formulaire sur le site https://contact@laboiteauto.com/ :\n\nEmail: ${email}\n\nTéléphone: ${phone}\n\nNom et prénom: ${name}\n\nMessage: ${message}`,
     };
