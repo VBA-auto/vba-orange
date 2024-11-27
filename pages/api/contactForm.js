@@ -12,8 +12,8 @@ export default async function handler(req, res) {
     // Configure nodemailer transporter
     const transporter = nodemailer.createTransport({
       host: "o2switch.net",
-      port: 587,
-      secure: false,
+      port: 465,
+      secure: true,
       auth: {
         user: "contact@laboiteauto.com",
         pass: "Test008//@@",
