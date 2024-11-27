@@ -1,10 +1,11 @@
 "use client";
+import Breadcrumb from "@/app/components/BreadCumb";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Breadcrumb from "../components/BreadCumb";
-
+const pageDescription =
+  "Nous avons en stock des poètes de vitesse automatique d'occasion et reconditionné en échange standard";
 const Page = () => {
   const [parts, setParts] = useState([]);
   const [selectedPart, setSelectedPart] = useState(null);
@@ -25,8 +26,17 @@ const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
+        <title>vente boite automatique occasion et reconditionnées</title>
+        <meta name="description" content={pageDescription} />
+        <meta
+          name="title"
+          content="vente boite automatique occasion et reconditionnées"
+        />
       </Head>
+      <div className="hidden">
+        <h1>boite automatique occasion </h1>
+        <h1>boite automatique occasion Renault</h1>
+      </div>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>

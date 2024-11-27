@@ -1,11 +1,9 @@
 "use client";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import TarifFilter from "../components/tarifFilter";
-import Image from "next/image";
 import Breadcrumb from "../components/BreadCumb";
-
+const pageDescription =
+  "Tous les tarifs pour les réparation et les vidanges de boite automatique selon votre modèle de véhicule. ";
 const Page = () => {
   const [openFilterDiv, setOpenfilterDiv] = useState(false);
 
@@ -99,8 +97,12 @@ const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <title>tarif réparation vidange boite automatique</title>
+        <meta
+          name="title"
+          content="tarif réparation vidange boite automatique"
+        />
+        <meta name="description" content={pageDescription} />
       </Head>
 
       <div className="container mx-auto py-12">

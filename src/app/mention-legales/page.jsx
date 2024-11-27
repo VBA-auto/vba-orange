@@ -1,20 +1,17 @@
-"use client";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect } from "react";
-import Footer from "../components/Footer";
+
 import Breadcrumb from "../components/BreadCumb";
 
 const Page = () => {
   return (
     <section className="">
       <Head>
-        <title>Automatic Transformation</title>
+        <title>boite automatique mention légales</title>
         {/* <meta name="description" content={pageDescription} /> */}
       </Head>
 
-      <div id="main" className="container mx-auto">
+      <div id="main" className="container mx-auto mb-16">
         <div className="mt-16 mb-8">
           <Breadcrumb />
         </div>

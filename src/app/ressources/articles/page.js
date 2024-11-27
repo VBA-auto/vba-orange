@@ -1,11 +1,11 @@
 "use client";
+import Breadcrumb from "@/app/components/BreadCumb";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Breadcrumb from "../components/BreadCumb";
-
+const pageDescription =
+  "Vous trouverez sur le blog avec tous les articles par véhicule sur le thème des boites automatiques, quelle boite équipe quel véhicule";
 const Page = () => {
   const [parts, setparts] = useState([]);
 
@@ -17,43 +17,17 @@ const Page = () => {
       });
   }, []);
 
-  // useEffect(() => {
-  //   const scrollToMain = () => {
-  //     const mainSection = document.getElementById("main");
-  //     if (mainSection) {
-  //       mainSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   };
-
-  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
-
-  //   return () => clearTimeout(scrollTimeout);
-  // }, []);
-
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <title>boite automatique blog</title>
+        <meta name="title" content="boite automatique blog" />
+        <meta name="description" content={pageDescription} />
       </Head>
-      {/* <div className="">
-        <div className="absolute w-full  mx-auto min-h-screen  bg-black inset-0 backdrop-filter backdrop-blur-xs  bg-opacity-25"></div>
-      </div> */}
+
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
-      {/* <div className="relative mx-auto">
-        <Image
-          width={400}
-          height={400}
-          className="w-full md:h-screen videoOverlay relative"
-          src="/images/carBlog.jpg"
-          alt=""
-        />
-        <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
-          Articles
-        </h1>
-      </div> */}
       <div id="main" className="container mx-auto">
         <div className=" pb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -62,7 +36,7 @@ const Page = () => {
                 key={index}
                 className="border p-4 rounded-md bg-white shadow-md"
               >
-                <Link href={`/articles/${part.title}`}>
+                <Link href={`/ressources/articles/${part.title}`}>
                   <Image
                     width={400}
                     height={400}
@@ -71,7 +45,7 @@ const Page = () => {
                     className="rounded-md w-full mb-5"
                   />
                 </Link>
-                <Link href={`/articles/${part.title}`}>
+                <Link href={`/ressources/articles/${part.title}`}>
                   {" "}
                   <h2 className="text-lg  mt-2 text-gray-700 capitalize font-medium">
                     {part.title}
@@ -79,7 +53,7 @@ const Page = () => {
                 </Link>
                 <p>{part.excerpt}...</p>
 
-                <Link href={`/articles/${part.title}`}>
+                <Link href={`/ressources/articles/${part.title}`}>
                   <button className="text-[14px] text-[#2C80EF]">
                     Lire plus...
                   </button>

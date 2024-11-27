@@ -5,6 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 
+const pageDescription =
+  "Spécialistes en boite de vitesses automatiques, mécatronique et calculateurs ";
+
 const Hero = () => {
   const settings = {
     className: "center",
@@ -20,14 +23,26 @@ const Hero = () => {
   return (
     <section className="Hero">
       <Head>
-        <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <title>Spécialiste en boite de vitesse automatique et boite EDC</title>
+        <meta name="description" content={pageDescription} />
       </Head>
-
+      <div className="hidden">
+        <h1>spécialiste expert boite automatique</h1>
+        <h1>boite automatique Renault EDC</h1>
+        <h1>mecatronique </h1>
+        <h2>boite automatique EDC Captur</h2>
+        <h2>boite automatique EDC Clio 4</h2>
+        <h2>boite automatique EDC Megane 3</h2>
+        <h2>boite automatique EDC Scenic 3</h2>
+        <h2>boite automatique EDC Clio RS</h2>
+        <h2>Tiguan</h2>
+        <h2>Audi</h2>
+        <h2>Golf</h2>
+        <h2>DSG7</h2>
+        <h2>DSG6</h2>
+      </div>
       <div className="container mx-auto py-12 text-center">
         <div className="">
-          {/* <div className="bg-black absolute  text-center top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50"> */}
-
           <div className=" ">
             <div className="w-3/4 mx-auto relative">
               <video

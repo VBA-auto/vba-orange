@@ -1,15 +1,29 @@
+import Breadcrumb from "@/app/components/BreadCumb";
+import ContactButton from "@/app/components/ContactButton";
 import Head from "next/head";
 import Image from "next/image";
-import diag1 from "../../../public/images/vid1.png";
-import ContactButton from "../components/ContactButton";
-import Breadcrumb from "../components/BreadCumb";
-
+const pageDescription = "";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
+        <title>vidange et entretien boite de vitesses automatique</title>
+        <meta
+          name="description"
+          content="Nous réalisons l'entretien et la vidange complète des boîtes de vitesse automatique avec joint de carter crépine et cartouche externe avec l'huile homologuée constructeur"
+        />
+        <meta
+          name="title"
+          content="vidange et entretien boite de vitesses automatique"
+        />
       </Head>
+      <div className="hidden">
+        <h1>Diagnostic boite EDC Renault Captur</h1>
+        <h1>Diagnostic boite EDC Renault Clio 4</h1>
+        <h1>Diagnostic boite EDC Renault Megane 3</h1>
+        <h1>Diagnostic boite EDC Renault Scenic 3</h1>
+        <h1>Diagnostic boite EDC Renault CLio RS</h1>
+      </div>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
@@ -39,7 +53,13 @@ const Page = () => {
             </div>
           </div>
           <div className="md:w-1/2">
-            <Image className="rounded-[8px] MB5" src={diag1} alt="" />
+            <Image
+              width={600}
+              height={200}
+              className="rounded-[8px] MB5"
+              src="/images/vid1.png"
+              alt=""
+            />
           </div>
         </div>
         <span className="separator"></span>

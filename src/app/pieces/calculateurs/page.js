@@ -1,11 +1,11 @@
 "use client";
+import Breadcrumb from "@/app/components/BreadCumb";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Breadcrumb from "../components/BreadCumb";
-
+const pageDescription =
+  "Nous vendons, reconditionnons et réparons les calculateurs de boites automatique EDC Getrag 6DCT250 (DC4) Renault Captur Megane scenic clio 4 ";
 const Page = () => {
   const [parts, setparts] = useState([]);
   const [selectedPart, setSelectedPart] = useState(null);
@@ -21,9 +21,23 @@ const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <title>vente calculateur Renault EDC boite automatique</title>
+        <meta
+          name="title"
+          content="vente calculateur Renault EDC boite automatique"
+        />
+        <meta name="description" content={pageDescription} />
       </Head>
+      <div className="hidden">
+        <h1>Calculateur boite automatique EDC Renault</h1>
+        <h1>Calculateur Volkswagen</h1>
+        <h2>Calculateur Renault Scenic</h2>
+        <h2>Calculateur Renault Mégane EDC</h2>
+        <h2>Calculateur Renault Captur EDC</h2>
+        <h2>Calculateur Renault Clio 4 EDC</h2>
+        <h2>310321488R </h2>
+        <h2>310321517R</h2>
+      </div>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>

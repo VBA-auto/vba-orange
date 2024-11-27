@@ -1,17 +1,26 @@
 import Head from "next/head";
 import Image from "next/image";
-import repa2 from "../../../public/images/repara2.png";
-import repa3 from "../../../public/images/repara3.png";
-import repa4 from "../../../public/images/repara4.jpeg";
-import Breadcrumb from "../components/BreadCumb";
-import ContactButton from "../components/ContactButton";
-
+import Breadcrumb from "@/app/components/BreadCumb";
+import ContactButton from "@/app/components/ContactButton";
+const pageDescription =
+  "Nous réparons, les boîtes de vitesse automatiques à convertisseur de couple, double embrayage, variation, continue et boîte robotisée";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
+        <title>réparation boite de vitesse automatique</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="title" content="réparation boite de vitesse automatique" />
       </Head>
+      <div className="hidden">
+        <h1>reparation boite automatique </h1>
+        <h1>reparation boite automatique Renault</h1>
+        <h2>reparation boite automatique EDC Renault Captur</h2>
+        <h2>reparation boite automatique EDC Renault Clio 4</h2>
+        <h2>reparation boite automatique EDC Renault Megane 3</h2>
+        <h2>reparation boite automatique EDC Renault Scenic 3</h2>
+        <h2>reparation boite automatique EDC Renault CLio RS</h2>
+      </div>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
@@ -51,7 +60,13 @@ const Page = () => {
         <span className=" separator"></span>
         <div className="md:flex flexDirection gap-14">
           <div className="md:w-1/2">
-            <Image className="rounded-[8px]" src={repa2} alt="" />
+            <Image
+              width={600}
+              height={200}
+              className="rounded-[8px]"
+              src="/images/repara2.png"
+              alt=""
+            />
           </div>
           <div className="md:w-1/2 md:mt-0 mt-12">
             <h1 className="titlesFonts">Les boites robotisées</h1>
@@ -100,7 +115,13 @@ const Page = () => {
             </div>
           </div>
           <div className="md:w-1/2 md:mt-0 mt-12">
-            <Image className="rounded-[8px] MB5" src={repa3} alt="" />
+            <Image
+              width={600}
+              height={200}
+              className="rounded-[8px] MB5"
+              src="/images/repara3.png"
+              alt=""
+            />
           </div>
         </div>
         <span className=" separator"></span>
@@ -141,8 +162,10 @@ const Page = () => {
             </div>
             <div className="md:w-1/2 md:my-0 my-12">
               <Image
+                width={600}
+                height={200}
                 className="rounded-[8px] h-[545px] mx-auto MB5 MT5"
-                src={repa4}
+                src="/images/repara4.jpeg"
                 alt=""
               />
             </div>

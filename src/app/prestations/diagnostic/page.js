@@ -1,20 +1,29 @@
+import Breadcrumb from "@/app/components/BreadCumb";
+import ContactButton from "@/app/components/ContactButton";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Diag1 from "../../../public/images/diag3.jpeg";
-import Diag2 from "../../../public/images/diag1.jpeg";
-import Diag3 from "../../../public/images/diag2.png";
-import Breadcrumb from "../components/BreadCumb";
-import ContactButton from "../components/ContactButton";
-
+const pageDescription =
+  "diagnostics de boite de vitesses automatiques. diagnostic sur la valise avec controle de la boite, du mecatronique, de l embrayage et des disques de friction";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <title>diagnostic boite de vitesse automatique</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="title" content="diagnostic boite de vitesse automatique" />
+        <meta
+          title="description"
+          content="diagnostic boite de vitesse automatique"
+        />
       </Head>
-
+      <div className="hidden">
+        <h1>Diagnostic boite EDC Renault Captur</h1>
+        <h1>Diagnostic boite EDC Renault Clio 4</h1>
+        <h1>Diagnostic boite EDC Renault Megane 3</h1>
+        <h1>Diagnostic boite EDC Renault Scenic 3</h1>
+        <h1>Diagnostic boite EDC Renault CLio RS</h1>
+      </div>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
@@ -50,7 +59,7 @@ const Page = () => {
               width={600}
               height={200}
               className="rounded-[8px] md:h-[350px]"
-              src={Diag2}
+              src="/images/diag1.jpeg"
               alt=""
             />
           </div>
@@ -62,7 +71,7 @@ const Page = () => {
               className="rounded-[8px] md:h-[220px] h-[177px]"
               width={600}
               height={400}
-              src={Diag3}
+              src="/images/diag2.png"
               alt=""
             />
           </div>
@@ -112,7 +121,7 @@ const Page = () => {
               className="rounded-[8px] MB5"
               width={700}
               height={400}
-              src={Diag1}
+              src="/images/diag3.jpeg"
               alt=""
             />
           </div>

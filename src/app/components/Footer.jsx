@@ -123,7 +123,11 @@ const Footer = () => {
                       </div>
                       <div className="text-gray-700 md:text-end text-center  text-[14px]">
                         <Link className="" href="/mention-legales">
-                          Mention Legales{" - "}Cookies
+                          Mention Legales
+                        </Link>
+                        <span> - </span>
+                        <Link className="" href="/cookies">
+                          Cookies
                         </Link>
                       </div>
                     </div>

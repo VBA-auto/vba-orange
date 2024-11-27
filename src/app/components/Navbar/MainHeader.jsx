@@ -38,19 +38,27 @@ const MainHeader = () => {
         {
           label: "Diagnostic",
           image: "/images/diagnostic.jpeg",
-          href: "/diagnostic",
+          href: "/prestations/diagnostic",
         },
         {
           label: "Réparation BVA",
           image: "/images/repa.webp",
-          href: "/reparation",
+          href: "/prestations/reparation",
         },
-        { label: "Vidange BVA", image: "/images/vid.webp", href: "/vidange" },
-        { label: "Montage BVA", image: "/images/mont.webp", href: "/montage" },
+        {
+          label: "Vidange BVA",
+          image: "/images/vid.webp",
+          href: "/prestations/vidange",
+        },
+        {
+          label: "Montage BVA",
+          image: "/images/mont.webp",
+          href: "/prestations/montage",
+        },
         {
           label: "Mécatronique",
           image: "/images/meca.webp",
-          href: "/mecatronique",
+          href: "/prestations/mecatronique",
         },
       ],
     },
@@ -60,17 +68,17 @@ const MainHeader = () => {
         {
           label: "Boite automatiques",
           image: "/images/boite.jpeg",
-          href: "/boite-auto",
+          href: "/pieces/boite-auto",
         },
         {
           label: "Calculateurs",
           image: "/images/calculators.png",
-          href: "/calculateurs",
+          href: "/pieces/calculateurs",
         },
         {
           label: "Mécatroniques",
           image: "/images/macreto.jpeg",
-          href: "/pieces-mecatroniques",
+          href: "/pieces/mecatronique",
         },
       ],
     },
@@ -81,22 +89,22 @@ const MainHeader = () => {
         {
           label: "Articles",
           image: "/images/carBlog.jpg",
-          href: "/articles",
+          href: "/ressources/articles",
         },
         {
           label: "Faq",
           image: "/images/faq.png",
-          href: "/faq",
+          href: "/ressources/faq",
         },
         {
           label: "Type de BVA",
           image: "/images/vid1.png",
-          href: "/type-de-bva",
+          href: "/ressources/type-de-bva",
         },
         {
           label: "Aide en ligne",
           image: "/images/aideEn.webp",
-          href: "/aide-en-ligne",
+          href: "/ressources/aide-en-ligne",
         },
       ],
     },
@@ -132,7 +140,7 @@ const MainHeader = () => {
             </ul>
           </div>
           <div className="md:w-1/4 flex justify-end space-x-2">
-            <Link href="/type-de-bva">
+            <Link href="/ressources/aide-en-ligne">
               {" "}
               <button className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block">
                 Type de BVA

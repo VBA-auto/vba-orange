@@ -1,15 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Head from "next/head";
-import { FaPhoneAlt, FaPaperPlane } from "react-icons/fa";
+
 import Breadcrumb from "../components/BreadCumb";
 import Link from "next/link";
-
+const pageDescription =
+  "Contactez nous ici pour prendre rdv en ligne et pour réaliser un diagnostic ou une vidange de votre boite de vitesse";
 export default function Contact() {
-  const PageDescription = "auto trans";
-  const HeadingText = "auto trans";
-
   const [isError, setIsError] = useState(false);
   const [isOk, setIsOk] = useState(false);
 
@@ -55,9 +53,9 @@ export default function Contact() {
   return (
     <section className="pb-8 px-5 md:px-0">
       <Head>
-        <title>auto trans</title>
-        <meta name="description" content={PageDescription} />
-        <meta name="headline" content={HeadingText} />
+        <title>boite automatique contact</title>
+        <meta name="description" content={pageDescription} />
+        <meta name="title" content="boite automatique contact" />
       </Head>
       <div className="container mx-auto py-12">
         <Breadcrumb />

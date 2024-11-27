@@ -1,11 +1,11 @@
 "use client";
+import Breadcrumb from "@/app/components/BreadCumb";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Breadcrumb from "../components/BreadCumb";
-
+const pageDescription =
+  "Nous vendons, reconditionnons et réparons les mécatronique de boites automatique Volgswagen, BMW, Audi et Mercedes ";
 const Page = () => {
   const [parts, setparts] = useState([]);
   const [selectedMeca, setSelectedMeca] = useState(null);
@@ -21,12 +21,19 @@ const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <title>Vente mécatronique boite automatique.</title>
+        <meta name="title" content="Vente mécatronique boite automatique." />
+        <meta name="description" content={pageDescription} />
       </Head>
-      {/* <div className="">
-        <div className="absolute w-full  mx-auto min-h-screen  bg-black inset-0 backdrop-filter backdrop-blur-xs  bg-opacity-25"></div>
-      </div> */}
+      <div className="hidden">
+        <h1>mecatronique Volkswagen</h1>
+        <h1>mecatronique AUDI</h1>
+        <h1>mecatronique Tiguan</h1>
+        <h2>DQ200</h2>
+        <h2>DQ381</h2>
+        <h2>DQ250</h2>
+        <h2>DQ500</h2>
+      </div>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>

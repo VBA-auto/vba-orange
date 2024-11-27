@@ -1,14 +1,19 @@
+import Breadcrumb from "@/app/components/BreadCumb";
+import CascadingDropdown from "@/app/components/checkBVA";
 import Head from "next/head";
-
-import CascadingDropdown from "../components/checkBVA";
-import Breadcrumb from "../components/BreadCumb";
+const pageDescription =
+  "En séléctionnant votre véhicule, la marque, l'année, le modèle vous trouverez la boite automatique correspondante à votre véhicule";
 
 const Page = () => {
   return (
     <section className="checkBVACont px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <title>trouver votre boite automatique par véhicule</title>
+        <meta
+          name="title"
+          content="trouver votre boite automatique par véhicule"
+        />
+        <meta name="description" content={pageDescription} />
       </Head>
       <div className="container mx-auto py-12">
         <Breadcrumb />

@@ -1,13 +1,18 @@
+import Breadcrumb from "@/app/components/BreadCumb";
+import ContactButton from "@/app/components/ContactButton";
 import Head from "next/head";
-import Breadcrumb from "../components/BreadCumb";
-import ContactButton from "../components/ContactButton";
-
+const pageDescription =
+  "Retrouvez ici toutes les questions que vous vous posez sur les boites de vitesses automatiques et vous trouverez vos réponses";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <title>questions fréquentes sur les boite automatique</title>
+        <meta
+          name="title"
+          content="questions fréquentes sur les boite automatique"
+        />
+        <meta name="description" content={pageDescription} />
       </Head>
       <div className="container mx-auto py-12">
         <Breadcrumb />

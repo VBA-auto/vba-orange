@@ -1,16 +1,26 @@
+import Breadcrumb from "@/app/components/BreadCumb";
+import ContactButton from "@/app/components/ContactButton";
 import Head from "next/head";
 import Image from "next/image";
-
-import Breadcrumb from "../components/BreadCumb";
-import ContactButton from "../components/ContactButton";
-
+const pageDescription =
+  "Nous réparons les mécatronique de boîte de vitesse automatique équipée sur les Mercedes, Audi, BMW, Renault et autres véhicules";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <meta
+          name="title"
+          content="Réparation mécatronique, boîte automatique"
+        />
+        <meta name="description" content={pageDescription} />
       </Head>
+      <div className="hidden">
+        <h1>Réparation mécatronique</h1>
+        <h1>Réparation mécatronique Audi</h1>
+        <h1>Réparation mécatronique Renault</h1>
+        <h1>Réparation mécatronique Volkswagen</h1>
+      </div>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>

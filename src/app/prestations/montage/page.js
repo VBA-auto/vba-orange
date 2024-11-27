@@ -1,18 +1,20 @@
+import Breadcrumb from "@/app/components/BreadCumb";
+import ContactButton from "@/app/components/ContactButton";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-
-import mont1 from "../../../public/images/mont1.png";
-import mont2 from "../../../public/images/mont2.png";
-import Breadcrumb from "../components/BreadCumb";
-import ContactButton from "../components/ContactButton";
-
+const pageDescription =
+  "Nous proposons le démontage et le remontage de votre boîte de vitesse automatique automatique";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
         <title>Automatic Transformation</title>
-        {/* <meta name="description" content={pageDescription} /> */}
+        <meta
+          name="title"
+          content="Démontage et remontage de boîte automatique"
+        />
+        <meta name="description" content={pageDescription} />
       </Head>
       <div className="container mx-auto py-12">
         <Breadcrumb />
@@ -42,13 +44,25 @@ const Page = () => {
             </div>
           </div>
           <div className="md:w-1/2">
-            <Image className="rounded-[8px] MB5" src={mont1} alt="" />
+            <Image
+              width={600}
+              height={200}
+              className="rounded-[8px] MB5"
+              src="/images/mont1.png"
+              alt=""
+            />
           </div>
         </div>
         <span className="separator"></span>
         <div className="md:flex flexDirection  gap-14">
           <div className="md:w-1/2">
-            <Image className="rounded-[8px] MB5" src={mont2} alt="" />
+            <Image
+              width={600}
+              height={200}
+              className="rounded-[8px] MB5"
+              src="/images/mont2.png"
+              alt=""
+            />
           </div>
           <div className="md:w-1/2 md:mt-0 mt-12">
             <h1 className="titlesFonts">Particularités</h1>

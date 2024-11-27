@@ -1,10 +1,10 @@
 "use client";
+import Breadcrumb from "@/app/components/BreadCumb";
+import ContactButton from "@/app/components/ContactButton";
 import Head from "next/head";
-import Link from "next/link";
+const pageDescription =
+  "Taper ici le code erreur que vous avez trouver sur votre valise et nous allons vous aider, vous orienter pour trouver la panne en fonstion du code défaut.";
 import React, { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Breadcrumb from "../components/BreadCumb";
-import ContactButton from "../components/ContactButton";
 
 const Page = () => {
   const [codes, setCodes] = useState([]);
@@ -60,8 +60,20 @@ const Page = () => {
   return (
     <section className="px-5 md:px-0">
       <Head>
-        <title>Automatic Transformation</title>
+        <title>aide code erreur boite automatique diagnostic</title>
+        <meta
+          name="title"
+          content="aide code erreur boite automatique diagnostic"
+        />
+        <meta name="description" content={pageDescription} />
       </Head>
+      <div className="hidden">
+        <h1>code defaut boite automatique</h1>
+        <h2>court circuit moteur embrayage 1</h2>
+        <h2>court circuit moteur embrayage 2</h2>
+        <h2>moteur embrayage 1 panne éléctrique</h2>
+        <h2>moteur embrayage 2 panne éléctrique</h2>
+      </div>
       <div className="container mx-auto py-12">
         <Breadcrumb />
       </div>
