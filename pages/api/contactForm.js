@@ -4,9 +4,14 @@ export default async function handler(req, res) {
   try {
     const { email, phone, name, message, immatriculation } = req.body;
 
+    // Validate form fields
+    if (!email || !phone || !name || !message || !immatriculation) {
+      return res.status(400).json({ message: "All fields are required." });
+    }
+
+    // Configure nodemailer transporter
     const transporter = nodemailer.createTransport({
-      // service: "gmail",
-      host: "laboiteauto.com",
+      host: "mail.laboiteauto.com",
       port: 465,
       secure: true,
       auth: {
@@ -15,21 +20,28 @@ export default async function handler(req, res) {
       },
     });
 
+    // Email options
     const mailOptions = {
-      from: email,
+      from: `"Website Contact Form" <contact@laboiteauto.com>`,
       to: "contact@laboiteauto.com",
+      replyTo: email, // Allow replying to the user's email
       subject: "Nouveau message de contact@laboiteauto.com",
-      text: `Un utilisateur a rempli le formulaire sur le site https://contact@laboiteauto.com/ :\n\nEmail: ${email}\n\nTéléphone: ${phone}\n\nNom et prénom: ${name}\n\nMessage: ${message} \n\n immatriculation:${immatriculation}`,
+      text: `Un utilisateur a rempli le formulaire sur le site:\n\n
+      Email: ${email}\n
+      Téléphone: ${phone}\n
+      Nom et prénom: ${name}\n
+      Message: ${message}\n
+      Immatriculation: ${immatriculation}`,
     };
 
+    // Send the email
     await transporter.sendMail(mailOptions);
 
-    // Use the res object to send the response
     res.status(200).json({ message: "Email Sent Successfully" });
   } catch (error) {
     console.error("Error sending email:", error);
-
-    // Use the res object to send the response
-    res.status(500).json({ message: "Failed to Send Email" });
+    res
+      .status(500)
+      .json({ message: "Failed to Send Email", error: error.message });
   }
 }
