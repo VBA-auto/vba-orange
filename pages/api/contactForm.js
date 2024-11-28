@@ -10,18 +10,20 @@ export default async function handler(req, res) {
     }
 
     // Configure nodemailer transporter
+
     const transporter = nodemailer.createTransport({
-      // host: "	109.234.165.117",
-      host: "o2switch.net",
+      host: "109.234.165.117", // Replace with your mail server's IP
       port: 465,
-      secure: true,
+      secure: true, // Use SSL
       auth: {
         user: "contact@laboiteauto.com",
         pass: "Test008//@@",
       },
       tls: {
-        rejectUnauthorized: false, // Ignore certificate errors
+        rejectUnauthorized: false, // Allow self-signed certificates
       },
+      connectionTimeout: 10000, // Fail faster on connection issues
+      socketTimeout: 20000, // Allow more time for slow responses
     });
 
     // Email options
