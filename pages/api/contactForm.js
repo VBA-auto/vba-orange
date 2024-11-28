@@ -11,6 +11,7 @@ export default async function handler(req, res) {
 
     // Configure nodemailer transporter
     const transporter = nodemailer.createTransport({
+      // host: "	109.234.165.117",
       host: "o2switch.net",
       port: 465,
       secure: true,
@@ -25,7 +26,7 @@ export default async function handler(req, res) {
 
     // Email options
     const mailOptions = {
-      from: `"Website Contact Form" <contact@laboiteauto.com>`,
+      from: `${email}`,
       to: "contact@laboiteauto.com",
       replyTo: email, // Allow replying to the user's email
       subject: "Nouveau message de contact@laboiteauto.com",
