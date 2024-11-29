@@ -1,10 +1,10 @@
 import "./globals.css";
-import Header from "./components/Header";
-import HeaderTest from "./components/Headertest";
+
 import MainHeader from "./components/Navbar/MainHeader";
 import SubHeader from "./components/SubHeader";
 import Footer from "./components/Footer";
 import CookieConsent from "./components/CookieConsent";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 {
   /* <link rel="icon" href="/favicon.ico" sizes="any" />; */
@@ -22,11 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body>
-        {/* <Header /> */}
-        {/* <HeaderTest /> */}
         <SubHeader />
         <MainHeader />
         {children}
+        <GoogleAnalytics />
         <CookieConsent />
         <Footer />
       </body>
