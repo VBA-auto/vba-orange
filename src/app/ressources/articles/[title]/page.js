@@ -46,7 +46,7 @@ const ArticlePage = ({ params }) => {
             <Image
               width={400}
               height={400}
-              className="w-full md:h-[86vh]  videoOverlay relative"
+              className="w-full md:h-[100vh]  videoOverlay relative"
               src={article.image}
               alt=""
             />
@@ -71,7 +71,10 @@ const ArticlePage = ({ params }) => {
                 <div className="border md:h-[80vh] overflow-y-scroll p-3 articleTab">
                   <h1 className="mb-3">More article</h1>
                   {related?.map((related, index) => (
-                    <Link key={index} href={`/articles/${related.title}`}>
+                    <Link
+                      key={index}
+                      href={`/ressources/articles/${related.title}`}
+                    >
                       <div
                         key={index}
                         className="md:flex md:gap-3 mb-3 artiEach"

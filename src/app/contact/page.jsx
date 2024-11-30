@@ -2,15 +2,17 @@
 
 import { useState } from "react";
 import Head from "next/head";
-
 import Breadcrumb from "../components/BreadCumb";
 import Link from "next/link";
+import ReCAPTCHA from "react-google-recaptcha";
+
 const pageDescription =
   "Contactez nous ici pour prendre rdv en ligne et pour réaliser un diagnostic ou une vidange de votre boite de vitesse";
+
 export default function Contact() {
   const [isError, setIsError] = useState(false);
   const [isOk, setIsOk] = useState(false);
-
+  const [isRecaptchaVerified, setIsRecaptchaVerified] = useState(false); // Added
   const [formData, setFormData] = useState({
     email: "",
     phone: "",
@@ -22,6 +24,15 @@ export default function Contact() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleRecaptchaChange = (value) => {
+    // Added
+    if (value) {
+      setIsRecaptchaVerified(true);
+    } else {
+      setIsRecaptchaVerified(false);
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -81,11 +92,9 @@ export default function Contact() {
               >
                 contact@laboiteauto.com
               </Link>
-
-              {/* <p>contact@roissyboiteauto.fr</p> */}
             </div>
           </div>
-          <div className="md:w-1/2 mx-auto  rounded ">
+          <div className="md:w-1/2 mx-auto rounded ">
             <p className="mb-5 font-semibold">Vous avez une question ?</p>
             <form
               onSubmit={handleSubmit}
@@ -94,7 +103,7 @@ export default function Contact() {
             >
               <div className="flex gap-5">
                 <input
-                  className="w-full px-2 py-3  border bg-white rounded-md"
+                  className="w-full px-2 py-3 border bg-white rounded-md"
                   type="text"
                   name="name"
                   placeholder="Nom*"
@@ -102,7 +111,7 @@ export default function Contact() {
                   required
                 />
                 <input
-                  className="w-full px-2 py-3  border bg-white rounded-md"
+                  className="w-full px-2 py-3 border bg-white rounded-md"
                   type="email"
                   name="email"
                   placeholder="Votre adresse email*"
@@ -112,14 +121,14 @@ export default function Contact() {
               </div>
               <div className="flex gap-5 mt-5">
                 <input
-                  className="w-full px-2 py-3  border bg-white rounded-md"
+                  className="w-full px-2 py-3 border bg-white rounded-md"
                   type="tel"
                   placeholder="Votre téléphone*"
                   name="phone"
                   onChange={handleChange}
                 />
                 <input
-                  className="w-full px-2 py-3  border bg-white rounded-md"
+                  className="w-full px-2 py-3 border bg-white rounded-md"
                   type="text"
                   name="immatriculation"
                   placeholder="Immatriculation*"
@@ -137,6 +146,13 @@ export default function Contact() {
                 required
               ></textarea>
 
+              <div className="mt-4">
+                <ReCAPTCHA
+                  sitekey="6Lfu2YgqAAAAAPXTQ0xfj3uSQDbdICh_dYKjRIAS" // Updated
+                  onChange={handleRecaptchaChange} // Added
+                />
+              </div>
+
               <p className="text-red-500">
                 {isError ? "Erreur lors de l'envoi du formulaire" : ""}
               </p>
@@ -144,10 +160,15 @@ export default function Contact() {
                 {isOk ? "Formulaire envoyé avec succès" : ""}
               </p>
 
-              <div className=" mt-4">
+              <div className="mt-4">
                 <button
-                  className="px-11 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md"
+                  className={`px-11 text-[15px] py-2 border ${
+                    isRecaptchaVerified
+                      ? "border-[#2C80EF] text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white"
+                      : "border-gray-300 text-gray-300"
+                  } rounded-md`}
                   type="submit"
+                  disabled={!isRecaptchaVerified} // Updated
                 >
                   Envoyer
                 </button>

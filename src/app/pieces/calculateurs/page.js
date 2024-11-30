@@ -98,7 +98,7 @@ const Page = () => {
                           />
                         </p>
                         <div className="text-center">
-                          <Link href={part.orderLink}>
+                          <Link href="https://laboiteautomatique.com/contact">
                             <button className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md">
                               Nous contacter
                             </button>

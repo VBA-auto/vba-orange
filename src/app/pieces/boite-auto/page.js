@@ -59,14 +59,14 @@ const Page = () => {
                   {part.title}
                 </h2>
                 <p className="text-gray-600 mt-1">{part.excerpt}</p>
-                <p className="text-[#2C80EF] font-semibold my-3">
-                  Price: {part.price} €
+                <p className="text-[#2C80EF] font-[400] my-3">
+                  Prix: {part.price} €
                 </p>
                 <button
                   onClick={() => openModal(part)}
-                  className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md"
+                  className="px-6 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md"
                 >
-                  Commander
+                  en rupture
                 </button>
               </div>
             ))}
@@ -96,19 +96,26 @@ const Page = () => {
                 />
               </div>
               <p className="pt-4 text-justify">{selectedPart.paragraph}</p>
-              <p className="my-2 font-medium">
+              <p className="my-2 font-[400]">
                 Lubrification: {selectedPart.lubrification}
               </p>
-              <p className="text-[#2C80EF] font-semibold my-3">
-                Price: {selectedPart.price} €
+              {/* <p className="text-[#2C80EF] font-[400] my-3">
+                Prix: {selectedPart.price} €
+              </p> */}
+              <p className="text-[#2C80EF] font-[400] my-3">
+                En repture de stock. <br />
+                <Link href="/contact" className="underline">
+                  Nous contacter
+                </Link>{" "}
+                pour plus d&apos;informations.{" "}
               </p>
-              <div className="text-center">
+              {/* <div className="text-center">
                 <Link href="/">
                   <button className="px-5 text-[15px] py-2 border border-[#2C80EF] text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md">
                     Commander
                   </button>
                 </Link>
-              </div>
+              </div> */}
             </>
           )}
         </div>

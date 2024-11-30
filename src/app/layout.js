@@ -7,14 +7,14 @@ import CookieConsent from "./components/CookieConsent";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 
 {
-  /* <link rel="icon" href="/favicon.ico" sizes="any" />; */
+  <link rel="icon" href="/favicon.ico" sizes="any" />;
 }
 
 export const metadata = {
   title: "VBA - Laboiteauto",
   description: "VBA - Laboiteauto",
   icons: {
-    // icon: "/fav.png",
+    icon: "favicon.ico",
   },
 };
 
