@@ -60,7 +60,7 @@ const Hero = () => {
                     <Slider {...settings}>
                       <div className="">
                         <Link
-                          href="/diagnostic"
+                          href="/prestations/diagnostic"
                           className="hover:text-blue-700"
                         >
                           <h3 className="heroTitle hover:text-white/90">
@@ -70,7 +70,7 @@ const Hero = () => {
                       </div>
 
                       <div>
-                        <Link href="/vidange">
+                        <Link href="/prestations/vidange">
                           <h3 className="heroTitle hover:text-white/90">
                             Vidange
                           </h3>
@@ -78,21 +78,21 @@ const Hero = () => {
                       </div>
 
                       <div>
-                        <Link href="/reparation">
+                        <Link href="/prestations/reparation">
                           <h3 className="heroTitle hover:text-white/90">
                             Réparation
                           </h3>
                         </Link>
                       </div>
                       <div>
-                        <Link href="/mecatronique">
+                        <Link href="/prestations/mecatronique">
                           <h3 className="heroTitle hover:text-white/90">
                             Mécatronique
                           </h3>
                         </Link>
                       </div>
                       <div>
-                        <Link href="/montage">
+                        <Link href="/prestations/montage">
                           <h3 className="heroTitle hover:text-white/90">
                             Montage
                           </h3>
@@ -101,7 +101,7 @@ const Hero = () => {
                     </Slider>
                   </div>
                   <div className="">
-                    <Link href="/aide-en-ligne">
+                    <Link href="/ressources/aide-en-ligne">
                       <button className="px-5 text-[15px] py-2 border border-white bg-[#fff]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
                         Aide en ligne
                       </button>
@@ -112,7 +112,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="mb-32 md:mb-0">
-            <Link href="/aide-en-ligne">
+            <Link href="/ressources/aide-en-ligne">
               <button className="px-5 text-[15px] py-2 border border-[#2C80EF] bg-[#fff]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md block sm:hidden mx-auto mt-5">
                 Aide en ligne
               </button>
