@@ -70,7 +70,7 @@ const Page = () => {
           </div>
           <div className="md:w-1/2 md:mt-0 mt-12">
             <h1 className="titlesFonts">Les boites robotisées</h1>
-            <p className="text-justify mb-5 paragraph">
+            <p className="text-justify mb-4 paragraph">
               Les boîtes robotisées ou pilotées, comme
               la &apos;Powershift&apos; chez Renault (Modus, Twingo) et Fiat,
               ainsi que sur les anciennes Peugeot 5008, sont constituées
@@ -79,13 +79,13 @@ const Page = () => {
               le changement de vitesses et la gestion de l&apos;embrayage. Ce
               sont en réalité des boites manuelles pilotées avec donc moins de
               confort qu’une « vraie» boite automatique : il est fréquent de «
-              sentir » l’a-coup du passage de la vitesse. Il existe sur certains
+              sentir » l’à-coup du passage de la vitesse. Il existe sur certains
               nouveaux modèles des boites robotisées à double embrayage. Ces
               boîtes nécessitent une maintenance régulière pour préserver leur
               performance et leur fiabilité.
             </p>
             <p className="text-justify mt-1 paragraph">
-              Pour résumer, il est possible de réparer le robot en focntion des
+              Pour résumer, il est possible de réparer le robot en focntion
               codes défauts et symptômes (moins coûteux que neuf).
             </p>
           </div>
@@ -188,7 +188,7 @@ const Page = () => {
                 IL existe des boites CVT comme la XTRONIC CVT de la Nissan
                 Qashqai ou la 722.8 des Mercedes Classe A et B, équipée avec un
                 un convertisseur de couple à l’exception{" "}
-                <strong>des boîtes Multitronic</strong>
+                <strong>des boîtes Multitronic </strong>
                 (01J/0AN ou 0AW).
               </p>
               <div className="mt-5">

@@ -142,7 +142,7 @@ const Page = () => {
             <Link className="text-[#2C80EF]" href="/type-de-bva">
               https://laboiteauto.com/type-de-bva.
             </Link>{" "}
-            Deux actions sont essentielles pour un diagnostic précis :
+            Deux actions sont essentielles pour un diagnostic précis:
             d&apos;abord, il faut connaître en détail les composants de la boîte
             de vitesse sur laquelle on internient pour pouvoir identifier
             correctement les problèmes potentiels.

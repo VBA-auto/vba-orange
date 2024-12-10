@@ -36,7 +36,7 @@ const Page = () => {
               couple, d&apos;autres à double embrayage. Certaines contiennent
               une crépine interne ou externe, avec ou sans joint de carter.
               Parfois il existe aussi une cartouche externe. La quantité
-              d&apos;huile varie selon les boîtes : les doubles embrayages à sec
+              d&apos;huile varie selon les boîtes: les doubles embrayages à sec
               nécessitent peu d&apos;huile, tandis que les autres types
               contiennent généralement entre 7 et 10 litres.
             </p>
