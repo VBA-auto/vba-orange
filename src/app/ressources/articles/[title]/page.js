@@ -46,11 +46,11 @@ const ArticlePage = ({ params }) => {
             <Image
               width={400}
               height={400}
-              className="w-full md:h-[100vh]  videoOverlay relative"
+              className="w-4/5 mx-auto md:h-[80vh]  videoOverlay relative"
               src={article.image}
               alt=""
             />
-            <h1 className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
+            <h1 className=" absolute w-4/5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
               {article.title}
             </h1>
           </div>

@@ -153,7 +153,6 @@ input[type="checkbox"]:checked {
   font-family: "Poppins";
   font-weight: 700;
   text-transform: capitalize;
-  width: 100%;
   text-align: center;
   /* padding: 0 40px; */
   background-color: #f1b04e65;

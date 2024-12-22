@@ -81,220 +81,41 @@ export async function GET() {
     },
   ];
 
-  const imageUrls = [
-    {
-      loc: `${baseUrl}/images/0AW(Multitronic).jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/0B5(DL501).jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/01j.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/5L40E.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/5R55N.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/6DCT450.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/6hp.png`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/6HP26.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/8hp.png`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/8HP70.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/722.8.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/aideEn.webp`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/audi.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/audiArti.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/audiArti2.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/AW-55-50.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/bmw.png`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/bmwArti.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/bmwArti2.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/boite.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/boiteOld.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/calculateurs.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/calculators.png`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/carArt.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/carBlog.jpg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/chevrolet.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/chrysler.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/citreonArti.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/citreonArti2.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/citroen-ds.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/cookies.png`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/diag1.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/diag2.png`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/diag3.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/diagChild.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/diagnostic.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/dodge.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/dq381.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/dqg6Meca.jpeg`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/VBAlogo.webp`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/meca3.png`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
-    {
-      loc: `${baseUrl}/images/video.webm`,
-      priority: 0.7,
-      lastmod: new Date().toISOString(),
-    },
+  const articleTitles = [
+    "audi",
+    "chrysler",
+    "ford",
+    "lexus",
+    "nissan",
+    "renault",
+    "volkswagen",
+    "citroen-ds",
+    "hyundai",
+    "mercedes",
+    "opel",
+    "skoda",
+    "volvo",
+    "bmw",
+    "dodge",
+    "jeep",
+    "mini",
+    "peugeot",
+    "smart",
+    "chevrolet",
+    "fiat",
+    "land-rover",
+    "mitsubishi",
+    "porsche",
+    "toyota",
   ];
 
-  const urls = [...staticUrls, ...imageUrls];
+  const dynamicUrls = articleTitles.map((title) => ({
+    loc: `${baseUrl}/ressources/articles/${title}`,
+    lastmod: new Date().toISOString(),
+    priority: 0.7,
+  }));
+
+  const urls = [...staticUrls, ...dynamicUrls];
 
   const sitemap = `
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
