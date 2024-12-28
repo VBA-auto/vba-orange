@@ -69,7 +69,7 @@ const ArticlePage = ({ params }) => {
               </div>
               <div className="md:w-[30%] md:h-[70vh] sticky top-20 md:mt-0 mt-12">
                 <div className="border md:h-[80vh] overflow-y-scroll p-3 articleTab">
-                  <h1 className="mb-3">More article</h1>
+                  <h1 className="mb-3">Plus d&apos;articles</h1>
                   {related?.map((related, index) => (
                     <Link
                       key={index}
