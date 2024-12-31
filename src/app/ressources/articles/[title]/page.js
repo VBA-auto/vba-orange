@@ -62,7 +62,10 @@ const ArticlePage = ({ params }) => {
               <div className="md:w-[70%]">
                 {/* <img className="" src={article.image} alt="" /> */}
                 <h1 className="titlesFonts my-3 capitalize">{article.title}</h1>
-                <p dangerouslySetInnerHTML={{ __html: article.paragraph }} />
+                <p
+                  className="text-justify"
+                  dangerouslySetInnerHTML={{ __html: article.paragraph }}
+                />
                 <div className="mt-5">
                   <ContactButton />
                 </div>
