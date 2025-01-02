@@ -65,7 +65,7 @@ const ArticlePage = ({ params }) => {
                   <Image
                     width={900}
                     height={400}
-                    className=" object-cover  videoOverlay relative"
+                    className=" object-cover rounded-md videoOverlay relative"
                     src={article.image}
                     alt=""
                   />
@@ -83,7 +83,7 @@ const ArticlePage = ({ params }) => {
                 </div>
               </div>
               <div className="md:w-[30%] md:h-[70vh] sticky top-20 md:mt-0 mt-12">
-                <div className="border md:h-[75vh] overflow-y-scroll p-3 articleTab">
+                <div className="border md:h-[75vh] overflow-y-scroll p-3 rounded-md articleTab">
                   <h1 className="mb-3">Plus d&apos;articles</h1>
                   {related?.map((related, index) => (
                     <Link
@@ -98,7 +98,7 @@ const ArticlePage = ({ params }) => {
                           <Image
                             width={400}
                             height={400}
-                            className="artChildImg"
+                            className="artChildImg rounded-md"
                             src={related.image}
                             alt=""
                           />
