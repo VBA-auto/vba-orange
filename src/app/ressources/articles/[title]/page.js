@@ -8,18 +8,18 @@ import React, { useEffect, useState } from "react";
 const ArticlePage = ({ params }) => {
   const [article, setArticle] = useState(null);
   const [related, setRelated] = useState([]);
-  useEffect(() => {
-    const scrollToMain = () => {
-      const mainSection = document.getElementById("main");
-      if (mainSection) {
-        mainSection.scrollIntoView({ behavior: "smooth" });
-      }
-    };
+  // useEffect(() => {
+  //   const scrollToMain = () => {
+  //     const mainSection = document.getElementById("main");
+  //     if (mainSection) {
+  //       mainSection.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   };
 
-    const scrollTimeout = setTimeout(scrollToMain, 1000);
+  //   const scrollTimeout = setTimeout(scrollToMain, 1000);
 
-    return () => clearTimeout(scrollTimeout);
-  }, []);
+  //   return () => clearTimeout(scrollTimeout);
+  // }, []);
 
   useEffect(() => {
     const fetchArticle = async () => {
@@ -42,7 +42,7 @@ const ArticlePage = ({ params }) => {
     <section className="article-container px-5 md:px-0">
       {article ? (
         <>
-          <div className="relative mx-auto">
+          {/* <div className="relative mx-auto">
             <Image
               width={400}
               height={400}
@@ -53,14 +53,26 @@ const ArticlePage = ({ params }) => {
             <h1 className=" absolute w-4/5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
               {article.title}
             </h1>
-          </div>
+          </div> */}
           <div
             id="main"
             className="container mx-auto min-h-screen  items-center"
           >
-            <div className="md:flex gap-5 pb-16 md:pt-24">
+            <div className="md:flex gap-5 pb-16 md:pt-16">
               <div className="md:w-[70%]">
                 {/* <img className="" src={article.image} alt="" /> */}
+                <div className="relative mx-auto">
+                  <Image
+                    width={900}
+                    height={400}
+                    className=" object-cover  videoOverlay relative"
+                    src={article.image}
+                    alt=""
+                  />
+                  <h1 className=" absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
+                    {article.title}
+                  </h1>
+                </div>
                 <h1 className="titlesFonts my-3 capitalize">{article.title}</h1>
                 <p
                   className="text-justify"
