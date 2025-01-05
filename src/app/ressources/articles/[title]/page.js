@@ -65,7 +65,7 @@ const ArticlePage = ({ params }) => {
                   <Image
                     width={900}
                     height={400}
-                    className=" object-cover rounded-md videoOverlay relative"
+                    className="w-full object-cover rounded-md videoOverlay relative"
                     src={article.image}
                     alt=""
                   />
