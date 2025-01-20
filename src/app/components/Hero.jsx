@@ -108,7 +108,7 @@ const Hero = () => {
                   </div>
                   <div className="flex gap-3">
                     <Link href="/tarif">
-                      <button className="px-16 text-[15px] py-2 border border-white   text-white hover:bg-[#2C80EF] hover:border-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
+                      <button className="px-16 text-[15px] py-2 border border-[#2C80EF] bg-[#2C80EF]   text-white hover:bg-[#2C80EF] hover:border-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
                         Tarif
                       </button>
                     </Link>
