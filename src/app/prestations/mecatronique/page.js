@@ -3,7 +3,7 @@ import ContactButton from "@/app/components/ContactButton";
 import Head from "next/head";
 import Image from "next/image";
 const pageDescription =
-  "Nous réparons les mécatronique de boîte de vitesse automatique équipée sur les Mercedes, Audi, BMW, Renault et autres véhicules";
+  "Nous réparons les mécatronique de boite de vitesse automatique équipée sur les Mercedes, Audi, BMW, Renault et autres véhicules";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
@@ -11,7 +11,7 @@ const Page = () => {
         <title>Automatic Transformation</title>
         <meta
           name="title"
-          content="Réparation mécatronique, boîte automatique"
+          content="Réparation mécatronique, boite automatique"
         />
         <meta name="description" content={pageDescription} />
       </Head>
@@ -67,7 +67,7 @@ const Page = () => {
             d&apos;une mauvaise huile peut endommager l&apos;ensemble du bloc.
             Lorsque la température de l&apos;huile devient trop élevée, cela
             peut provoquer des courts-circuits. Ces courts-circuits peuvent
-            entraîner divers problèmes, tels que la lenteur au passage des
+            entrainer divers problèmes, tels que la lenteur au passage des
             rapports, des à-coups ou même l&apos;impossibilité de passer à une
             vitesse supérieure. Dans la plupart des cas, lorsqu&apos;il y a un
             problème sur celui-ci, un code défaut va remonter sur la valise
@@ -134,7 +134,7 @@ const Page = () => {
               létanchéité et remplacer éventuelement les joints (kit joints)
               pour enlever les défauts de pression. Il est préférable (si
               possible) de commencer par le mécatronique avant de démonter la
-              boîte pour s&apos;assurer que le problème n&apos;est pas
+              boite pour s&apos;assurer que le problème n&apos;est pas
               mécanique. Un diagnostic précis et une réparation efficace
               nécessitent de l&apos;expérience pour bien identifier la source du
               problème. <br /> Pour résumer, il faut toujours dans un premier

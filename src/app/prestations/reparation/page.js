@@ -3,7 +3,7 @@ import Image from "next/image";
 import Breadcrumb from "@/app/components/BreadCumb";
 import ContactButton from "@/app/components/ContactButton";
 const pageDescription =
-  "Nous réparons, les boîtes de vitesse automatiques à convertisseur de couple, double embrayage, variation, continue et boîte robotisée";
+  "Nous réparons, les boites de vitesse automatiques à convertisseur de couple, double embrayage, variation, continue et boite robotisée";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
@@ -29,19 +29,19 @@ const Page = () => {
           <div className="md:w-1/2">
             <h1 className="titlesFonts">Les boites CVT à variation continue</h1>
             <p className="text-justify mb-2 paragraph">
-              Les boîtes de vitesses CVT, telles que la Mercedes 722.8 des
-              classes A et B et la Multitronic d&apos;Audi, ainsi que la
-              HF35(CVT) des Ford Mondeo Hybrid et autres nécessitent des outils
-              spécialisés pour leur réparation. Ces systèmes utilisent une
-              courroie segmentée en acier reliant des pignons primaires et
+              Les boites de vitesses CVT, telles que la Mercedes <b>722.8</b>{" "}
+              des classes A et B et la Multitronic d&apos;Audi, ainsi que la{" "}
+              <b>HF35(CVT) </b>des Ford Mondeo Hybrid et autres nécessitent des
+              outils spécialisés pour leur réparation. Ces systèmes utilisent
+              une courroie segmentée en acier reliant des pignons primaires et
               secondaires, permettant un ajustement continu des rapports.
             </p>
             <p className="text-justify mb-2 paragraph">
               Il existe aussi des problèmes sur l’embrayage situé juste avant le
               système CVT. Pour remplacer et modifier un système CVT, il est
               important d’avoir un outil spécial pour ne pas endommager la
-              transmission. <br /> Les passages de vitesses sont en réalité des
-              “ratios”.
+              transmission. <br /> Les passages de vitesses sont en réalité des{" "}
+              <b>“ratios”</b>.
             </p>
             <div className="mt-5">
               <ContactButton />
@@ -71,17 +71,17 @@ const Page = () => {
           <div className="md:w-1/2 md:mt-0 mt-12">
             <h1 className="titlesFonts">Les boites robotisées</h1>
             <p className="text-justify mb-4 paragraph">
-              Les boîtes robotisées ou pilotées, comme
+              Les boites robotisées ou pilotées, comme
               la &apos;Powershift&apos; chez Renault (Modus, Twingo) et Fiat,
               ainsi que sur les anciennes Peugeot 5008, sont constituées
               d&apos;un embrayage, d&apos;une butée d&apos;embrayage, et
               d&apos;un robot(comprenant souvent un accumulateur) qui automatise
               le changement de vitesses et la gestion de l&apos;embrayage. Ce
               sont en réalité des boites manuelles pilotées avec donc moins de
-              confort qu’une « vraie» boite automatique : il est fréquent de «
+              confort qu’une « vraie» boite automatique: il est fréquent de «
               sentir » l’à-coup du passage de la vitesse. Il existe sur certains
               nouveaux modèles des boites robotisées à double embrayage. Ces
-              boîtes nécessitent une maintenance régulière pour préserver leur
+              boites nécessitent une maintenance régulière pour préserver leur
               performance et leur fiabilité.
             </p>
             <p className="text-justify mt-1 paragraph">
@@ -99,12 +99,12 @@ const Page = () => {
               Les modèles à embrayage mouillé,
               <strong> DQ500, DQ381, DSG6</strong> (DQ250) et certains modèles
               de Mercedes (724.0), nécessitent une lubrification (équipent en
-              général les moteurs plus puissants). À l&apos;inverse, les boîtes
+              général les moteurs plus puissants). À l&apos;inverse, les boites
               à embrayage sec, comme les <strong>DSG7</strong> (DQ200) et la
               <strong> 6DCT250</strong> de GETRAG (appelée{" "}
-              <strong>boîte EDC ou DC4</strong> ), fonctionnent avec très peu de
-              lubrification : une partie dans le mécatronique et à peine dans la
-              partie mécanique. L&apos;entretien ou la réparation de ces boîtes
+              <strong>boite EDC ou DC4</strong> ), fonctionnent avec très peu de
+              lubrification: une partie dans le mécatronique et à peine dans la
+              partie mécanique. L&apos;entretien ou la réparation de ces boites
               demande des outils spécifiques, tels que ceux fournis par la
               marque LUK. Le plus important pour réparer ces boites est
               d&apos;avoir le bon outillage pour pouvoir remplacer ces embrayage
@@ -133,21 +133,21 @@ const Page = () => {
           <div className="md:flex   gap-5">
             <div className="md:w-1/2">
               <p className="text-justify mb-2 paragraph">
-                Les boîtes de vitesses équipées de convertisseurs de couple
+                Les boites de vitesses équipées de convertisseurs de couple
                 hydraulique, comme les modèles ZF{" "}
                 <strong>6HP21, 6HP26, 8HP</strong> souvent montées sur les BMW,
                 ainsi que les Aisin TF80, <strong>7G-Tronic</strong> ou encore
                 les <strong>9G-Tronic</strong>(Mercedes) les DP0 ou AL4
                 (Renault/Peugeot) sont réputées pour leur robustesse et leur
                 capacité à gérer la puissance du moteur de manière fluide. Le
-                convertisseur permet à la voiture de démarrer sans à-coups ;
+                convertisseur permet à la voiture de démarrer sans à-coups;
                 <strong>
                   {" "}
                   si la voiture patine ou si les tours du moteur oscillent
                   anormalement
                 </strong>
                 , cela peut indiquer un problème avec celui-ci. Réparer ces
-                boîtes nécessite un savoir-faire technique et des outils
+                boites nécessite un savoir-faire technique et des outils
                 spécifiques pour diagnostiquer correctement le problème. Les
                 plus grande marques de boite de vitesse a convertisseur sont
                 <strong> Aisin, ZF, Mercedes</strong>. Comme dit précédement, il
@@ -175,8 +175,8 @@ const Page = () => {
                 permet de multiplier le couple entre les vitesses d&apos;entrée
                 et de sortie, grâce à un mécanisme hydraulique où toutes les
                 pièces internes baignent dans de l’huile, souvent la même que
-                celle utilisée pour la boîte de vitesses automatique (BVA), à
-                quelques exceptions près. Cette caractéristique isole la boîte
+                celle utilisée pour la boite de vitesses automatique (BVA), à
+                quelques exceptions près. Cette caractéristique isole la boite
                 de vitesses du moteur, permettant au véhicule de rester en
                 marche même à l&apos;arrêt. Le rôle de l’embrayage du
                 convertissuer de couple hydraulique permet de combler la perte
@@ -188,7 +188,7 @@ const Page = () => {
                 IL existe des boites CVT comme la XTRONIC CVT de la Nissan
                 Qashqai ou la 722.8 des Mercedes Classe A et B, équipée avec un
                 un convertisseur de couple à l’exception{" "}
-                <strong>des boîtes Multitronic </strong>
+                <strong>des boites Multitronic </strong>
                 (01J/0AN ou 0AW).
               </p>
               <div className="mt-5">

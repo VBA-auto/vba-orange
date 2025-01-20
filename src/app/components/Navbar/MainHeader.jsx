@@ -115,7 +115,7 @@ const MainHeader = () => {
     <header className="bg-white shadow-md sticky top-0 w-full z-[99999] px-5 md:px-0">
       <div className="container mx-auto">
         <nav
-          className="max-w-7xl mx-auto flex items-center justify-between py-2"
+          className=" mx-auto flex items-center justify-between py-2"
           ref={mobileMenuRef}
         >
           <div className="md:w-1/4 text-lg font-bold">
@@ -142,8 +142,8 @@ const MainHeader = () => {
           <div className="md:w-1/4 flex justify-end space-x-2">
             <Link href="/ressources/type-de-bva">
               {" "}
-              <button className="px-5 text-[15px] py-2 border border-[#2C80EF]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block">
-                Type de BVA
+              <button className="px-5 text-[15px] py-2.5 border bg-[#2C80EF]  text-white hover:bg-[#fff] hover:text-[#2C80EF] hover:border rounded-md hidden md:block">
+                Trouver votre BVA
               </button>
             </Link>
 

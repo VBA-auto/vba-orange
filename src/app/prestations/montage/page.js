@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 const pageDescription =
-  "Nous proposons le démontage et le remontage de votre boîte de vitesse automatique automatique";
+  "Nous proposons le démontage et le remontage de votre boite de vitesse automatique automatique";
 const Page = () => {
   return (
     <section className="px-5 md:px-0">
@@ -12,7 +12,7 @@ const Page = () => {
         <title>Automatic Transformation</title>
         <meta
           name="title"
-          content="Démontage et remontage de boîte automatique"
+          content="Démontage et remontage de boite automatique"
         />
         <meta name="description" content={pageDescription} />
       </Head>
@@ -24,19 +24,20 @@ const Page = () => {
           <div className="md:w-1/2 ">
             <h1 className="titlesFonts">Spécificités techniques</h1>
             <p className="text-justify mb-2 paragraph">
-              Monter une boîte automatique prend en général 4 à 5 heures. Le
+              Monter une boite automatique prend en général 4 à 5 heures. Le
               démontage quand à lui prend lui un peu moins de temps . Pour les
-              modèles avec une motorisation élevée, il faut prévoir 50 % à 100 %
+              modèles avec une motorisation élevée, il faut prévoir{" "}
+              <b>50 % à 100 % </b>
               de temps supplémentaire. Cela est dû au fait qu&apos;il est
               souvent nécessaire de retirer le berceau et parfois le groupe
               motopropulseur. Un outillage spécifique est indispensable pour ces
               opérations, notamment pour la rétention de l&apos;huile. Une
-              attention particulière doit être portée aux boîtes avec
+              attention particulière doit être portée aux boites avec
               convertisseur de couple hydraulique, surtout quand au remontage
               (pompe engrenage). Utiliser les bons outils et suivre les
               instructions permet d&apos;éviter les erreurs. il est important de
-              faire le niveau d’huile et les ”adaptations” ou “réglages de
-              base”.
+              faire le niveau d’huile et les <b>”adaptations”</b> ou “réglages
+              de base”.
             </p>
 
             <div className="">
@@ -67,12 +68,12 @@ const Page = () => {
           <div className="md:w-1/2 md:mt-0 mt-12">
             <h1 className="titlesFonts">Particularités</h1>
             <p className="text-justify mb-2 paragraph">
-              Les boîtes automatiques{" "}
+              Les boites automatiques{" "}
               <strong>à convertisseur de couple hydrauliquenécessitent</strong>{" "}
-              une attention particulière : Il est important de s&apos;assurer
-              que celui-ci est correctement emboîté sur les goupillesafin
+              une attention particulière: Il est important de s&apos;assurer que
+              celui-ci est correctement emboité sur les goupillesafin
               d&apos;éviter d&apos;endommager la pompe d&apos;engrenage. Une
-              mauvaise manipulation peut entraîner des problèmes au niveau de
+              mauvaise manipulation peut entrainer des problèmes au niveau de
               cette pompe (casse).
             </p>
             <p className="text-justify mb-2 paragraph">
@@ -90,14 +91,14 @@ const Page = () => {
         </div>
         <span className="separator"></span>
         <div className="pb-16">
-          <h1 className="titlesFonts">Boîtes automatiques : attention !</h1>
+          <h1 className="titlesFonts">Boites automatiques: attention !</h1>
           <p className="text-justify mb-2 paragraph">
-            Les boîtes de vitesses automatiques diffèrent des boites manuelles
-            sur plusieurs points :
+            Les boites de vitesses automatiques diffèrent des boites manuelles
+            sur plusieurs points:
           </p>
           <h2 className="font-[500] text-gray-700 mb-2">Calibrage</h2>
           <p className="text-justify mb-2 paragraph">
-            Les boîtes automatiques nécessitent un calibrage précis pour assurer
+            Les boites automatiques nécessitent un calibrage précis pour assurer
             des changements de vitesse contrairement aux boites manuelles.
           </p>
           <h2 className="font-[500] text-gray-700 mb-2">
@@ -107,30 +108,30 @@ const Page = () => {
             La grande majorité des boites automatiques sont équipées d&apos;un
             calculateur. La reprogrammation de ces calculateurs doit être
             effectuée correctement pour garantir des performances optimales. Une
-            mauvaise reprogrammation peut entraîner des dysfonctionnements.
+            mauvaise reprogrammation peut entrainer des dysfonctionnements.
           </p>
           <h2 className="font-[500] text-gray-700 mb-2">Niveau d&apos;Huile</h2>
           <p className="text-justify mb-2 paragraph">
             Le contrôle et l&apos;ajustement du niveau d&apos;huile dans les
-            boîtes automatiques sont essentiels et doivent être réalisés
+            boites automatiques sont essentiels et doivent être réalisés
             correctement. Pour obtenir une mesure précise, il est souvent
             nécessaire de vérifier le niveau d&apos;huile lorsque la
-            transmission est chaude, généralement à environ 65°C. Voici les
-            étapes recommandées sur une boite de vitesse équipées d&apos;un
+            transmission est chaude, généralement à <b>environ 65°C</b>. Voici
+            les étapes recommandées sur une boite de vitesse équipées d&apos;un
             convertissuer de couple
           </p>
           <ul style={{ paddingLeft: "0px", color: "#000" }}>
             <li>
               <p className="text-justify  paragraph">
                 {" "}
-                - Chauffer l&apos;huile : Faire monter la température de
-                l&apos;huile de boîte pour atteindre au moins 65°C, puis arrêter
+                - Chauffer l&apos;huile: Faire monter la température de
+                l&apos;huile de boite pour atteindre au moins 65°C, puis arrêter
                 le moteur.
               </p>
             </li>
             <li>
               <p className="text-justify  paragraph">
-                - Vidange : Dévisser le carter, vider l&apos;huile dans une
+                - Vidange: Dévisser le carter, vider l&apos;huile dans une
                 bassine, nettoyer le fond du carter et l&apos;aimant, puis
                 dévisser la crépine pour laisser couler l&apos;huile restante.
                 Remonter le tout avec une nouvelle crépine.
@@ -138,21 +139,21 @@ const Page = () => {
             </li>
             <li>
               <p className="text-justify  paragraph">
-                - Remplissage : Utiliser un entonnoir pour verser environ 4
+                - Remplissage: Utiliser un entonnoir pour verser environ 4
                 litres d&apos;huile dans l&apos;orifice de remplissage situé
                 sous le capot, près du moteur.
               </p>
             </li>
             <li>
               <p className="text-justify  paragraph">
-                - Mise à niveau : Mettre le moteur en marche au ralenti, appuyer
+                - Mise à niveau: Mettre le moteur en marche au ralenti, appuyer
                 sur la pédale de frein et enclencher toutes les vitesses avant
                 de positionner le levier en mode &apos;Parking&apos; (P).
               </p>
             </li>
           </ul>
           <p className="text-justify mb-2 paragraph">
-            Suite au remontage d&apos;une boîte automatique, il est important de
+            Suite au remontage d&apos;une boite automatique, il est important de
             bien faire le calibrage/reprogrammation et de vérifierle niveau
             d&apos;huile.
           </p>

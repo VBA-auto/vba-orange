@@ -5,7 +5,7 @@ const SubHeader = () => {
   return (
     <div>
       <section className="py-2 border-b">
-        <div className="container mx-auto md:px-2 px-4">
+        <div className="container mx-auto md:px-0 px-4">
           <div className="flex justify-between">
             <div className="">
               <div className="flex items-center gap-3">

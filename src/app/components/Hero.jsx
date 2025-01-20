@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import HomeLeftTab from "./HomeLeftTab";
 
 const pageDescription =
   "Spécialistes en boite de vitesses automatiques, mécatronique et calculateurs ";
@@ -41,10 +42,15 @@ const Hero = () => {
         <h2>DSG7</h2>
         <h2>DSG6</h2>
       </div>
-      <div className="container mx-auto py-12 text-center">
+      <div className="container mx-auto py-12 ">
         <div className="">
-          <div className=" ">
-            <div className="w-3/4 mx-auto relative">
+          <div className=" parent-container md:flex gap-5 md:px-0 px-5">
+            <div className="md:w-[20%] rounded-md">
+              <div className=" leftTabHeight overflow-y-scroll">
+                <HomeLeftTab />
+              </div>
+            </div>
+            <div className="md:w-[80%] ms-auto relative text-center">
               <video
                 preload="metadata"
                 autoPlay
@@ -100,9 +106,14 @@ const Hero = () => {
                       </div>
                     </Slider>
                   </div>
-                  <div className="">
+                  <div className="flex gap-3">
+                    <Link href="/tarif">
+                      <button className="px-16 text-[15px] py-2 border border-white   text-white hover:bg-[#2C80EF] hover:border-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
+                        Tarif
+                      </button>
+                    </Link>
                     <Link href="/ressources/aide-en-ligne">
-                      <button className="px-5 text-[15px] py-2 border border-white bg-[#fff]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
+                      <button className="px-8 text-[15px] py-2 border border-white   text-white hover:bg-[#2C80EF] hover:text-white hover:border-[#2C80EF] hover:border rounded-md hidden md:block mx-auto mt-5">
                         Aide en ligne
                       </button>
                     </Link>
@@ -113,7 +124,7 @@ const Hero = () => {
           </div>
           <div className="mb-32 md:mb-0">
             <Link href="/ressources/aide-en-ligne">
-              <button className="px-5 text-[15px] py-2 border border-[#2C80EF] bg-[#fff]  text-[#2C80EF] hover:bg-[#2C80EF] hover:text-white hover:border rounded-md block sm:hidden mx-auto mt-5">
+              <button className="px-5 text-[15px] py-2 border border-[#2C80EF] bg-[#fff]  text-[#2C80EF] hover:bg-[#2C80EF]  hover:text-white hover:border rounded-md block sm:hidden mx-auto mt-5">
                 Aide en ligne
               </button>
             </Link>
