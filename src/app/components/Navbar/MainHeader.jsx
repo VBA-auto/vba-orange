@@ -140,10 +140,16 @@ const MainHeader = () => {
             </ul>
           </div>
           <div className="md:w-1/4 flex justify-end space-x-2">
+            <Link href="/ressources/aide-en-ligne">
+              {" "}
+              <button className="px-5 text-[15px] py-2.5 border bg-[#b4343b]  text-white hover:bg-[#fff] hover:text-[#2C80EF] hover:border rounded-md hidden md:block">
+                Aide en ligne
+              </button>
+            </Link>
             <Link href="/ressources/type-de-bva">
               {" "}
-              <button className="px-5 text-[15px] py-2.5 border bg-[#2C80EF]  text-white hover:bg-[#fff] hover:text-[#2C80EF] hover:border rounded-md hidden md:block">
-                Trouver votre BVA
+              <button className="px-[22px] text-[15px] py-2.5 border bg-[#2C80EF]  text-white hover:bg-[#fff] hover:text-[#2C80EF] hover:border rounded-md hidden md:block">
+                Type de BVA
               </button>
             </Link>
 

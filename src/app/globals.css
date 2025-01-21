@@ -65,7 +65,7 @@ input[type="checkbox"]:checked {
 
 .heroTitle {
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   font-family: poppins, sans-serif;
   /* text-shadow: 1px 1px #f1b04e; */
@@ -347,7 +347,9 @@ input[type="checkbox"]:checked {
 .leftTabHeight {
   height: 683px;
 }
-
+.parent-container {
+  height: 100%;
+}
 @media (max-width: 1535px) {
   .leftTabHeight {
     height: 568px;

@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import HomeLeftTab from "./HomeLeftTab";
+import Image from "next/image";
 
 const pageDescription =
   "Spécialistes en boite de vitesses automatiques, mécatronique et calculateurs ";
@@ -46,8 +47,55 @@ const Hero = () => {
         <div className="">
           <div className=" parent-container md:flex gap-5 md:px-0 px-5">
             <div className="md:w-[20%] rounded-md">
-              <div className=" leftTabHeight overflow-y-scroll">
-                <HomeLeftTab />
+              <div className="h-full flex flex-col justify-between">
+                <div className="relative">
+                  <Link href="/ressources/articles/renault">
+                    <Image
+                      width={400}
+                      height={200}
+                      src="/images/renault.jpeg"
+                      alt="audi"
+                      className="rounded-md "
+                    />
+                  </Link>
+                  {/* <div className="absolute left-0 right-0 top-[40%] ">
+                    <h2 className="text-normal bg-black/50 py-1 rounded-md text-white text-center capitalize font-medium ">
+                      Renault
+                    </h2>
+                  </div> */}
+                </div>
+                <div className="relative">
+                  <Link href="/ressources/articles/audi">
+                    <Image
+                      width={400}
+                      height={200}
+                      src="/images/audi.jpeg"
+                      alt="audi"
+                      className="rounded-md "
+                    />
+                  </Link>
+                  {/* <div className="absolute left-0 right-0 top-[40%] ">
+                    <h2 className="text-normal text-white text-center bg-black/50 py-1 rounded-md capitalize font-medium ">
+                      Audi
+                    </h2>
+                  </div> */}
+                </div>
+                <div className="relative">
+                  <Link href="/ressources/articles/bmw">
+                    <Image
+                      width={400}
+                      height={200}
+                      src="/images/bmw.png"
+                      alt="audi"
+                      className="rounded-md "
+                    />
+                  </Link>
+                  {/* <div className="absolute left-0 right-0 top-0">
+                    <h2 className="text-normal bg-black/50 py-1 rounded-md text-white text-center capitalize font-medium ">
+                      BMW
+                    </h2>
+                  </div> */}
+                </div>
               </div>
             </div>
             <div className="md:w-[80%] ms-auto relative text-center">
@@ -62,9 +110,14 @@ const Hero = () => {
               </video>
               <div className="absolute top-0 w-full h-full  z-50 bg-[#00000091] rounded-md">
                 <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50">
-                  <div className="w-[300px] mx-auto my-5">
+                  <div className="">
+                    <h2 className="text-[35px] text-white hidden md:block">
+                      Specialiste Boite Auto
+                    </h2>
+                  </div>
+                  <div className="w-[300px]  mx-auto my-[40px]">
                     <Slider {...settings}>
-                      <div className="">
+                      <div className="border rounded-md border-gray-400 hover:bg-white/20">
                         <Link
                           href="/prestations/diagnostic"
                           className="hover:text-blue-700"
@@ -75,7 +128,7 @@ const Hero = () => {
                         </Link>
                       </div>
 
-                      <div>
+                      <div className="border rounded-md border-gray-400 hover:bg-white/20">
                         <Link href="/prestations/vidange">
                           <h3 className="heroTitle hover:text-white/90">
                             Vidange
@@ -83,38 +136,31 @@ const Hero = () => {
                         </Link>
                       </div>
 
-                      <div>
+                      <div className="border rounded-md border-gray-400 hover:bg-white/20">
+                        <Link href="/pieces/calculateurs">
+                          <h3 className="heroTitle hover:text-white/90">
+                            Calculateurs
+                          </h3>
+                        </Link>
+                      </div>
+                      <div className="border rounded-md border-gray-400 hover:bg-white/20">
                         <Link href="/prestations/reparation">
                           <h3 className="heroTitle hover:text-white/90">
-                            Réparation
-                          </h3>
-                        </Link>
-                      </div>
-                      <div>
-                        <Link href="/prestations/mecatronique">
-                          <h3 className="heroTitle hover:text-white/90">
-                            Mécatronique
-                          </h3>
-                        </Link>
-                      </div>
-                      <div>
-                        <Link href="/prestations/montage">
-                          <h3 className="heroTitle hover:text-white/90">
-                            Montage
+                            Reparation
                           </h3>
                         </Link>
                       </div>
                     </Slider>
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex justify-center gap-3">
                     <Link href="/tarif">
-                      <button className="px-16 text-[15px] py-2 border border-[#2C80EF] bg-[#2C80EF]   text-white hover:bg-[#2C80EF] hover:border-[#2C80EF] hover:text-white hover:border rounded-md hidden md:block mx-auto mt-5">
+                      <button className="px-[55px] text-[15px] py-2 border border-[#b4343b] bg-[#b4343b]   text-white hover:bg-[#fff] hover:border-[#fff] hover:text-[#b4343b] hover:border rounded-md hidden md:block mx-auto mt-5">
                         Tarif
                       </button>
                     </Link>
-                    <Link href="/ressources/aide-en-ligne">
-                      <button className="px-8 text-[15px] py-2 border border-white   text-white hover:bg-[#2C80EF] hover:text-white hover:border-[#2C80EF] hover:border rounded-md hidden md:block mx-auto mt-5">
-                        Aide en ligne
+                    <Link href="/prestations/diagnostic">
+                      <button className="px-[30px] text-[15px] py-2 border bg-[#2C80EF] border-[#2C80EF]   text-white hover:bg-[#fff] hover:text-[#2C80EF] hover:border-[#fff] hover:border rounded-md hidden md:block mx-auto mt-5">
+                        Diagnostic
                       </button>
                     </Link>
                   </div>

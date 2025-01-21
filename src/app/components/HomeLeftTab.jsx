@@ -1,25 +1,45 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-// This function fetches data on the server
-async function fetchArticles() {
-  const response = await fetch(`https://laboiteauto.com/article.json`, {
-    cache: "no-store", // Optional: Use 'no-store' for dynamic content or 'force-cache' for caching
-  });
-  if (!response.ok) {
-    throw new Error("Failed to fetch articles");
-  }
-  return response.json();
-}
+const HomeLeftTab = () => {
+  const [parts, setParts] = useState([]);
+  const [error, setError] = useState(null);
 
-const HomeLeftTab = async () => {
-  const parts = await fetchArticles();
+  // Fetch articles on the client side
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const response = await fetch(`https://laboiteauto.com/article.json`, {
+          cache: "force-cache", // Optional: Use 'no-store' for dynamic content
+        });
+        if (!response.ok) {
+          throw new Error("Failed to fetch articles");
+        }
+        const data = await response.json();
+        const filteredParts = data.filter((part) =>
+          ["renault", "audi", "bmw"].includes(part?.title.toLowerCase())
+        );
+        setParts(filteredParts);
+      } catch (err) {
+        setError(err.message);
+      }
+    };
+
+    fetchArticles();
+  }, []);
+
+  if (error) {
+    return <p className="text-red-500">Error: {error}</p>;
+  }
 
   return (
-    <section className="">
-      <div className="">
-        {parts?.map((part, index) => (
-          <div key={index} className="relative mb-8 w-full">
+    <section>
+      <div className="flex flex-col justify-between h-[100%]">
+        {parts.map((part, index) => (
+          <div key={index} className="relative">
             <Link href={`/ressources/articles/${part.title}`}>
               <Image
                 width={400}
