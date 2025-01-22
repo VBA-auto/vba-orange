@@ -1,4 +1,5 @@
 "use client";
+import AideenLigneSearch from "@/app/components/AideEnLigneSearch";
 import Breadcrumb from "@/app/components/BreadCumb";
 import ContactButton from "@/app/components/ContactButton";
 import Head from "next/head";
@@ -93,7 +94,7 @@ const Page = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <div className="">
+            {/* <div className="">
               <p className="">Chercher un code défault</p>
               <div className="">
                 <input
@@ -164,6 +165,9 @@ const Page = () => {
                   </div>
                 </div>
               </div>
+            </div> */}
+            <div className="">
+              <AideenLigneSearch />
             </div>
           </div>
         </div>

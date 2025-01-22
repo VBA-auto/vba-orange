@@ -47,54 +47,9 @@ const Hero = () => {
         <div className="">
           <div className=" parent-container md:flex gap-5 md:px-0 px-5">
             <div className="md:w-[20%] rounded-md">
-              <div className="h-full flex flex-col justify-between">
-                <div className="relative">
-                  <Link href="/ressources/articles/renault">
-                    <Image
-                      width={400}
-                      height={200}
-                      src="/images/renault.jpeg"
-                      alt="audi"
-                      className="rounded-md "
-                    />
-                  </Link>
-                  {/* <div className="absolute left-0 right-0 top-[40%] ">
-                    <h2 className="text-normal bg-black/50 py-1 rounded-md text-white text-center capitalize font-medium ">
-                      Renault
-                    </h2>
-                  </div> */}
-                </div>
-                <div className="relative">
-                  <Link href="/ressources/articles/audi">
-                    <Image
-                      width={400}
-                      height={200}
-                      src="/images/audi.jpeg"
-                      alt="audi"
-                      className="rounded-md "
-                    />
-                  </Link>
-                  {/* <div className="absolute left-0 right-0 top-[40%] ">
-                    <h2 className="text-normal text-white text-center bg-black/50 py-1 rounded-md capitalize font-medium ">
-                      Audi
-                    </h2>
-                  </div> */}
-                </div>
-                <div className="relative">
-                  <Link href="/ressources/articles/bmw">
-                    <Image
-                      width={400}
-                      height={200}
-                      src="/images/bmw.png"
-                      alt="audi"
-                      className="rounded-md "
-                    />
-                  </Link>
-                  {/* <div className="absolute left-0 right-0 top-0">
-                    <h2 className="text-normal bg-black/50 py-1 rounded-md text-white text-center capitalize font-medium ">
-                      BMW
-                    </h2>
-                  </div> */}
+              <div className="leftTabHeight rounded-md flex flex-col justify-between">
+                <div className="overflow-y-scroll rounded-md">
+                  <HomeLeftTab />
                 </div>
               </div>
             </div>
@@ -111,13 +66,13 @@ const Hero = () => {
               <div className="absolute top-0 w-full h-full  z-50 bg-[#00000091] rounded-md">
                 <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50">
                   <div className="">
-                    <h2 className="text-[35px] text-white hidden md:block">
-                      Specialiste Boite Auto
+                    <h2 className="text-[35px] text-white hidden md:block font-semibold">
+                      Spécialiste Boite Auto
                     </h2>
                   </div>
                   <div className="w-[300px]  mx-auto my-[40px]">
                     <Slider {...settings}>
-                      <div className="border rounded-md border-gray-400 hover:bg-white/20">
+                      <div className="border rounded-md border-[#2C80EF] hover:bg-white/20">
                         <Link
                           href="/prestations/diagnostic"
                           className="hover:text-blue-700"
@@ -128,7 +83,7 @@ const Hero = () => {
                         </Link>
                       </div>
 
-                      <div className="border rounded-md border-gray-400 hover:bg-white/20">
+                      <div className="border rounded-md border-[#2C80EF] hover:bg-white/20">
                         <Link href="/prestations/vidange">
                           <h3 className="heroTitle hover:text-white/90">
                             Vidange
@@ -136,17 +91,17 @@ const Hero = () => {
                         </Link>
                       </div>
 
-                      <div className="border rounded-md border-gray-400 hover:bg-white/20">
+                      <div className="border rounded-md border-[#2C80EF] hover:bg-white/20">
                         <Link href="/pieces/calculateurs">
                           <h3 className="heroTitle hover:text-white/90">
                             Calculateurs
                           </h3>
                         </Link>
                       </div>
-                      <div className="border rounded-md border-gray-400 hover:bg-white/20">
+                      <div className="border rounded-md border-[#2C80EF] hover:bg-white/20">
                         <Link href="/prestations/reparation">
                           <h3 className="heroTitle hover:text-white/90">
-                            Reparation
+                            Réparation
                           </h3>
                         </Link>
                       </div>
