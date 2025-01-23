@@ -70,9 +70,9 @@ const Hero = () => {
                       Spécialiste Boite Auto
                     </h2>
                   </div>
-                  <div className="w-[300px]  mx-auto my-[40px]">
+                  <div className="w-[340px]  mx-auto my-[40px]">
                     <Slider {...settings}>
-                      <div className="border rounded-md border-[#2C80EF] hover:bg-white/20">
+                      <div className="border rounded-md border-[#fff] hover:bg-white/20">
                         <Link
                           href="/prestations/diagnostic"
                           className="hover:text-blue-700"
@@ -83,7 +83,7 @@ const Hero = () => {
                         </Link>
                       </div>
 
-                      <div className="border rounded-md border-[#2C80EF] hover:bg-white/20">
+                      <div className="border rounded-md border-[#fff] hover:bg-white/20">
                         <Link href="/prestations/vidange">
                           <h3 className="heroTitle hover:text-white/90">
                             Vidange
@@ -91,14 +91,14 @@ const Hero = () => {
                         </Link>
                       </div>
 
-                      <div className="border rounded-md border-[#2C80EF] hover:bg-white/20">
+                      <div className="border rounded-md border-[#fff] hover:bg-white/20">
                         <Link href="/pieces/calculateurs">
                           <h3 className="heroTitle hover:text-white/90">
                             Calculateurs
                           </h3>
                         </Link>
                       </div>
-                      <div className="border rounded-md border-[#2C80EF] hover:bg-white/20">
+                      <div className="border rounded-md border-[#fff] hover:bg-white/20">
                         <Link href="/prestations/reparation">
                           <h3 className="heroTitle hover:text-white/90">
                             Réparation
