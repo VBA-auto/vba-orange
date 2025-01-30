@@ -31,18 +31,19 @@ const Page = () => {
             <p className="text-justify my-2 paragraph">
               Le bloc de contrôle hydraulique, appelé aussi
               &apos;mécatronique&apos;, est indispensable dans les transmissions
-              automatiques. Celui-ci comprends un « valve body » ou « corps de
-              valve » lui même « gréffé » au calculateur. Les modèles souvent
+              automatiques. Celui-ci comprends un «valve body» ou «corps de
+              valve» lui même «gréffé» au calculateur. Les modèles souvent
               problématiques incluent les DSG7, les Mercedes Classe A et B, les
               boites Renault à double embrayage mouillé, les Volkswagen récents
               (DQ381, DQ500) et BMW (6HP, 8HP).
             </p>
             <p className="text-justify paragraph">
               En général, le bloc hydraulique baigne dans l&apos;huile avec les
-              solénoides(à bien contrôller) mais ce n&apos;est pas toujours le
-              cas. <br /> Les défaillances courantes concernent la qualité de
-              l&apos;huile et les courts-circuits à haute température. <br /> Il
-              est possible de réparer ou de reconditionner les mécatroniques.
+              solénoides(à bien contrôller) mais peuvent être éléctroniques
+              (électrovannes). <br /> Les défaillances courantes concernent la
+              qualité de l&apos;huile et les courts-circuits à haute
+              température. <br /> Il est possible de réparer ou de
+              reconditionner les mécatroniques.
             </p>
           </div>
           <div className="md:w-1/2">

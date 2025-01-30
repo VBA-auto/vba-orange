@@ -159,7 +159,7 @@ const Page = () => {
             consommation de carburant. Elle est adaptée aux marques américaines,
             asiatiques et européennes. L’huile <strong>ATF+4®</strong>, formulée
             pour les transmissions Chrysler, améliore les changements de
-            vitesse, réduit les Tremblements et offre une protection contre
+            vitesse, réduit les tremblements et offre une protection contre
             l&apos;usure et la corrosion. Pour maintenir votre boite de vitesses
             automatique en parfait état, il est important de procéder à des
             vidanges régulières, tous les <b>60 000 à 80 000 km</b>. La méthode

@@ -114,7 +114,7 @@ export default function Contact() {
                   className="w-full px-2 py-3 border bg-white rounded-md"
                   type="email"
                   name="email"
-                  placeholder="Votre adresse email*"
+                  placeholder="Votre adresse e-mail*"
                   onChange={handleChange}
                   required
                 />

@@ -25,7 +25,7 @@ const Page = () => {
             <h1 className="titlesFonts">Spécificités techniques</h1>
             <p className="text-justify mb-2 paragraph">
               Monter une boite automatique prend en général 4 à 5 heures. Le
-              démontage quand à lui prend lui un peu moins de temps . Pour les
+              démontage quand à lui prend lui un peu moins de temps. Pour les
               modèles avec une motorisation élevée, il faut prévoir{" "}
               <b>50 % à 100 % </b>
               de temps supplémentaire. Cela est dû au fait qu&apos;il est
@@ -33,8 +33,8 @@ const Page = () => {
               motopropulseur. Un outillage spécifique est indispensable pour ces
               opérations, notamment pour la rétention de l&apos;huile. Une
               attention particulière doit être portée aux boites avec
-              convertisseur de couple hydraulique, surtout quand au remontage
-              (pompe engrenage). Utiliser les bons outils et suivre les
+              convertisseur de couple hydraulique, surtout quand au
+              remontage(pompe engrenage). Utiliser les bons outils et suivre les
               instructions permet d&apos;éviter les erreurs. il est important de
               faire le niveau d’huile et les <b>”adaptations”</b> ou “réglages
               de base”.
@@ -69,9 +69,9 @@ const Page = () => {
             <h1 className="titlesFonts">Particularités</h1>
             <p className="text-justify mb-2 paragraph">
               Les boites automatiques{" "}
-              <strong>à convertisseur de couple hydrauliquenécessitent</strong>{" "}
+              <strong>à convertisseur de couple hydraulique nécessitent</strong>{" "}
               une attention particulière: Il est important de s&apos;assurer que
-              celui-ci est correctement emboité sur les goupillesafin
+              celui-ci est correctement emboité sur les goupilles afin
               d&apos;éviter d&apos;endommager la pompe d&apos;engrenage. Une
               mauvaise manipulation peut entrainer des problèmes au niveau de
               cette pompe (casse).
@@ -124,14 +124,14 @@ const Page = () => {
             <li>
               <p className="text-justify  paragraph">
                 {" "}
-                - Chauffer l&apos;huile: Faire monter la température de
+                - Chauffer l&apos;huile: faire monter la température de
                 l&apos;huile de boite pour atteindre au moins 65°C, puis arrêter
                 le moteur.
               </p>
             </li>
             <li>
               <p className="text-justify  paragraph">
-                - Vidange: Dévisser le carter, vider l&apos;huile dans une
+                - Vidange: dévisser le carter, vider l&apos;huile dans une
                 bassine, nettoyer le fond du carter et l&apos;aimant, puis
                 dévisser la crépine pour laisser couler l&apos;huile restante.
                 Remonter le tout avec une nouvelle crépine.
@@ -139,14 +139,14 @@ const Page = () => {
             </li>
             <li>
               <p className="text-justify  paragraph">
-                - Remplissage: Utiliser un entonnoir pour verser environ 4
+                - Remplissage: utiliser un entonnoir pour verser environ 4
                 litres d&apos;huile dans l&apos;orifice de remplissage situé
                 sous le capot, près du moteur.
               </p>
             </li>
             <li>
               <p className="text-justify  paragraph">
-                - Mise à niveau: Mettre le moteur en marche au ralenti, appuyer
+                - Mise à niveau: mettre le moteur en marche au ralenti, appuyer
                 sur la pédale de frein et enclencher toutes les vitesses avant
                 de positionner le levier en mode &apos;Parking&apos; (P).
               </p>
@@ -154,7 +154,7 @@ const Page = () => {
           </ul>
           <p className="text-justify mb-2 paragraph">
             Suite au remontage d&apos;une boite automatique, il est important de
-            bien faire le calibrage/reprogrammation et de vérifierle niveau
+            bien faire le calibrage/reprogrammation et de vérifier le niveau
             d&apos;huile.
           </p>
           <div className="">

@@ -123,7 +123,7 @@ const Page = () => {
               fonctionnement de la boîte. Enfin, nous poussons le diagnostic en
               vérifiant les solénoides de pression par exemple en plus des
               supports moteur, boite ainsi que la partie mécanique ou du moteur
-              qui pourrait mettre la boite de vitesse en defaut par exemple.
+              qui pourrait mettre la boite de vitesse en défaut par exemple.
             </p>
           </div>
           <div className="mt-12">
@@ -132,13 +132,13 @@ const Page = () => {
               Une vidange de boite de vitesse automatique,{" "}
               <strong>coûte entre 300 € et 600 €</strong>. Ce tarif peut
               varieren fonction de la quantité et du type d’huile utilisée,
-              ainsi que les pièces àremplacer (joints de carter, crépine,
+              ainsi que les pièces à remplacer(joints de carter, crépine,
               cartouche externe). Les types d’huile à utiliser peuvent être de
               la « multi ATF », de la « multi CVT », de la ATF 6, de DCTF (pour
               les doubles embrayages), de la « mutli HF » pour les boites
-              robotisée. Lecoût peut aussi dépendre de l’accessibilité de la
+              robotiées. Le coût peut aussi dépendre de l’accessibilité de la
               crépine et de la complexité du modèle de boîte (exemple sur
-              certain type de boite BMW ou porsche, il y a des tubes et d’autre
+              certain type de boite BMW ou Porsche, il y a des tubes et d’autre
               pièce à remplacer en plus de la crépine). Le prix comprend la
               main-d&apos;œuvre et tous les composants nécessaires à une vidange
               faite dans les règles de l’art.

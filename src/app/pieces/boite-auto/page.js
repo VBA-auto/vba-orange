@@ -103,7 +103,7 @@ const Page = () => {
                 Prix: {selectedPart.price} €
               </p> */}
               <p className="text-[#2C80EF] font-[400] my-3">
-                En repture de stock. <br />
+                En rupture de stock. <br />
                 <Link href="/contact" className="underline">
                   Nous contacter
                 </Link>{" "}

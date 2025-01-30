@@ -205,7 +205,7 @@ const AideenLigneSearch = () => {
         ""
       ) : (
         <div className="mt-5 italic text-[14px]">
-          <p>* Codes défault a titre indicatif uniquement</p>
+          <p>* Codes défault à titre indicatif uniquement</p>
         </div>
       )}
     </div>

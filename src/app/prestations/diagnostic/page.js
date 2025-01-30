@@ -105,7 +105,7 @@ const Page = () => {
               <h1 className="titlesFonts mb-2">Voyant tableau de bord</h1>
               <p className="text-justify mb-2 paragraph">
                 <strong>&apos;Boite de vitesse à contrôler&apos;</strong>,
-                &apos;Défaut boite de vitesse, aller à l&apos;atelier&apos;, ou
+                &apos;défaut boite de vitesse aller à l&apos;atelier&apos;, ou
                 encore &apos;surchauffe boite de vitesse&apos;. Ces alertes
                 pouvant apparaitre dans des véhicules de marques BMW, Audi,
                 Volkswagen, Mercedes, Peugeot, Renault, Toyota ou autre
