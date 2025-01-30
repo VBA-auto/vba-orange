@@ -39,15 +39,15 @@ const Page = () => {
                 également le <strong>niveau, la qualité de l&apos;huile</strong>{" "}
                 et éventuellement la <strong>présence de limaille</strong>. La
                 partie « <strong>mécatronique</strong>» ou « bloc de contrôle
-                hydraulique » est important: il faut vérifier la pression.
+                hydraulique » est important: il faut vérifier sa pression.
               </p>
               <p className="text-justify mb-2 paragraph">
                 Ces contrôles nous aident à évaluer l&apos;état de la boite et à
                 estimer les réparations. Si ces premiers tests ne suffisent pas
                 à identifier les problèmes, nous procédons à des inspections
                 plus poussées, comme le démontage de la boite. <br /> Nous
-                effectuons des contrôles complémentaires, comme le démontage
-                caisson.
+                effectuons des contrôles complémentaires, comme le démontage du
+                carter.
               </p>
             </div>
             <div className="mt-5">
@@ -139,15 +139,15 @@ const Page = () => {
             dans son fonctionnement. Parmi ces composants, on trouve le
             convertisseur de couple hydraulique, les disques de friction, les
             disques en métal, les bagues en bronze, le(s) joint(s) de carter,
-            l&apos;embrayage (simple ou double), le bloc de contrôle
-            hydraulique, les solénoïdes de pression, les synchros…etc. Il faut
-            bien connaitre la boite sur laquelle on va réaliser le diagnostic:{" "}
+            l&apos;embrayage(simple ou double), le bloc de contrôle hydraulique,
+            les solénoïdes de pression, les synchros…etc. Il faut bien connaitre
+            la boite sur laquelle on va réaliser le diagnostic:{" "}
             <Link className="text-[#2C80EF]" href="/ressources/type-de-bva">
               https://laboiteauto.com/type-de-bva.
             </Link>{" "}
             Deux actions sont essentielles pour un diagnostic précis:
             d&apos;abord, il faut connaitre en détail les composants de la boite
-            de vitesse sur laquelle on internient pour pouvoir identifier
+            de vitesse sur laquelle on intervient pour pouvoir identifier
             correctement les problèmes potentiels.
           </p>
           <p className="text-justify mb-2 paragraph">
