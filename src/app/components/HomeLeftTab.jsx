@@ -46,7 +46,7 @@ const HomeLeftTab = () => {
             />
           </Link>
           <Link href={`/ressources/articles/${part.title}`}>
-            <h2 className="text-normal text-white text-center capitalize font-medium absolute  left-0 right-0 bottom-[0%] py-2 bg-[#2c80ef8e] rounded-md">
+            <h2 className="text-normal text-white text-center capitalize font-medium absolute  left-0 right-0 bottom-[25%] py-0 bg-[#2c80ef8e]">
               {part.title}
             </h2>
           </Link>
