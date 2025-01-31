@@ -66,11 +66,11 @@ const Hero = () => {
               <div className="absolute top-0 w-full h-full  z-50 bg-[#00000091] rounded-md">
                 <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50">
                   <div className="">
-                    <h2 className="text-[29px] text-white hidden md:block font-[500]">
+                    <h2 className="text-[28px] text-white hidden md:block font-[500]">
                       Spécialiste Boite Auto
                     </h2>
                   </div>
-                  <div className="w-[310px]  mx-auto my-[40px]">
+                  <div className="w-[305px]  mx-auto my-[40px]">
                     <Slider {...settings}>
                       <div className="border rounded-md border-[#fff] hover:bg-white/20">
                         <Link
