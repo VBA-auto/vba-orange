@@ -66,11 +66,11 @@ const Hero = () => {
               <div className="absolute top-0 w-full h-full  z-50 bg-[#00000091] rounded-md">
                 <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 z-50">
                   <div className="">
-                    <h2 className="text-[30px] text-white hidden md:block font-semibold">
+                    <h2 className="text-[29px] text-white hidden md:block font-[500]">
                       Spécialiste Boite Auto
                     </h2>
                   </div>
-                  <div className="w-[320px]  mx-auto my-[40px]">
+                  <div className="w-[310px]  mx-auto my-[40px]">
                     <Slider {...settings}>
                       <div className="border rounded-md border-[#fff] hover:bg-white/20">
                         <Link
@@ -107,7 +107,7 @@ const Hero = () => {
                       </div>
                     </Slider>
                   </div>
-                  <div className="flex justify-center gap-3">
+                  <div className="flex justify-center gap-5">
                     <Link href="/tarif">
                       <button className="px-[55px] text-[15px] py-2 border border-[#b4343b] bg-[#b4343b]   text-white hover:bg-[#fff] hover:border-[#fff] hover:text-[#b4343b] hover:border rounded-md hidden md:block mx-auto mt-5">
                         Tarif

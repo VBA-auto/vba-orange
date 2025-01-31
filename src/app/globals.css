@@ -65,8 +65,9 @@ input[type="checkbox"]:checked {
 
 .heroTitle {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
+  padding: 2px 0;
   font-family: poppins, sans-serif;
   /* text-shadow: 1px 1px #f1b04e; */
 }
