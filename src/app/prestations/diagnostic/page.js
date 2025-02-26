@@ -46,7 +46,7 @@ const Page = () => {
                 estimer les réparations. Si ces premiers tests ne suffisent pas
                 à identifier les problèmes, nous procédons à des inspections
                 plus poussées, comme le démontage de la boite. <br /> Nous
-                effectuons des contrôles complémentaires, comme le démontage du
+                effectuons d&apos;autres contrôles, comme le démontage du
                 carter.
               </p>
             </div>
