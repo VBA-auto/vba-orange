@@ -67,7 +67,7 @@ const Page = () => {
       .then((response) => response.json())
       .then((data) => {
         setModelsData(data);
-        console.log(data);
+        // console.log(data);
       })
 
       .catch((error) => console.error("Error fetching models data:", error));
@@ -90,7 +90,7 @@ const Page = () => {
       );
       if (matchingModel) {
         setseemore(matchingModel);
-        console.log("Model matched:", matchingModel);
+        // console.log("Model matched:", matchingModel);
       }
     }
   }, [selectedBrand, selectedModel, modelsData]);
