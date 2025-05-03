@@ -123,7 +123,8 @@ const MainHeader = () => {
               <Image
                 width={80}
                 height={80}
-                src="/images/VBAlogo.webp"
+                src="https://res.cloudinary.com/ddf0yuahe/image/upload/v1746259961/VBAlogo_frschi.png"
+                // src="/images/VBAlogo.webp"
                 alt="logo"
               />
             </Link>
