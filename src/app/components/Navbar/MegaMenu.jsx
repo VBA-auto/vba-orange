@@ -17,6 +17,7 @@ const MegaMenu = ({ childrenItems }) => {
                     src={child.image}
                     alt={child.label}
                     className="w-16 h-10 mr-2"
+                    unoptimized
                   />
                 )}
                 <span className="text-gray-700 text-[15px]">{child.label}</span>

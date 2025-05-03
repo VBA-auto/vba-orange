@@ -123,6 +123,7 @@ const Page = () => {
               className="rounded-[8px] MB5"
               src="/images/meca3.png"
               alt=""
+              unoptimized
             />
           </div>
           <div className="md:w-1/2 md:mt-0 mt-12">
@@ -175,6 +176,7 @@ const Page = () => {
               className="rounded-[8px] MB5"
               src="/images/meca2.png"
               alt=""
+              unoptimized
             />
           </div>
         </div>

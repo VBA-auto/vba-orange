@@ -61,6 +61,7 @@ const Page = () => {
               className="rounded-[8px] md:h-[350px]"
               src="/images/diag1.jpeg"
               alt=""
+              unoptimized
             />
           </div>
         </div>
@@ -73,6 +74,7 @@ const Page = () => {
               height={400}
               src="/images/diag2.png"
               alt=""
+              unoptimized
             />
           </div>
           <div className="md:w-1/2 flex flex-col justify-between md:mt-0 mt-12">
@@ -126,6 +128,7 @@ const Page = () => {
               height={400}
               src="/images/diag3.jpeg"
               alt=""
+              unoptimized
             />
           </div>
         </div>

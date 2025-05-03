@@ -68,6 +68,7 @@ const ArticlePage = ({ params }) => {
                     className="w-full object-cover rounded-md videoOverlay relative"
                     src={article.image}
                     alt=""
+                    unoptimized
                   />
                   <h1 className=" absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 positionTitle">
                     {article.title}
@@ -101,6 +102,7 @@ const ArticlePage = ({ params }) => {
                             className="artChildImg rounded-md"
                             src={related.image}
                             alt=""
+                            unoptimized
                           />
                         </div>
                         <div className="md:w-1/2">

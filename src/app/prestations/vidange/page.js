@@ -59,6 +59,7 @@ const Page = () => {
               className="rounded-[8px] MB5"
               src="/images/vid1.png"
               alt=""
+              unoptimized
             />
           </div>
         </div>

@@ -43,6 +43,7 @@ const Page = () => {
                     src={part.image}
                     alt={part.title}
                     className="rounded-md w-full mb-5"
+                    unoptimized
                   />
                 </Link>
                 <Link href={`/ressources/articles/${part.title}`}>

@@ -43,6 +43,7 @@ const HomeLeftTab = () => {
               src={part.image}
               alt={part.title}
               className="rounded-md mb-1"
+              unoptimized
             />
           </Link>
           <Link href={`/ressources/articles/${part.title}`}>

@@ -54,6 +54,7 @@ const Page = () => {
                   src={part.image}
                   alt={part.title}
                   className="rounded-md w-full"
+                  unoptimized
                 />
                 <h2 className="text-md text-gray-700 font-[500] mt-2">
                   {part.title}
@@ -93,6 +94,7 @@ const Page = () => {
                   src={selectedPart.image}
                   alt={selectedPart.title}
                   className="rounded-md w-full"
+                  unoptimized
                 />
               </div>
               <p className="pt-4 text-justify">{selectedPart.paragraph}</p>

@@ -66,6 +66,7 @@ const Page = () => {
               className="rounded-[8px]"
               src="/images/repara2.png"
               alt=""
+              unoptimized
             />
           </div>
           <div className="md:w-1/2 md:mt-0 mt-12">
@@ -121,6 +122,7 @@ const Page = () => {
               className="rounded-[8px] MB5"
               src="/images/repara3.png"
               alt=""
+              unoptimized
             />
           </div>
         </div>
@@ -167,6 +169,7 @@ const Page = () => {
                 className="rounded-[8px] h-[545px] mx-auto MB5 MT5"
                 src="/images/repara4.jpeg"
                 alt=""
+                unoptimized
               />
             </div>
             <div className="md:w-1/2">

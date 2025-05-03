@@ -55,6 +55,7 @@ const Page = () => {
                   src={part.image}
                   alt={part.title}
                   className="rounded-md w-full min-h-[220px] mx-auto"
+                  unoptimized
                 />
                 <h2 className="text-md text-gray-700 font-[500] mt-2">
                   {part.title}
@@ -89,6 +90,7 @@ const Page = () => {
                           src={selectedPart.image}
                           alt={selectedPart.title}
                           className="rounded-md w-full  mx-auto"
+                          unoptimized
                         />
                         <p className="py-4 text-justify">
                           <p
