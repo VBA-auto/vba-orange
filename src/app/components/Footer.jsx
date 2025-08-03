@@ -23,11 +23,11 @@ const Footer = () => {
                     <p className="text-[14px] text-gray-700">VBA</p>
 
                     <p className="text-[14px] my-[5px] text-gray-700">
-                      12 rue du general delestrain
+                      ROISSY EN BRIE
                     </p>
 
                     <p className="text-[14px] text-gray-700">
-                      91220 bretigny sur orge
+                      BRETIGNY SUR ORGE
                     </p>
                   </div>
                   <div className="w-full my-5 md:my-0">

@@ -78,8 +78,8 @@ export default function Contact() {
             <p className="mb-5 font-semibold">Information</p>
             <div className="">
               <p>VBA</p>
-              <p className="my-1">11 rue denis papin</p>
-              <p>77680 ROISSY EN BRIE</p>
+              <p className="my-1">ROISSY EN BRIE</p>
+              <p>BRETIGNY SUR ORGE</p>
               <Link
                 href="callto:0756896197"
                 className="flex items-center gap-2 text-[15px] text-gray-600 mt-1"
